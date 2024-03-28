@@ -15,3 +15,92 @@
 2024-03-28 01:36:13,238 - INFO - Table 'sales' created successfully!
 2024-03-28 01:36:13,238 - INFO - Connection closed successfully!
 2024-03-28 01:36:13,238 - INFO - Connection to the database closed.
+2024-03-28 11:32:54,707 - INFO - Connected to the database successfully!
+2024-03-28 11:32:54,728 - INFO - Table 'sales' deleted successfully!
+2024-03-28 11:32:54,729 - INFO - Connection closed successfully!
+2024-03-28 11:33:05,057 - INFO - Connected to the database successfully!
+2024-03-28 11:33:05,092 - INFO - Table 'sales' created successfully!
+2024-03-28 11:33:05,092 - INFO - Connection closed successfully!
+2024-03-28 11:33:05,093 - INFO - Connection to the database closed.
+2024-03-28 11:35:49,076 - INFO - CSV file read successfully.
+2024-03-28 11:35:49,076 - INFO - Sales data transformed successfully.
+2024-03-28 11:35:49,116 - INFO - 
+Original Data:
+2024-03-28 11:35:49,116 - INFO -                            transaction_id                                        customer_id                           product_id  quantity                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  b'gAAAAABmBUgFsjowfuBRABhbjyBYdlf1Hl30jDdpNhjL...                 Home & Kitchen_HP_TV       2.0 2024-03-28 11:35:49.116750
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  b'gAAAAABmBUgFmUbPhbpI4E4z-RGy2Zn9BGRXjsuP7ETc...  Sports & Outdoors_Adidas_Smartphone      20.0 2024-03-28 11:35:49.116750
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  b'gAAAAABmBUgFo0ANyqI7jCLHAjVC0iTjwo0i24KgNhHv...               Home & Kitchen_Dell_TV      24.0 2024-03-28 11:35:49.116750
+3    69a22701-b546-43cd-8b2b-7a0058faf651  b'gAAAAABmBUgFs_M_z-RSTyrGjRPSNBpS-uFPkZTQm1On...         Sports & Outdoors_Sony_Shoes       0.0 2024-03-28 11:35:49.116750
+4    167db451-46e3-46a8-ab69-89090a376e18  b'gAAAAABmBUgFEvQMY_sCJm-tL2cVCUegUC41Q7xXlPw2...                    Toys_Nike_T-shirt      16.0 2024-03-28 11:35:49.116750
+..                                    ...                                                ...                                  ...       ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  b'gAAAAABmBUgFRo5yzOpbyX2mawh_XUchfwmH1OXglq3p...                   Clothing_Sony_Book       9.0 2024-03-28 11:35:49.116750
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  b'gAAAAABmBUgFVlym1RFbtlCTpz0r4jll_lbVZ5sQZmDF...                   Toys_Apple_T-shirt      12.0 2024-03-28 11:35:49.116750
+997  0c3322e5-19d7-4129-995b-8bece53c711c  b'gAAAAABmBUgFa1FB4mWdArm88vuUzl2DU6xCkxykkgWS...       Sports & Outdoors_Apple_Laptop      14.0 2024-03-28 11:35:49.116750
+998  6241c782-1abb-48d7-b094-b603bfc34848  b'gAAAAABmBUgF8_4g88yDy0Far2i3X-__wz3Z2qukeZYc...            Clothing_Apple_Headphones      17.0 2024-03-28 11:35:49.116750
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  b'gAAAAABmBUgF-mFW31OzW1OgzNRu5mw1xyRhjy_CVC97...                       Toys_Dell_Book      18.0 2024-03-28 11:35:49.116750
+
+[1000 rows x 5 columns]
+2024-03-28 11:35:49,136 - INFO - 
+Data after handling outliers:
+2024-03-28 11:35:49,136 - INFO -                            transaction_id                                        customer_id                           product_id  quantity                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  b'gAAAAABmBUgFsjowfuBRABhbjyBYdlf1Hl30jDdpNhjL...                 Home & Kitchen_HP_TV       2.0 2024-03-28 11:35:49.116750
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  b'gAAAAABmBUgFmUbPhbpI4E4z-RGy2Zn9BGRXjsuP7ETc...  Sports & Outdoors_Adidas_Smartphone      20.0 2024-03-28 11:35:49.116750
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  b'gAAAAABmBUgFo0ANyqI7jCLHAjVC0iTjwo0i24KgNhHv...               Home & Kitchen_Dell_TV      24.0 2024-03-28 11:35:49.116750
+3    69a22701-b546-43cd-8b2b-7a0058faf651  b'gAAAAABmBUgFs_M_z-RSTyrGjRPSNBpS-uFPkZTQm1On...         Sports & Outdoors_Sony_Shoes       0.0 2024-03-28 11:35:49.116750
+4    167db451-46e3-46a8-ab69-89090a376e18  b'gAAAAABmBUgFEvQMY_sCJm-tL2cVCUegUC41Q7xXlPw2...                    Toys_Nike_T-shirt      16.0 2024-03-28 11:35:49.116750
+..                                    ...                                                ...                                  ...       ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  b'gAAAAABmBUgFRo5yzOpbyX2mawh_XUchfwmH1OXglq3p...                   Clothing_Sony_Book       9.0 2024-03-28 11:35:49.116750
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  b'gAAAAABmBUgFVlym1RFbtlCTpz0r4jll_lbVZ5sQZmDF...                   Toys_Apple_T-shirt      12.0 2024-03-28 11:35:49.116750
+997  0c3322e5-19d7-4129-995b-8bece53c711c  b'gAAAAABmBUgFa1FB4mWdArm88vuUzl2DU6xCkxykkgWS...       Sports & Outdoors_Apple_Laptop      14.0 2024-03-28 11:35:49.116750
+998  6241c782-1abb-48d7-b094-b603bfc34848  b'gAAAAABmBUgF8_4g88yDy0Far2i3X-__wz3Z2qukeZYc...            Clothing_Apple_Headphones      17.0 2024-03-28 11:35:49.116750
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  b'gAAAAABmBUgF-mFW31OzW1OgzNRu5mw1xyRhjy_CVC97...                       Toys_Dell_Book      18.0 2024-03-28 11:35:49.116750
+
+[1000 rows x 5 columns]
+2024-03-28 11:35:49,200 - INFO - Connected to the database successfully!
+2024-03-28 11:35:49,223 - INFO - Table schema updated successfully!
+2024-03-28 11:35:49,223 - INFO - Schema changes detected and applied to the database table.
+2024-03-28 11:35:49,483 - INFO - Data loaded into database successfully!
+2024-03-28 11:35:49,483 - INFO - Connection closed successfully!
+2024-03-28 11:35:49,483 - INFO - Connection to the database closed.
+2024-03-28 12:05:41,422 - INFO - CSV file read successfully.
+2024-03-28 12:05:41,423 - INFO - Sales data transformed successfully.
+2024-03-28 12:05:41,467 - INFO - 
+Original Data:
+2024-03-28 12:05:41,467 - INFO -                            transaction_id                                        customer_id                           product_id  quantity                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  b'gAAAAABmBU8FbdDfp-ady6GWu6DTf8fiMC8m6zvcOH6J...                 Home & Kitchen_HP_TV       2.0 2024-03-28 12:05:41.466151
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  b'gAAAAABmBU8FwnbeIrKZPZBxPZWDKGDvbtku2FtltJg0...  Sports & Outdoors_Adidas_Smartphone      20.0 2024-03-28 12:05:41.466151
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  b'gAAAAABmBU8F8e94eYpg3mXrZFnAgLLRLJuWv_4G6kMC...               Home & Kitchen_Dell_TV      24.0 2024-03-28 12:05:41.466151
+3    69a22701-b546-43cd-8b2b-7a0058faf651  b'gAAAAABmBU8F5hNBWkvYWnvGvBsHjUpxBYwsQ_EpSvdF...         Sports & Outdoors_Sony_Shoes       0.0 2024-03-28 12:05:41.466151
+4    167db451-46e3-46a8-ab69-89090a376e18  b'gAAAAABmBU8FlYDYTx9sw8MEYnJeMRF1awa5YaqIYsqr...                    Toys_Nike_T-shirt      16.0 2024-03-28 12:05:41.466151
+..                                    ...                                                ...                                  ...       ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  b'gAAAAABmBU8FKcCfAvyfdfmJ5Pma42LtaveluHcTaEJv...                   Clothing_Sony_Book       9.0 2024-03-28 12:05:41.466151
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  b'gAAAAABmBU8FzU1DTx1RLKSwpeZuzhd-UGhJT0SZ-aK5...                   Toys_Apple_T-shirt      12.0 2024-03-28 12:05:41.466151
+997  0c3322e5-19d7-4129-995b-8bece53c711c  b'gAAAAABmBU8Fr-lNokubTdIbWjFJNeFGma5GOpeN0Y-8...       Sports & Outdoors_Apple_Laptop      14.0 2024-03-28 12:05:41.466151
+998  6241c782-1abb-48d7-b094-b603bfc34848  b'gAAAAABmBU8FhmUsq15kjWcqma0Y39b4Xm_rTQk9naLh...            Clothing_Apple_Headphones      17.0 2024-03-28 12:05:41.466151
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  b'gAAAAABmBU8FLvv7Uunc7aIgoCACCBJRk4HnUm9IYPLY...                       Toys_Dell_Book      18.0 2024-03-28 12:05:41.466151
+
+[1000 rows x 5 columns]
+2024-03-28 12:05:41,483 - INFO - 
+Data after handling outliers:
+2024-03-28 12:05:41,483 - INFO -                            transaction_id                                        customer_id                           product_id  quantity                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  b'gAAAAABmBU8FbdDfp-ady6GWu6DTf8fiMC8m6zvcOH6J...                 Home & Kitchen_HP_TV       2.0 2024-03-28 12:05:41.466151
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  b'gAAAAABmBU8FwnbeIrKZPZBxPZWDKGDvbtku2FtltJg0...  Sports & Outdoors_Adidas_Smartphone      20.0 2024-03-28 12:05:41.466151
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  b'gAAAAABmBU8F8e94eYpg3mXrZFnAgLLRLJuWv_4G6kMC...               Home & Kitchen_Dell_TV      24.0 2024-03-28 12:05:41.466151
+3    69a22701-b546-43cd-8b2b-7a0058faf651  b'gAAAAABmBU8F5hNBWkvYWnvGvBsHjUpxBYwsQ_EpSvdF...         Sports & Outdoors_Sony_Shoes       0.0 2024-03-28 12:05:41.466151
+4    167db451-46e3-46a8-ab69-89090a376e18  b'gAAAAABmBU8FlYDYTx9sw8MEYnJeMRF1awa5YaqIYsqr...                    Toys_Nike_T-shirt      16.0 2024-03-28 12:05:41.466151
+..                                    ...                                                ...                                  ...       ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  b'gAAAAABmBU8FKcCfAvyfdfmJ5Pma42LtaveluHcTaEJv...                   Clothing_Sony_Book       9.0 2024-03-28 12:05:41.466151
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  b'gAAAAABmBU8FzU1DTx1RLKSwpeZuzhd-UGhJT0SZ-aK5...                   Toys_Apple_T-shirt      12.0 2024-03-28 12:05:41.466151
+997  0c3322e5-19d7-4129-995b-8bece53c711c  b'gAAAAABmBU8Fr-lNokubTdIbWjFJNeFGma5GOpeN0Y-8...       Sports & Outdoors_Apple_Laptop      14.0 2024-03-28 12:05:41.466151
+998  6241c782-1abb-48d7-b094-b603bfc34848  b'gAAAAABmBU8FhmUsq15kjWcqma0Y39b4Xm_rTQk9naLh...            Clothing_Apple_Headphones      17.0 2024-03-28 12:05:41.466151
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  b'gAAAAABmBU8FLvv7Uunc7aIgoCACCBJRk4HnUm9IYPLY...                       Toys_Dell_Book      18.0 2024-03-28 12:05:41.466151
+
+[1000 rows x 5 columns]
+2024-03-28 12:05:41,552 - INFO - Connected to the database successfully!
+2024-03-28 12:05:41,573 - INFO - Table schema updated successfully!
+2024-03-28 12:05:41,573 - INFO - Schema changes detected and applied to the database table.
+2024-03-28 12:05:41,576 - ERROR - Error loading data into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ae6f06a5-97c0-4a74-8d5c-a1642046a8c9) already exists.
+
+2024-03-28 12:05:41,577 - INFO - Connection closed successfully!
+2024-03-28 12:05:41,577 - INFO - Connection to the database closed.

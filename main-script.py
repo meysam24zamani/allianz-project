@@ -1,6 +1,6 @@
 import pandas as pd
 import logging
-from database.database_utils import connect_to_database, load_config, close_connection
+from database.database_utils import connect_to_database, load_config, close_connection, get_table_schema, update_table_schema
 from cryptography.fernet import Fernet
 
 # Configure logging
@@ -131,6 +131,24 @@ def load_data(conn, df):
         if cursor:
             cursor.close()
 
+# Function to dynamically detect and handle schema changes
+def handle_schema_changes(df, connection):
+    try:
+        # Get the schema of the CSV file
+        csv_schema = df.columns.tolist()
+
+        # Get the schema of the database table
+        table_schema = get_table_schema(connection)  # function to fetch table schema
+
+        # Compare CSV schema with table schema
+        if csv_schema != table_schema:
+            # Handle schema changes
+            update_table_schema(connection, csv_schema)  # function to update table schema
+
+            logging.info("Schema changes detected and applied to the database table.")
+    except Exception as e:
+        logging.error(f"Error handling schema changes: {e}")
+
 # Main function
 def main():
     try:
@@ -165,6 +183,9 @@ def main():
                     connection = connect_to_database(config)
 
                     if connection:
+                        # Handle schema changes before loading data into the database
+                        handle_schema_changes(df, connection)
+
                         # Load data into the database
                         load_data(connection, df)
 

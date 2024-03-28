@@ -2,7 +2,7 @@ import logging
 import database_utils as db_utils
 
 # Configure logging
-logging.basicConfig(filename='../etl.log', level=logging.INFO,
+logging.basicConfig(filename='etl.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def create_table(conn):
@@ -50,7 +50,7 @@ def create_table(conn):
 def main():
     try:
         # Load configuration from YAML file
-        config_file = "config.yaml"
+        config_file = "database/config.yaml"
         config = db_utils.load_config(config_file)
 
         if config:

@@ -1,3 +1,9 @@
 # Ignore temporary files created by Microsoft Office
 ~WRL0003.tmp
 ~$*.docx
+
+# Ignore __pycache__ directories
+database/__pycache__/*
+
+# Ignore .pyc files inside __pycache__ directories
+database/__pycache__/*.pyc

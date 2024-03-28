@@ -3,7 +3,7 @@ import psycopg2
 import logging
 
 # Configure logging
-logging.basicConfig(filename='../etl.log', level=logging.INFO,
+logging.basicConfig(filename='etl.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def load_config(file_path):
@@ -56,3 +56,30 @@ def close_connection(conn, cursor=None):
     except Exception as e:
         logging.error(f"Error closing connection: {e}")
         print(f"Error closing connection: {e}")
+
+def get_table_schema(connection):
+    """Fetch the schema of the destination database table."""
+    try:
+        cursor = connection.cursor()
+        cursor.execute("SELECT column_name FROM information_schema.columns WHERE table_name = 'sales'")
+        schema = [row[0] for row in cursor.fetchall()]
+        cursor.close()
+        return schema
+    except Exception as e:
+        logging.error(f"Error fetching table schema: {e}")
+        print(f"Error fetching table schema: {e}")
+        return None
+
+def update_table_schema(connection, new_schema):
+    """Update the schema of the destination database table."""
+    try:
+        cursor = connection.cursor()
+        # Alter table to add or remove columns based on schema changes
+        for column in new_schema:
+            cursor.execute(f"ALTER TABLE sales ADD COLUMN IF NOT EXISTS {column} VARCHAR;")
+        connection.commit()
+        cursor.close()
+        logging.info("Table schema updated successfully!")
+    except Exception as e:
+        logging.error(f"Error updating table schema: {e}")
+        print(f"Error updating table schema: {e}")
