@@ -1,0 +1,3 @@
+# Ignore temporary files created by Microsoft Office
+~WRL0003.tmp
+~$*.docx

@@ -1,0 +1,17 @@
+2024-03-28 00:47:38,223 - INFO - Connected to the database successfully!
+2024-03-28 00:47:38,241 - INFO - All rows from table 'sales' deleted successfully!
+2024-03-28 00:47:38,241 - INFO - Connection closed successfully!
+2024-03-28 00:47:47,779 - INFO - Connected to the database successfully!
+2024-03-28 00:47:47,793 - INFO - Table 'sales' deleted successfully!
+2024-03-28 00:47:47,793 - INFO - Connection closed successfully!
+2024-03-28 00:48:39,269 - INFO - Connected to the database successfully!
+2024-03-28 00:48:39,289 - INFO - Table 'sales' created successfully!
+2024-03-28 00:48:39,290 - INFO - Connection closed successfully!
+2024-03-28 00:48:39,290 - INFO - Connection to the database closed.
+2024-03-28 01:35:42,232 - INFO - Connected to the database successfully!
+2024-03-28 01:35:42,244 - INFO - Table 'sales' deleted successfully!
+2024-03-28 01:35:42,244 - INFO - Connection closed successfully!
+2024-03-28 01:36:13,220 - INFO - Connected to the database successfully!
+2024-03-28 01:36:13,238 - INFO - Table 'sales' created successfully!
+2024-03-28 01:36:13,238 - INFO - Connection closed successfully!
+2024-03-28 01:36:13,238 - INFO - Connection to the database closed.
