@@ -36,8 +36,8 @@ def connect_to_database(config):
             password=db_password
         )
 
-        logging.info("Connected to the database successfully!")
-        print("Connected to the database successfully!")
+        #logging.info("Connected to the database successfully!")
+        #print("Connected to the database successfully!")
         return conn
 
     except Exception as e:
@@ -51,8 +51,8 @@ def close_connection(conn, cursor=None):
             cursor.close()
         if conn:
             conn.close()
-        logging.info("Connection closed successfully!")
-        print("Connection closed successfully!")
+        #logging.info("Connection closed successfully!")
+        #print("Connection closed successfully!")
     except Exception as e:
         logging.error(f"Error closing connection: {e}")
         print(f"Error closing connection: {e}")

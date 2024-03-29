@@ -62,8 +62,8 @@ def main():
 
                 # Close the database connection
                 db_utils.close_connection(connection)
-                logging.info("Connection to the database closed.")
-                print("Connection to the database closed.")
+                #logging.info("Connection to the database closed.")
+                #print("Connection to the database closed.")
 
     except Exception as e:
         logging.error(f"An error occurred: {e}")
