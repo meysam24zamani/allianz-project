@@ -12,7 +12,7 @@ This project implements an ETL (Extract, Transform, Load) pipeline to process sa
    - Detection and handling of outliers
 3. **Load Data**: Insert the transformed data into a PostgreSQL database.
 4. **Logging**: Record information, errors, and other events during the ETL process using the logging module.
-5. **Concurrency**: Utilize concurrency techniques such as multiprocessing or threading to improve loading performance (not yet implemented).
+5. **Concurrency**: Utilize multiprocessing to improve loading performance. (A script, `main-multiprocessing.py`, is provided for running the ETL process with multiprocessing, which can significantly improve performance when handling large datasets.)
 6. **Schema Changes Handling**: Handle changes to the schema of the CSV file or the destination database table, ensuring backward and forward compatibility without data loss.
 7. **Database Interaction Scripts**: Included scripts in the `database` folder for creating, emptying, and deleting tables in the PostgreSQL database.
 
@@ -59,15 +59,23 @@ python create_table.py
 
 ```
 
-3. Run the ETL script:
+3. Run the ETL script with multiprocessing (optional):
 
 ```bash
 
-python main-script.py
+python main-multiprocessing.py
 
 ```
 
-4. Check the log file `etl.log` for information and any errors encountered during the ETL process.
+4. Run the ETL script without multiprocessing:
+
+```bash
+
+python main.py
+
+```
+
+5. Check the log file `etl.log` for information and any errors encountered during the ETL process.
 
 
 ## Database Interaction

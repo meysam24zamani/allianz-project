@@ -104,3 +104,1527 @@ DETAIL:  Key (transaction_id)=(ae6f06a5-97c0-4a74-8d5c-a1642046a8c9) already exi
 
 2024-03-28 12:05:41,577 - INFO - Connection closed successfully!
 2024-03-28 12:05:41,577 - INFO - Connection to the database closed.
+2024-03-29 19:01:24,020 - INFO - Connected to the database successfully!
+2024-03-29 19:01:24,036 - INFO - All rows from table 'sales' deleted successfully!
+2024-03-29 19:01:24,037 - INFO - Connection closed successfully!
+2024-03-29 19:01:30,286 - INFO - Connected to the database successfully!
+2024-03-29 19:01:30,313 - INFO - Table 'sales' deleted successfully!
+2024-03-29 19:01:30,313 - INFO - Connection closed successfully!
+2024-03-29 19:01:38,603 - INFO - Connected to the database successfully!
+2024-03-29 19:01:38,632 - INFO - Table 'sales' created successfully!
+2024-03-29 19:01:38,632 - INFO - Connection closed successfully!
+2024-03-29 19:01:38,633 - INFO - Connection to the database closed.
+2024-03-29 19:02:08,681 - INFO - CSV file read successfully.
+2024-03-29 19:02:08,681 - INFO - Sales data transformed successfully.
+2024-03-29 19:02:08,723 - INFO - 
+Original Data:
+2024-03-29 19:02:08,723 - INFO -                            transaction_id                                        customer_id                           product_id  quantity                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  b'gAAAAABmBwIgbVe17UOAf2Q11MvqK_mgZtXxTQvya4o3...                 Home & Kitchen_HP_TV       2.0 2024-03-29 19:02:08.723256
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  b'gAAAAABmBwIgFbgsEdNhgdAThK4OiFDPDh7_0YUg0mkI...  Sports & Outdoors_Adidas_Smartphone      20.0 2024-03-29 19:02:08.723256
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  b'gAAAAABmBwIgT3Ikjrj8uxnGhwdosBYMpHb3rM7EndVN...               Home & Kitchen_Dell_TV      24.0 2024-03-29 19:02:08.723256
+3    69a22701-b546-43cd-8b2b-7a0058faf651  b'gAAAAABmBwIgwO9_ZSgmUNR7tQzDGkui0j9l2nkMY7Qy...         Sports & Outdoors_Sony_Shoes       0.0 2024-03-29 19:02:08.723256
+4    167db451-46e3-46a8-ab69-89090a376e18  b'gAAAAABmBwIg8r-cN1f1CTyK-Of_ZFOLfjX_ZmSUTl1I...                    Toys_Nike_T-shirt      16.0 2024-03-29 19:02:08.723256
+..                                    ...                                                ...                                  ...       ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  b'gAAAAABmBwIgnMVKL8XL2bGKv1yqR7YdLOYgAnV3fHs3...                   Clothing_Sony_Book       9.0 2024-03-29 19:02:08.723256
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  b'gAAAAABmBwIgsMoD2XL-6SKNpGO5_gc8hujPjgA98yyG...                   Toys_Apple_T-shirt      12.0 2024-03-29 19:02:08.723256
+997  0c3322e5-19d7-4129-995b-8bece53c711c  b'gAAAAABmBwIgjnzpsbA_e-KqpQtmAR4HL3yqO7QvL5e1...       Sports & Outdoors_Apple_Laptop      14.0 2024-03-29 19:02:08.723256
+998  6241c782-1abb-48d7-b094-b603bfc34848  b'gAAAAABmBwIgwFPpceiZkWM6YsnTUDSDz4uxaT1yyztd...            Clothing_Apple_Headphones      17.0 2024-03-29 19:02:08.723256
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  b'gAAAAABmBwIg3xaxFUDYbnXATDV8E2zga3juSBpQTx6d...                       Toys_Dell_Book      18.0 2024-03-29 19:02:08.723256
+
+[1000 rows x 5 columns]
+2024-03-29 19:02:08,739 - INFO - 
+Data after handling outliers:
+2024-03-29 19:02:08,739 - INFO -                            transaction_id                                        customer_id                           product_id  quantity                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  b'gAAAAABmBwIgbVe17UOAf2Q11MvqK_mgZtXxTQvya4o3...                 Home & Kitchen_HP_TV       2.0 2024-03-29 19:02:08.723256
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  b'gAAAAABmBwIgFbgsEdNhgdAThK4OiFDPDh7_0YUg0mkI...  Sports & Outdoors_Adidas_Smartphone      20.0 2024-03-29 19:02:08.723256
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  b'gAAAAABmBwIgT3Ikjrj8uxnGhwdosBYMpHb3rM7EndVN...               Home & Kitchen_Dell_TV      24.0 2024-03-29 19:02:08.723256
+3    69a22701-b546-43cd-8b2b-7a0058faf651  b'gAAAAABmBwIgwO9_ZSgmUNR7tQzDGkui0j9l2nkMY7Qy...         Sports & Outdoors_Sony_Shoes       0.0 2024-03-29 19:02:08.723256
+4    167db451-46e3-46a8-ab69-89090a376e18  b'gAAAAABmBwIg8r-cN1f1CTyK-Of_ZFOLfjX_ZmSUTl1I...                    Toys_Nike_T-shirt      16.0 2024-03-29 19:02:08.723256
+..                                    ...                                                ...                                  ...       ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  b'gAAAAABmBwIgnMVKL8XL2bGKv1yqR7YdLOYgAnV3fHs3...                   Clothing_Sony_Book       9.0 2024-03-29 19:02:08.723256
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  b'gAAAAABmBwIgsMoD2XL-6SKNpGO5_gc8hujPjgA98yyG...                   Toys_Apple_T-shirt      12.0 2024-03-29 19:02:08.723256
+997  0c3322e5-19d7-4129-995b-8bece53c711c  b'gAAAAABmBwIgjnzpsbA_e-KqpQtmAR4HL3yqO7QvL5e1...       Sports & Outdoors_Apple_Laptop      14.0 2024-03-29 19:02:08.723256
+998  6241c782-1abb-48d7-b094-b603bfc34848  b'gAAAAABmBwIgwFPpceiZkWM6YsnTUDSDz4uxaT1yyztd...            Clothing_Apple_Headphones      17.0 2024-03-29 19:02:08.723256
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  b'gAAAAABmBwIg3xaxFUDYbnXATDV8E2zga3juSBpQTx6d...                       Toys_Dell_Book      18.0 2024-03-29 19:02:08.723256
+
+[1000 rows x 5 columns]
+2024-03-29 19:02:08,802 - INFO - Connected to the database successfully!
+2024-03-29 19:02:08,824 - INFO - Table schema updated successfully!
+2024-03-29 19:02:08,824 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 19:02:09,101 - INFO - Data loaded into database successfully!
+2024-03-29 19:02:09,102 - INFO - Connection closed successfully!
+2024-03-29 19:02:09,102 - INFO - Connection to the database closed.
+2024-03-29 19:08:12,322 - INFO - CSV file read successfully.
+2024-03-29 19:08:12,322 - INFO - Sales data transformed successfully.
+2024-03-29 19:08:12,362 - INFO - 
+Original Data:
+2024-03-29 19:08:12,362 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:08:12.362735
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:08:12.362735
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:08:12.362735
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:08:12.362735
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:08:12.362735
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:08:12.362735
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:08:12.362735
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:08:12.362735
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:08:12.362735
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:08:12.362735
+
+[1000 rows x 5 columns]
+2024-03-29 19:08:12,390 - INFO - 
+Data after handling outliers:
+2024-03-29 19:08:12,391 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:08:12.362735
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:08:12.362735
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:08:12.362735
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:08:12.362735
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:08:12.362735
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:08:12.362735
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:08:12.362735
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:08:12.362735
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:08:12.362735
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:08:12.362735
+
+[1000 rows x 5 columns]
+2024-03-29 19:08:12,453 - INFO - Connected to the database successfully!
+2024-03-29 19:08:12,472 - INFO - Table schema updated successfully!
+2024-03-29 19:08:12,472 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 19:08:12,478 - ERROR - Error loading data into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ae6f06a5-97c0-4a74-8d5c-a1642046a8c9) already exists.
+
+2024-03-29 19:08:12,479 - INFO - Connection closed successfully!
+2024-03-29 19:08:12,479 - INFO - Connection to the database closed.
+2024-03-29 19:16:57,512 - INFO - CSV file read successfully.
+2024-03-29 19:16:57,513 - INFO - Sales data transformed successfully.
+2024-03-29 19:16:57,554 - INFO - 
+Original Data:
+2024-03-29 19:16:57,554 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:16:57.554545
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:16:57.554545
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:16:57.554545
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:16:57.554545
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:16:57.554545
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:16:57.554545
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:16:57.554545
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:16:57.554545
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:16:57.554545
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:16:57.554545
+
+[1000 rows x 5 columns]
+2024-03-29 19:16:57,572 - INFO - 
+Data after handling outliers:
+2024-03-29 19:16:57,572 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:16:57.554545
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:16:57.554545
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:16:57.554545
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:16:57.554545
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:16:57.554545
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:16:57.554545
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:16:57.554545
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:16:57.554545
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:16:57.554545
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:16:57.554545
+
+[1000 rows x 5 columns]
+2024-03-29 19:16:57,637 - INFO - Connected to the database successfully!
+2024-03-29 19:16:57,663 - INFO - Table schema updated successfully!
+2024-03-29 19:16:57,663 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 19:16:57,668 - ERROR - Error loading data into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ae6f06a5-97c0-4a74-8d5c-a1642046a8c9) already exists.
+
+2024-03-29 19:16:57,669 - INFO - Connection closed successfully!
+2024-03-29 19:16:57,669 - INFO - Connection to the database closed.
+2024-03-29 19:17:33,287 - INFO - CSV file read successfully.
+2024-03-29 19:17:33,287 - INFO - Sales data transformed successfully.
+2024-03-29 19:17:33,329 - INFO - 
+Original Data:
+2024-03-29 19:17:33,329 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:17:33.329855
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:17:33.329855
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:17:33.329855
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:17:33.329855
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:17:33.329855
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:17:33.329855
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:17:33.329855
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:17:33.329855
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:17:33.329855
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:17:33.329855
+
+[1000 rows x 5 columns]
+2024-03-29 19:17:33,347 - INFO - 
+Data after handling outliers:
+2024-03-29 19:17:33,347 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:17:33.329855
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:17:33.329855
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:17:33.329855
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:17:33.329855
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:17:33.329855
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:17:33.329855
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:17:33.329855
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:17:33.329855
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:17:33.329855
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:17:33.329855
+
+[1000 rows x 5 columns]
+2024-03-29 19:17:33,412 - INFO - Connected to the database successfully!
+2024-03-29 19:17:33,436 - INFO - Table schema updated successfully!
+2024-03-29 19:17:33,436 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 19:17:33,439 - ERROR - Error loading data into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ae6f06a5-97c0-4a74-8d5c-a1642046a8c9) already exists.
+
+2024-03-29 19:17:33,440 - INFO - Connection closed successfully!
+2024-03-29 19:17:33,441 - INFO - Connection to the database closed.
+2024-03-29 19:18:46,122 - INFO - CSV file read successfully.
+2024-03-29 19:18:46,123 - INFO - Sales data transformed successfully.
+2024-03-29 19:18:46,165 - INFO - 
+Original Data:
+2024-03-29 19:18:46,165 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:18:46.165605
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:18:46.165605
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:18:46.165605
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:18:46.165605
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:18:46.165605
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:18:46.165605
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:18:46.165605
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:18:46.165605
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:18:46.165605
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:18:46.165605
+
+[1000 rows x 5 columns]
+2024-03-29 19:18:46,184 - INFO - 
+Data after handling outliers:
+2024-03-29 19:18:46,184 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:18:46.165605
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:18:46.165605
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:18:46.165605
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:18:46.165605
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:18:46.165605
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:18:46.165605
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:18:46.165605
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:18:46.165605
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:18:46.165605
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:18:46.165605
+
+[1000 rows x 5 columns]
+2024-03-29 19:18:46,249 - INFO - Connected to the database successfully!
+2024-03-29 19:18:46,267 - INFO - Table schema updated successfully!
+2024-03-29 19:18:46,268 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 19:18:46,271 - ERROR - Error loading data into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ae6f06a5-97c0-4a74-8d5c-a1642046a8c9) already exists.
+
+2024-03-29 19:18:46,272 - INFO - Connection closed successfully!
+2024-03-29 19:18:46,272 - INFO - Connection to the database closed.
+2024-03-29 19:19:04,772 - INFO - CSV file read successfully.
+2024-03-29 19:19:04,773 - INFO - Sales data transformed successfully.
+2024-03-29 19:19:04,818 - INFO - 
+Original Data:
+2024-03-29 19:19:04,818 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:19:04.818277
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:19:04.818277
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:19:04.818277
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:19:04.818277
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:19:04.818277
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:19:04.818277
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:19:04.818277
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:19:04.818277
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:19:04.818277
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:19:04.818277
+
+[1000 rows x 5 columns]
+2024-03-29 19:19:04,835 - INFO - 
+Data after handling outliers:
+2024-03-29 19:19:04,835 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:19:04.818277
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:19:04.818277
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:19:04.818277
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:19:04.818277
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:19:04.818277
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:19:04.818277
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:19:04.818277
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:19:04.818277
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:19:04.818277
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:19:04.818277
+
+[1000 rows x 5 columns]
+2024-03-29 19:19:04,896 - INFO - Connected to the database successfully!
+2024-03-29 19:19:04,921 - INFO - Table schema updated successfully!
+2024-03-29 19:19:04,921 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 19:19:04,924 - ERROR - Error loading data into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ae6f06a5-97c0-4a74-8d5c-a1642046a8c9) already exists.
+
+2024-03-29 19:19:04,925 - INFO - Connection closed successfully!
+2024-03-29 19:19:04,925 - INFO - Connection to the database closed.
+2024-03-29 19:19:28,819 - INFO - CSV file read successfully.
+2024-03-29 19:19:28,819 - INFO - Sales data transformed successfully.
+2024-03-29 19:19:28,860 - INFO - 
+Original Data:
+2024-03-29 19:19:28,860 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:19:28.860815
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:19:28.860815
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:19:28.860815
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:19:28.860815
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:19:28.860815
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:19:28.860815
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:19:28.860815
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:19:28.860815
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:19:28.860815
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:19:28.860815
+
+[1000 rows x 5 columns]
+2024-03-29 19:19:28,877 - INFO - 
+Data after handling outliers:
+2024-03-29 19:19:28,878 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:19:28.860815
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:19:28.860815
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:19:28.860815
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:19:28.860815
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:19:28.860815
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:19:28.860815
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:19:28.860815
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:19:28.860815
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:19:28.860815
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:19:28.860815
+
+[1000 rows x 5 columns]
+2024-03-29 19:19:28,938 - INFO - Connected to the database successfully!
+2024-03-29 19:19:28,963 - INFO - Table schema updated successfully!
+2024-03-29 19:19:28,963 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 19:19:28,966 - ERROR - Error loading data into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ae6f06a5-97c0-4a74-8d5c-a1642046a8c9) already exists.
+
+2024-03-29 19:19:28,967 - INFO - Connection closed successfully!
+2024-03-29 19:19:28,968 - INFO - Connection to the database closed.
+2024-03-29 19:19:42,378 - INFO - Connected to the database successfully!
+2024-03-29 19:19:42,393 - INFO - All rows from table 'sales' deleted successfully!
+2024-03-29 19:19:42,393 - INFO - Connection closed successfully!
+2024-03-29 19:19:46,584 - INFO - Connected to the database successfully!
+2024-03-29 19:19:46,601 - INFO - Table 'sales' deleted successfully!
+2024-03-29 19:19:46,602 - INFO - Connection closed successfully!
+2024-03-29 19:19:49,370 - INFO - Connected to the database successfully!
+2024-03-29 19:19:49,395 - INFO - Table 'sales' created successfully!
+2024-03-29 19:19:49,395 - INFO - Connection closed successfully!
+2024-03-29 19:19:49,395 - INFO - Connection to the database closed.
+2024-03-29 19:19:53,879 - INFO - CSV file read successfully.
+2024-03-29 19:19:53,880 - INFO - Sales data transformed successfully.
+2024-03-29 19:19:53,921 - INFO - 
+Original Data:
+2024-03-29 19:19:53,921 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:19:53.920425
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:19:53.920425
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:19:53.920425
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:19:53.920425
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:19:53.920425
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:19:53.920425
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:19:53.920425
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:19:53.920425
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:19:53.920425
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:19:53.920425
+
+[1000 rows x 5 columns]
+2024-03-29 19:19:53,937 - INFO - 
+Data after handling outliers:
+2024-03-29 19:19:53,938 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:19:53.920425
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:19:53.920425
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:19:53.920425
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:19:53.920425
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:19:53.920425
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:19:53.920425
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:19:53.920425
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:19:53.920425
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:19:53.920425
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:19:53.920425
+
+[1000 rows x 5 columns]
+2024-03-29 19:19:54,001 - INFO - Connected to the database successfully!
+2024-03-29 19:19:54,022 - INFO - Table schema updated successfully!
+2024-03-29 19:19:54,022 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 19:19:54,280 - INFO - Data loaded into database successfully!
+2024-03-29 19:19:54,280 - INFO - Connection closed successfully!
+2024-03-29 19:19:54,280 - INFO - Connection to the database closed.
+2024-03-29 19:20:47,849 - INFO - CSV file read successfully.
+2024-03-29 19:20:47,850 - INFO - Sales data transformed successfully.
+2024-03-29 19:20:47,895 - INFO - 
+Original Data:
+2024-03-29 19:20:47,895 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:20:47.895829
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:20:47.895829
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:20:47.895829
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:20:47.895829
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:20:47.895829
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:20:47.895829
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:20:47.895829
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:20:47.895829
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:20:47.895829
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:20:47.895829
+
+[1000 rows x 5 columns]
+2024-03-29 19:20:47,913 - INFO - 
+Data after handling outliers:
+2024-03-29 19:20:47,913 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:20:47.895829
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:20:47.895829
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:20:47.895829
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:20:47.895829
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:20:47.895829
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:20:47.895829
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:20:47.895829
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:20:47.895829
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:20:47.895829
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:20:47.895829
+
+[1000 rows x 5 columns]
+2024-03-29 19:20:47,972 - INFO - Connected to the database successfully!
+2024-03-29 19:20:47,989 - INFO - Table schema updated successfully!
+2024-03-29 19:20:47,989 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 19:20:47,989 - INFO - Number of processors: 8
+2024-03-29 19:20:47,990 - INFO - Chunk size: 125
+2024-03-29 19:20:47,990 - ERROR - An error occurred: name 'num_chunks' is not defined
+2024-03-29 19:21:36,511 - INFO - CSV file read successfully.
+2024-03-29 19:21:36,512 - INFO - Sales data transformed successfully.
+2024-03-29 19:21:36,554 - INFO - 
+Original Data:
+2024-03-29 19:21:36,554 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:21:36.554198
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:21:36.554198
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:21:36.554198
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:21:36.554198
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:21:36.554198
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:21:36.554198
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:21:36.554198
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:21:36.554198
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:21:36.554198
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:21:36.554198
+
+[1000 rows x 5 columns]
+2024-03-29 19:21:36,571 - INFO - 
+Data after handling outliers:
+2024-03-29 19:21:36,571 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:21:36.554198
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:21:36.554198
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:21:36.554198
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:21:36.554198
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:21:36.554198
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:21:36.554198
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:21:36.554198
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:21:36.554198
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:21:36.554198
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:21:36.554198
+
+[1000 rows x 5 columns]
+2024-03-29 19:21:36,639 - INFO - Connected to the database successfully!
+2024-03-29 19:21:36,655 - INFO - Table schema updated successfully!
+2024-03-29 19:21:36,655 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 19:21:36,656 - INFO - Number of processors: 8
+2024-03-29 19:21:36,656 - INFO - Chunk size: 125
+2024-03-29 19:21:36,657 - INFO - Number of chunks: 8
+2024-03-29 19:21:36,732 - ERROR - An error occurred: cannot pickle 'psycopg2.extensions.connection' object
+2024-03-29 19:24:18,990 - INFO - CSV file read successfully.
+2024-03-29 19:24:18,990 - INFO - Sales data transformed successfully.
+2024-03-29 19:24:19,029 - INFO - 
+Original Data:
+2024-03-29 19:24:19,029 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:24:19.029441
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:24:19.029441
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:24:19.029441
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:24:19.029441
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:24:19.029441
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:24:19.029441
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:24:19.029441
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:24:19.029441
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:24:19.029441
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:24:19.029441
+
+[1000 rows x 5 columns]
+2024-03-29 19:24:19,047 - INFO - 
+Data after handling outliers:
+2024-03-29 19:24:19,047 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 19:24:19.029441
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 19:24:19.029441
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 19:24:19.029441
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 19:24:19.029441
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 19:24:19.029441
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 19:24:19.029441
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 19:24:19.029441
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 19:24:19.029441
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 19:24:19.029441
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 19:24:19.029441
+
+[1000 rows x 5 columns]
+2024-03-29 19:24:19,114 - INFO - Connected to the database successfully!
+2024-03-29 19:24:19,133 - INFO - Table schema updated successfully!
+2024-03-29 19:24:19,133 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 19:24:19,133 - INFO - Number of processors: 8
+2024-03-29 19:24:19,134 - INFO - Chunk size: 125
+2024-03-29 19:24:19,134 - INFO - Number of chunks: 8
+2024-03-29 19:24:19,198 - ERROR - An error occurred: cannot pickle 'psycopg2.extensions.connection' object
+2024-03-29 22:18:33,386 - INFO - CSV file read successfully.
+2024-03-29 22:18:33,386 - INFO - Sales data transformed successfully.
+2024-03-29 22:18:33,430 - INFO - 
+Original Data:
+2024-03-29 22:18:33,430 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:18:33.429815
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:18:33.429815
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:18:33.429815
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:18:33.429815
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:18:33.429815
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:18:33.429815
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:18:33.429815
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:18:33.429815
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:18:33.429815
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:18:33.429815
+
+[1000 rows x 5 columns]
+2024-03-29 22:18:33,446 - INFO - 
+Data after handling outliers:
+2024-03-29 22:18:33,446 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:18:33.429815
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:18:33.429815
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:18:33.429815
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:18:33.429815
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:18:33.429815
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:18:33.429815
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:18:33.429815
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:18:33.429815
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:18:33.429815
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:18:33.429815
+
+[1000 rows x 5 columns]
+2024-03-29 22:18:33,507 - INFO - Connected to the database successfully!
+2024-03-29 22:18:33,526 - INFO - Table schema updated successfully!
+2024-03-29 22:18:33,526 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:18:33,526 - INFO - Number of processors: 8
+2024-03-29 22:18:33,526 - INFO - Chunk size: 125
+2024-03-29 22:18:33,527 - INFO - Number of chunks: 8
+2024-03-29 22:18:35,065 - INFO - Connected to the database successfully!
+2024-03-29 22:18:35,070 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(9ab382f5-0888-4eda-9f96-7ebec463f1fa) already exists.
+
+2024-03-29 22:18:35,093 - INFO - Connected to the database successfully!
+2024-03-29 22:18:35,096 - INFO - Connected to the database successfully!
+2024-03-29 22:18:35,097 - INFO - Connected to the database successfully!
+2024-03-29 22:18:35,098 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(9c95b2bc-4461-4bce-a919-6e84e61fac5b) already exists.
+
+2024-03-29 22:18:35,102 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ae6f06a5-97c0-4a74-8d5c-a1642046a8c9) already exists.
+
+2024-03-29 22:18:35,102 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(18f8f507-3965-434a-b120-1fcef3237260) already exists.
+
+2024-03-29 22:18:35,111 - INFO - Connected to the database successfully!
+2024-03-29 22:18:35,116 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(5d9ebf77-27b9-48e6-8b4c-2f12f5f31f6c) already exists.
+
+2024-03-29 22:18:35,121 - INFO - Connected to the database successfully!
+2024-03-29 22:18:35,123 - INFO - Connected to the database successfully!
+2024-03-29 22:18:35,125 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(d34b1341-d168-48ea-b920-4e294f317c6d) already exists.
+
+2024-03-29 22:18:35,127 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ce1af878-4978-425e-831f-d1cb43729f9c) already exists.
+
+2024-03-29 22:18:35,147 - INFO - Connected to the database successfully!
+2024-03-29 22:18:35,151 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(6af79e2e-7128-49dd-88e1-a8d1b173485f) already exists.
+
+2024-03-29 22:19:58,219 - INFO - CSV file read successfully.
+2024-03-29 22:19:58,220 - INFO - Sales data transformed successfully.
+2024-03-29 22:19:58,261 - INFO - 
+Original Data:
+2024-03-29 22:19:58,261 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:19:58.260233
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:19:58.260233
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:19:58.260233
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:19:58.260233
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:19:58.260233
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:19:58.260233
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:19:58.260233
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:19:58.260233
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:19:58.260233
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:19:58.260233
+
+[1000 rows x 5 columns]
+2024-03-29 22:19:58,278 - INFO - 
+Data after handling outliers:
+2024-03-29 22:19:58,278 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:19:58.260233
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:19:58.260233
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:19:58.260233
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:19:58.260233
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:19:58.260233
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:19:58.260233
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:19:58.260233
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:19:58.260233
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:19:58.260233
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:19:58.260233
+
+[1000 rows x 5 columns]
+2024-03-29 22:19:58,336 - INFO - Connected to the database successfully!
+2024-03-29 22:19:58,360 - INFO - Table schema updated successfully!
+2024-03-29 22:19:58,360 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:19:58,360 - INFO - Number of processors: 8
+2024-03-29 22:19:58,361 - INFO - Chunk size: 125
+2024-03-29 22:19:58,362 - INFO - Number of chunks: 8
+2024-03-29 22:19:59,901 - INFO - Connected to the database successfully!
+2024-03-29 22:19:59,902 - INFO - Connected to the database successfully!
+2024-03-29 22:19:59,904 - INFO - Connected to the database successfully!
+2024-03-29 22:19:59,907 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ae6f06a5-97c0-4a74-8d5c-a1642046a8c9) already exists.
+
+2024-03-29 22:19:59,907 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(9c95b2bc-4461-4bce-a919-6e84e61fac5b) already exists.
+
+2024-03-29 22:19:59,910 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(9ab382f5-0888-4eda-9f96-7ebec463f1fa) already exists.
+
+2024-03-29 22:19:59,912 - INFO - Connected to the database successfully!
+2024-03-29 22:19:59,921 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(18f8f507-3965-434a-b120-1fcef3237260) already exists.
+
+2024-03-29 22:19:59,923 - INFO - Connected to the database successfully!
+2024-03-29 22:19:59,927 - INFO - Connected to the database successfully!
+2024-03-29 22:19:59,930 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(5d9ebf77-27b9-48e6-8b4c-2f12f5f31f6c) already exists.
+
+2024-03-29 22:19:59,933 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ce1af878-4978-425e-831f-d1cb43729f9c) already exists.
+
+2024-03-29 22:19:59,947 - INFO - Connected to the database successfully!
+2024-03-29 22:19:59,950 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(d34b1341-d168-48ea-b920-4e294f317c6d) already exists.
+
+2024-03-29 22:19:59,967 - INFO - Connected to the database successfully!
+2024-03-29 22:19:59,970 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(6af79e2e-7128-49dd-88e1-a8d1b173485f) already exists.
+
+2024-03-29 22:20:05,871 - INFO - Connected to the database successfully!
+2024-03-29 22:20:05,890 - INFO - Table 'sales' deleted successfully!
+2024-03-29 22:20:05,890 - INFO - Connection closed successfully!
+2024-03-29 22:20:09,649 - INFO - Connected to the database successfully!
+2024-03-29 22:20:09,668 - INFO - Table 'sales' created successfully!
+2024-03-29 22:20:09,668 - INFO - Connection closed successfully!
+2024-03-29 22:20:09,668 - INFO - Connection to the database closed.
+2024-03-29 22:20:14,512 - INFO - CSV file read successfully.
+2024-03-29 22:20:14,513 - INFO - Sales data transformed successfully.
+2024-03-29 22:20:14,553 - INFO - 
+Original Data:
+2024-03-29 22:20:14,553 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:20:14.552340
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:20:14.552340
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:20:14.552340
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:20:14.552340
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:20:14.552340
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:20:14.552340
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:20:14.552340
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:20:14.552340
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:20:14.552340
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:20:14.552340
+
+[1000 rows x 5 columns]
+2024-03-29 22:20:14,569 - INFO - 
+Data after handling outliers:
+2024-03-29 22:20:14,569 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:20:14.552340
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:20:14.552340
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:20:14.552340
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:20:14.552340
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:20:14.552340
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:20:14.552340
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:20:14.552340
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:20:14.552340
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:20:14.552340
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:20:14.552340
+
+[1000 rows x 5 columns]
+2024-03-29 22:20:14,628 - INFO - Connected to the database successfully!
+2024-03-29 22:20:14,647 - INFO - Table schema updated successfully!
+2024-03-29 22:20:14,647 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:20:14,648 - INFO - Number of processors: 8
+2024-03-29 22:20:14,648 - INFO - Chunk size: 125
+2024-03-29 22:20:14,648 - INFO - Number of chunks: 8
+2024-03-29 22:20:16,177 - INFO - Connected to the database successfully!
+2024-03-29 22:20:16,181 - INFO - Connected to the database successfully!
+2024-03-29 22:20:16,181 - INFO - Connected to the database successfully!
+2024-03-29 22:20:16,181 - INFO - Connected to the database successfully!
+2024-03-29 22:20:16,196 - INFO - Connected to the database successfully!
+2024-03-29 22:20:16,249 - INFO - Connected to the database successfully!
+2024-03-29 22:20:16,257 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:20:16,257 - INFO - Connection closed successfully!
+2024-03-29 22:20:16,257 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:20:16,262 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:20:16,263 - INFO - Connection closed successfully!
+2024-03-29 22:20:16,263 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:20:16,263 - INFO - Connection to the database closed.
+2024-03-29 22:20:16,265 - INFO - Connection closed successfully!
+2024-03-29 22:20:16,267 - INFO - Connection to the database closed.
+2024-03-29 22:20:16,271 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:20:16,272 - INFO - Connection closed successfully!
+2024-03-29 22:20:16,272 - INFO - Connection to the database closed.
+2024-03-29 22:20:16,274 - INFO - Connection closed successfully!
+2024-03-29 22:20:16,275 - INFO - Connection to the database closed.
+2024-03-29 22:20:16,277 - INFO - Connection to the database closed.
+2024-03-29 22:20:16,290 - INFO - Connected to the database successfully!
+2024-03-29 22:20:16,306 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:20:16,307 - INFO - Connection closed successfully!
+2024-03-29 22:20:16,307 - INFO - Connection to the database closed.
+2024-03-29 22:20:16,315 - INFO - Connected to the database successfully!
+2024-03-29 22:20:16,331 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:20:16,331 - INFO - Connection closed successfully!
+2024-03-29 22:20:16,331 - INFO - Connection to the database closed.
+2024-03-29 22:20:16,350 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:20:16,351 - INFO - Connection closed successfully!
+2024-03-29 22:20:16,351 - INFO - Connection to the database closed.
+2024-03-29 22:22:46,533 - INFO - CSV file read successfully.
+2024-03-29 22:22:46,533 - INFO - Sales data transformed successfully.
+2024-03-29 22:22:46,578 - INFO - 
+Original Data:
+2024-03-29 22:22:46,578 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:22:46.577315
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:22:46.577315
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:22:46.577315
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:22:46.577315
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:22:46.577315
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:22:46.577315
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:22:46.577315
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:22:46.577315
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:22:46.577315
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:22:46.577315
+
+[1000 rows x 5 columns]
+2024-03-29 22:22:46,596 - INFO - 
+Data after handling outliers:
+2024-03-29 22:22:46,596 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:22:46.577315
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:22:46.577315
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:22:46.577315
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:22:46.577315
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:22:46.577315
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:22:46.577315
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:22:46.577315
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:22:46.577315
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:22:46.577315
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:22:46.577315
+
+[1000 rows x 5 columns]
+2024-03-29 22:22:46,657 - INFO - Connected to the database successfully!
+2024-03-29 22:22:46,681 - INFO - Table schema updated successfully!
+2024-03-29 22:22:46,681 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:22:46,682 - INFO - Number of processors: 8
+2024-03-29 22:22:46,682 - INFO - Chunk size: 125
+2024-03-29 22:22:46,683 - INFO - Number of chunks: 8
+2024-03-29 22:22:48,206 - INFO - Connected to the database successfully!
+2024-03-29 22:22:48,216 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ae6f06a5-97c0-4a74-8d5c-a1642046a8c9) already exists.
+
+2024-03-29 22:22:48,240 - INFO - Connected to the database successfully!
+2024-03-29 22:22:48,245 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(18f8f507-3965-434a-b120-1fcef3237260) already exists.
+
+2024-03-29 22:22:48,258 - INFO - Connected to the database successfully!
+2024-03-29 22:22:48,263 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(9c95b2bc-4461-4bce-a919-6e84e61fac5b) already exists.
+
+2024-03-29 22:22:48,270 - INFO - Connected to the database successfully!
+2024-03-29 22:22:48,273 - INFO - Connected to the database successfully!
+2024-03-29 22:22:48,276 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ce1af878-4978-425e-831f-d1cb43729f9c) already exists.
+
+2024-03-29 22:22:48,277 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(9ab382f5-0888-4eda-9f96-7ebec463f1fa) already exists.
+
+2024-03-29 22:22:48,277 - INFO - Connected to the database successfully!
+2024-03-29 22:22:48,282 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(5d9ebf77-27b9-48e6-8b4c-2f12f5f31f6c) already exists.
+
+2024-03-29 22:22:48,282 - INFO - Connected to the database successfully!
+2024-03-29 22:22:48,282 - INFO - Connected to the database successfully!
+2024-03-29 22:22:48,287 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(d34b1341-d168-48ea-b920-4e294f317c6d) already exists.
+
+2024-03-29 22:22:48,287 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(6af79e2e-7128-49dd-88e1-a8d1b173485f) already exists.
+
+2024-03-29 22:23:11,090 - INFO - Connected to the database successfully!
+2024-03-29 22:23:11,111 - INFO - Table 'sales' deleted successfully!
+2024-03-29 22:23:11,112 - INFO - Connection closed successfully!
+2024-03-29 22:23:14,767 - INFO - Connected to the database successfully!
+2024-03-29 22:23:14,791 - INFO - Table 'sales' created successfully!
+2024-03-29 22:23:14,792 - INFO - Connection closed successfully!
+2024-03-29 22:23:14,792 - INFO - Connection to the database closed.
+2024-03-29 22:23:20,195 - INFO - CSV file read successfully.
+2024-03-29 22:23:20,196 - INFO - Sales data transformed successfully.
+2024-03-29 22:23:20,243 - INFO - 
+Original Data:
+2024-03-29 22:23:20,244 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:23:20.243715
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:23:20.243715
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:23:20.243715
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:23:20.243715
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:23:20.243715
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:23:20.243715
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:23:20.243715
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:23:20.243715
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:23:20.243715
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:23:20.243715
+
+[1000 rows x 5 columns]
+2024-03-29 22:23:20,262 - INFO - 
+Data after handling outliers:
+2024-03-29 22:23:20,262 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:23:20.243715
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:23:20.243715
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:23:20.243715
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:23:20.243715
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:23:20.243715
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:23:20.243715
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:23:20.243715
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:23:20.243715
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:23:20.243715
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:23:20.243715
+
+[1000 rows x 5 columns]
+2024-03-29 22:23:20,326 - INFO - Connected to the database successfully!
+2024-03-29 22:23:20,350 - INFO - Table schema updated successfully!
+2024-03-29 22:23:20,350 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:23:20,350 - INFO - Number of processors: 8
+2024-03-29 22:23:20,351 - INFO - Chunk size: 125
+2024-03-29 22:23:20,351 - INFO - Number of chunks: 8
+2024-03-29 22:23:21,936 - INFO - Connected to the database successfully!
+2024-03-29 22:23:21,941 - INFO - Connected to the database successfully!
+2024-03-29 22:23:21,941 - INFO - Connected to the database successfully!
+2024-03-29 22:23:21,949 - INFO - Connected to the database successfully!
+2024-03-29 22:23:21,960 - INFO - Connected to the database successfully!
+2024-03-29 22:23:21,963 - INFO - Connected to the database successfully!
+2024-03-29 22:23:21,981 - INFO - Connected to the database successfully!
+2024-03-29 22:23:22,017 - ERROR - Error loading data chunk into database: name 'chunk_number' is not defined
+2024-03-29 22:23:22,023 - ERROR - Error loading data chunk into database: name 'chunk_number' is not defined
+2024-03-29 22:23:22,034 - ERROR - Error loading data chunk into database: name 'chunk_number' is not defined
+2024-03-29 22:23:22,036 - ERROR - Error loading data chunk into database: name 'chunk_number' is not defined
+2024-03-29 22:23:22,040 - ERROR - Error loading data chunk into database: name 'chunk_number' is not defined
+2024-03-29 22:23:22,044 - ERROR - Error loading data chunk into database: name 'chunk_number' is not defined
+2024-03-29 22:23:22,056 - ERROR - Error loading data chunk into database: name 'chunk_number' is not defined
+2024-03-29 22:23:22,058 - INFO - Connected to the database successfully!
+2024-03-29 22:23:22,093 - ERROR - Error loading data chunk into database: name 'chunk_number' is not defined
+2024-03-29 22:28:57,358 - INFO - CSV file read successfully.
+2024-03-29 22:28:57,359 - INFO - Sales data transformed successfully.
+2024-03-29 22:28:57,399 - INFO - 
+Transformed Data:
+2024-03-29 22:28:57,399 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:28:57.399918
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:28:57.399918
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:28:57.399918
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:28:57.399918
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:28:57.399918
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:28:57.399918
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:28:57.399918
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:28:57.399918
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:28:57.399918
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:28:57.399918
+
+[1000 rows x 5 columns]
+2024-03-29 22:28:57,417 - INFO - 
+Data after handling outliers:
+2024-03-29 22:28:57,419 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:28:57.399918
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:28:57.399918
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:28:57.399918
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:28:57.399918
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:28:57.399918
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:28:57.399918
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:28:57.399918
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:28:57.399918
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:28:57.399918
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:28:57.399918
+
+[1000 rows x 5 columns]
+2024-03-29 22:28:57,484 - INFO - Connected to the database successfully!
+2024-03-29 22:28:57,508 - INFO - Table schema updated successfully!
+2024-03-29 22:28:57,508 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:28:57,508 - INFO - Number of processors: 8
+2024-03-29 22:28:57,509 - INFO - Chunk size: 125
+2024-03-29 22:28:57,509 - INFO - Number of chunks: 8
+2024-03-29 22:28:59,122 - INFO - Connected to the database successfully!
+2024-03-29 22:28:59,131 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ae6f06a5-97c0-4a74-8d5c-a1642046a8c9) already exists.
+
+2024-03-29 22:28:59,141 - INFO - Connected to the database successfully!
+2024-03-29 22:28:59,146 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(9ab382f5-0888-4eda-9f96-7ebec463f1fa) already exists.
+
+2024-03-29 22:28:59,148 - INFO - Connected to the database successfully!
+2024-03-29 22:28:59,153 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(9c95b2bc-4461-4bce-a919-6e84e61fac5b) already exists.
+
+2024-03-29 22:28:59,160 - INFO - Connected to the database successfully!
+2024-03-29 22:28:59,165 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(18f8f507-3965-434a-b120-1fcef3237260) already exists.
+
+2024-03-29 22:28:59,200 - INFO - Connected to the database successfully!
+2024-03-29 22:28:59,205 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(5d9ebf77-27b9-48e6-8b4c-2f12f5f31f6c) already exists.
+
+2024-03-29 22:28:59,217 - INFO - Connected to the database successfully!
+2024-03-29 22:28:59,221 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ce1af878-4978-425e-831f-d1cb43729f9c) already exists.
+
+2024-03-29 22:28:59,227 - INFO - Connected to the database successfully!
+2024-03-29 22:28:59,229 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(d34b1341-d168-48ea-b920-4e294f317c6d) already exists.
+
+2024-03-29 22:28:59,230 - INFO - Connected to the database successfully!
+2024-03-29 22:28:59,233 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(6af79e2e-7128-49dd-88e1-a8d1b173485f) already exists.
+
+2024-03-29 22:29:18,073 - INFO - Connected to the database successfully!
+2024-03-29 22:29:18,091 - INFO - Table 'sales' deleted successfully!
+2024-03-29 22:29:18,092 - INFO - Connection closed successfully!
+2024-03-29 22:29:20,555 - INFO - Connected to the database successfully!
+2024-03-29 22:29:20,570 - INFO - Table 'sales' created successfully!
+2024-03-29 22:29:20,571 - INFO - Connection closed successfully!
+2024-03-29 22:29:20,571 - INFO - Connection to the database closed.
+2024-03-29 22:29:25,462 - INFO - CSV file read successfully.
+2024-03-29 22:29:25,462 - INFO - Sales data transformed successfully.
+2024-03-29 22:29:25,505 - INFO - 
+Transformed Data:
+2024-03-29 22:29:25,506 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:29:25.505651
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:29:25.505651
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:29:25.505651
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:29:25.505651
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:29:25.505651
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:29:25.505651
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:29:25.505651
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:29:25.505651
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:29:25.505651
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:29:25.505651
+
+[1000 rows x 5 columns]
+2024-03-29 22:29:25,523 - INFO - 
+Data after handling outliers:
+2024-03-29 22:29:25,523 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:29:25.505651
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:29:25.505651
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:29:25.505651
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:29:25.505651
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:29:25.505651
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:29:25.505651
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:29:25.505651
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:29:25.505651
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:29:25.505651
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:29:25.505651
+
+[1000 rows x 5 columns]
+2024-03-29 22:29:25,582 - INFO - Connected to the database successfully!
+2024-03-29 22:29:25,606 - INFO - Table schema updated successfully!
+2024-03-29 22:29:25,606 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:29:25,607 - INFO - Number of processors: 8
+2024-03-29 22:29:25,607 - INFO - Chunk size: 125
+2024-03-29 22:29:25,608 - INFO - Number of chunks: 8
+2024-03-29 22:29:27,168 - INFO - Connected to the database successfully!
+2024-03-29 22:29:27,179 - INFO - Connected to the database successfully!
+2024-03-29 22:29:27,181 - INFO - Connected to the database successfully!
+2024-03-29 22:29:27,183 - INFO - Connected to the database successfully!
+2024-03-29 22:29:27,187 - INFO - Connected to the database successfully!
+2024-03-29 22:29:27,194 - INFO - Connected to the database successfully!
+2024-03-29 22:29:27,256 - INFO - Chunk 125 loaded into database successfully!
+2024-03-29 22:29:27,257 - INFO - Connection closed successfully!
+2024-03-29 22:29:27,257 - INFO - Connection to the database closed.
+2024-03-29 22:29:27,267 - INFO - Chunk 125 loaded into database successfully!
+2024-03-29 22:29:27,268 - INFO - Connection closed successfully!
+2024-03-29 22:29:27,269 - INFO - Chunk 125 loaded into database successfully!
+2024-03-29 22:29:27,269 - INFO - Connection to the database closed.
+2024-03-29 22:29:27,271 - INFO - Chunk 125 loaded into database successfully!
+2024-03-29 22:29:27,271 - INFO - Connection closed successfully!
+2024-03-29 22:29:27,272 - INFO - Connection to the database closed.
+2024-03-29 22:29:27,275 - INFO - Connection closed successfully!
+2024-03-29 22:29:27,279 - INFO - Connection to the database closed.
+2024-03-29 22:29:27,279 - INFO - Chunk 125 loaded into database successfully!
+2024-03-29 22:29:27,280 - INFO - Connection closed successfully!
+2024-03-29 22:29:27,282 - INFO - Connection to the database closed.
+2024-03-29 22:29:27,283 - INFO - Chunk 125 loaded into database successfully!
+2024-03-29 22:29:27,286 - INFO - Connection closed successfully!
+2024-03-29 22:29:27,288 - INFO - Connection to the database closed.
+2024-03-29 22:29:27,314 - INFO - Connected to the database successfully!
+2024-03-29 22:29:27,333 - INFO - Connected to the database successfully!
+2024-03-29 22:29:27,362 - INFO - Chunk 125 loaded into database successfully!
+2024-03-29 22:29:27,363 - INFO - Connection closed successfully!
+2024-03-29 22:29:27,363 - INFO - Connection to the database closed.
+2024-03-29 22:29:27,377 - INFO - Chunk 125 loaded into database successfully!
+2024-03-29 22:29:27,377 - INFO - Connection closed successfully!
+2024-03-29 22:29:27,377 - INFO - Connection to the database closed.
+2024-03-29 22:33:56,079 - INFO - Connected to the database successfully!
+2024-03-29 22:33:56,098 - INFO - Table 'sales' deleted successfully!
+2024-03-29 22:33:56,098 - INFO - Connection closed successfully!
+2024-03-29 22:33:58,260 - INFO - Connected to the database successfully!
+2024-03-29 22:33:58,284 - INFO - Table 'sales' created successfully!
+2024-03-29 22:33:58,284 - INFO - Connection closed successfully!
+2024-03-29 22:33:58,285 - INFO - Connection to the database closed.
+2024-03-29 22:34:01,152 - INFO - CSV file read successfully.
+2024-03-29 22:34:01,152 - INFO - Sales data transformed successfully.
+2024-03-29 22:34:01,193 - INFO - 
+Transformed Data:
+2024-03-29 22:34:01,193 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:34:01.193510
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:34:01.193510
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:34:01.193510
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:34:01.193510
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:34:01.193510
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:34:01.193510
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:34:01.193510
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:34:01.193510
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:34:01.193510
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:34:01.193510
+
+[1000 rows x 5 columns]
+2024-03-29 22:34:01,211 - INFO - 
+Data after handling outliers:
+2024-03-29 22:34:01,211 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:34:01.193510
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:34:01.193510
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:34:01.193510
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:34:01.193510
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:34:01.193510
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:34:01.193510
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:34:01.193510
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:34:01.193510
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:34:01.193510
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:34:01.193510
+
+[1000 rows x 5 columns]
+2024-03-29 22:34:01,273 - INFO - Connected to the database successfully!
+2024-03-29 22:34:01,298 - INFO - Table schema updated successfully!
+2024-03-29 22:34:01,298 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:34:01,298 - INFO - Number of processors: 8
+2024-03-29 22:34:01,299 - INFO - Chunk size: 125
+2024-03-29 22:34:01,301 - INFO - Number of chunks: 8
+2024-03-29 22:34:02,735 - ERROR - Error loading data chunk into database: too many values to unpack (expected 2)
+2024-03-29 22:34:02,738 - ERROR - Error loading data chunk into database: too many values to unpack (expected 2)
+2024-03-29 22:34:02,739 - ERROR - Error loading data chunk into database: too many values to unpack (expected 2)
+2024-03-29 22:34:02,740 - ERROR - Error loading data chunk into database: too many values to unpack (expected 2)
+2024-03-29 22:34:02,741 - ERROR - Error loading data chunk into database: too many values to unpack (expected 2)
+2024-03-29 22:34:02,742 - ERROR - Error loading data chunk into database: too many values to unpack (expected 2)
+2024-03-29 22:34:02,745 - ERROR - Error loading data chunk into database: too many values to unpack (expected 2)
+2024-03-29 22:34:02,747 - ERROR - Error loading data chunk into database: too many values to unpack (expected 2)
+2024-03-29 22:36:00,203 - INFO - Connected to the database successfully!
+2024-03-29 22:36:00,215 - INFO - Table 'sales' deleted successfully!
+2024-03-29 22:36:00,215 - INFO - Connection closed successfully!
+2024-03-29 22:36:02,362 - INFO - Connected to the database successfully!
+2024-03-29 22:36:02,384 - INFO - Table 'sales' created successfully!
+2024-03-29 22:36:02,385 - INFO - Connection closed successfully!
+2024-03-29 22:36:02,385 - INFO - Connection to the database closed.
+2024-03-29 22:36:05,459 - INFO - CSV file read successfully.
+2024-03-29 22:36:05,459 - INFO - Sales data transformed successfully.
+2024-03-29 22:36:05,501 - INFO - 
+Transformed Data:
+2024-03-29 22:36:05,501 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:36:05.501536
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:36:05.501536
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:36:05.501536
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:36:05.501536
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:36:05.501536
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:36:05.501536
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:36:05.501536
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:36:05.501536
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:36:05.501536
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:36:05.501536
+
+[1000 rows x 5 columns]
+2024-03-29 22:36:05,519 - INFO - 
+Data after handling outliers:
+2024-03-29 22:36:05,519 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:36:05.501536
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:36:05.501536
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:36:05.501536
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:36:05.501536
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:36:05.501536
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:36:05.501536
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:36:05.501536
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:36:05.501536
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:36:05.501536
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:36:05.501536
+
+[1000 rows x 5 columns]
+2024-03-29 22:36:05,578 - INFO - Connected to the database successfully!
+2024-03-29 22:36:05,602 - INFO - Table schema updated successfully!
+2024-03-29 22:36:05,602 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:36:05,602 - INFO - Number of processors: 8
+2024-03-29 22:36:05,602 - INFO - Chunk size: 125
+2024-03-29 22:36:05,603 - INFO - Number of chunks: 8
+2024-03-29 22:36:07,219 - INFO - Connected to the database successfully!
+2024-03-29 22:36:07,219 - INFO - Connected to the database successfully!
+2024-03-29 22:36:07,227 - INFO - Connected to the database successfully!
+2024-03-29 22:36:07,238 - INFO - Connected to the database successfully!
+2024-03-29 22:36:07,258 - INFO - Connected to the database successfully!
+2024-03-29 22:36:07,293 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:36:07,294 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:36:07,294 - INFO - Connection closed successfully!
+2024-03-29 22:36:07,297 - INFO - Connection to the database closed.
+2024-03-29 22:36:07,301 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:36:07,303 - INFO - Connection closed successfully!
+2024-03-29 22:36:07,304 - INFO - Connection closed successfully!
+2024-03-29 22:36:07,307 - INFO - Connection to the database closed.
+2024-03-29 22:36:07,312 - INFO - Connection to the database closed.
+2024-03-29 22:36:07,313 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:36:07,318 - INFO - Connection closed successfully!
+2024-03-29 22:36:07,320 - INFO - Connection to the database closed.
+2024-03-29 22:36:07,332 - INFO - Connected to the database successfully!
+2024-03-29 22:36:07,332 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:36:07,333 - INFO - Connection closed successfully!
+2024-03-29 22:36:07,333 - INFO - Connection to the database closed.
+2024-03-29 22:36:07,341 - INFO - Connected to the database successfully!
+2024-03-29 22:36:07,366 - INFO - Connected to the database successfully!
+2024-03-29 22:36:07,376 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:36:07,377 - INFO - Connection closed successfully!
+2024-03-29 22:36:07,377 - INFO - Connection to the database closed.
+2024-03-29 22:36:07,386 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:36:07,387 - INFO - Connection closed successfully!
+2024-03-29 22:36:07,387 - INFO - Connection to the database closed.
+2024-03-29 22:36:07,405 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:36:07,406 - INFO - Connection closed successfully!
+2024-03-29 22:36:07,406 - INFO - Connection to the database closed.
+2024-03-29 22:45:52,583 - INFO - Connected to the database successfully!
+2024-03-29 22:45:52,602 - INFO - Table 'sales' deleted successfully!
+2024-03-29 22:45:52,603 - INFO - Connection closed successfully!
+2024-03-29 22:45:55,815 - INFO - Connected to the database successfully!
+2024-03-29 22:45:55,832 - INFO - Table 'sales' created successfully!
+2024-03-29 22:45:55,833 - INFO - Connection closed successfully!
+2024-03-29 22:45:55,833 - INFO - Connection to the database closed.
+2024-03-29 22:45:58,636 - INFO - CSV file read successfully.
+2024-03-29 22:45:58,637 - INFO - Sales data transformed successfully.
+2024-03-29 22:45:58,681 - INFO - 
+Transformed Data:
+2024-03-29 22:45:58,681 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:45:58.680807
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:45:58.680807
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:45:58.680807
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:45:58.680807
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:45:58.680807
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:45:58.680807
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:45:58.680807
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:45:58.680807
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:45:58.680807
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:45:58.680807
+
+[1000 rows x 5 columns]
+2024-03-29 22:45:58,699 - INFO - 
+Data after handling outliers:
+2024-03-29 22:45:58,699 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:45:58.680807
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:45:58.680807
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:45:58.680807
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:45:58.680807
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:45:58.680807
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:45:58.680807
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:45:58.680807
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:45:58.680807
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:45:58.680807
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:45:58.680807
+
+[1000 rows x 5 columns]
+2024-03-29 22:45:58,760 - INFO - Connected to the database successfully!
+2024-03-29 22:45:58,783 - INFO - Table schema updated successfully!
+2024-03-29 22:45:58,784 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:45:58,784 - INFO - Number of processors: 8
+2024-03-29 22:45:58,784 - INFO - Chunk size: 125
+2024-03-29 22:45:58,786 - INFO - Number of chunks: 8
+2024-03-29 22:45:58,899 - ERROR - An error occurred: cannot pickle 'psycopg2.extensions.connection' object
+2024-03-29 22:47:25,543 - INFO - Connected to the database successfully!
+2024-03-29 22:47:25,560 - INFO - Table 'sales' deleted successfully!
+2024-03-29 22:47:25,561 - INFO - Connection closed successfully!
+2024-03-29 22:47:27,389 - INFO - Connected to the database successfully!
+2024-03-29 22:47:27,412 - INFO - Table 'sales' created successfully!
+2024-03-29 22:47:27,412 - INFO - Connection closed successfully!
+2024-03-29 22:47:27,413 - INFO - Connection to the database closed.
+2024-03-29 22:47:30,070 - INFO - CSV file read successfully.
+2024-03-29 22:47:30,071 - INFO - Sales data transformed successfully.
+2024-03-29 22:47:30,115 - INFO - 
+Transformed Data:
+2024-03-29 22:47:30,115 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:47:30.115205
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:47:30.115205
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:47:30.115205
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:47:30.115205
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:47:30.115205
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:47:30.115205
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:47:30.115205
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:47:30.115205
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:47:30.115205
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:47:30.115205
+
+[1000 rows x 5 columns]
+2024-03-29 22:47:30,132 - INFO - 
+Data after handling outliers:
+2024-03-29 22:47:30,132 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:47:30.115205
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:47:30.115205
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:47:30.115205
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:47:30.115205
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:47:30.115205
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:47:30.115205
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:47:30.115205
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:47:30.115205
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:47:30.115205
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:47:30.115205
+
+[1000 rows x 5 columns]
+2024-03-29 22:47:30,192 - INFO - Connected to the database successfully!
+2024-03-29 22:47:30,214 - INFO - Table schema updated successfully!
+2024-03-29 22:47:30,214 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:47:30,215 - INFO - Number of processors: 8
+2024-03-29 22:47:30,215 - INFO - Chunk size: 125
+2024-03-29 22:47:30,216 - INFO - Number of chunks: 8
+2024-03-29 22:47:31,839 - INFO - Connected to the database successfully!
+2024-03-29 22:47:31,842 - INFO - Connected to the database successfully!
+2024-03-29 22:47:31,867 - INFO - Connected to the database successfully!
+2024-03-29 22:47:31,874 - INFO - Connected to the database successfully!
+2024-03-29 22:47:31,882 - INFO - Connected to the database successfully!
+2024-03-29 22:47:31,889 - INFO - Connected to the database successfully!
+2024-03-29 22:47:31,921 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:47:31,922 - INFO - Connection closed successfully!
+2024-03-29 22:47:31,922 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:47:31,922 - INFO - Connection to the database closed.
+2024-03-29 22:47:31,930 - INFO - Connection closed successfully!
+2024-03-29 22:47:31,939 - INFO - Connection to the database closed.
+2024-03-29 22:47:31,951 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:47:31,952 - INFO - Connection closed successfully!
+2024-03-29 22:47:31,952 - INFO - Connection to the database closed.
+2024-03-29 22:47:31,955 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:47:31,956 - INFO - Connection closed successfully!
+2024-03-29 22:47:31,957 - INFO - Connection to the database closed.
+2024-03-29 22:47:31,963 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:47:31,963 - INFO - Connection closed successfully!
+2024-03-29 22:47:31,964 - INFO - Connection to the database closed.
+2024-03-29 22:47:31,968 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:47:31,969 - INFO - Connection closed successfully!
+2024-03-29 22:47:31,969 - INFO - Connection to the database closed.
+2024-03-29 22:47:31,983 - INFO - Connected to the database successfully!
+2024-03-29 22:47:31,992 - INFO - Connected to the database successfully!
+2024-03-29 22:47:32,024 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:47:32,024 - INFO - Connection closed successfully!
+2024-03-29 22:47:32,025 - INFO - Connection to the database closed.
+2024-03-29 22:47:32,030 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:47:32,031 - INFO - Connection closed successfully!
+2024-03-29 22:47:32,031 - INFO - Connection to the database closed.
+2024-03-29 22:48:43,479 - INFO - Connected to the database successfully!
+2024-03-29 22:48:43,490 - INFO - Table 'sales' deleted successfully!
+2024-03-29 22:48:43,492 - INFO - Connection closed successfully!
+2024-03-29 22:48:45,708 - INFO - Connected to the database successfully!
+2024-03-29 22:48:45,731 - INFO - Table 'sales' created successfully!
+2024-03-29 22:48:45,731 - INFO - Connection closed successfully!
+2024-03-29 22:48:45,731 - INFO - Connection to the database closed.
+2024-03-29 22:48:59,758 - INFO - CSV file read successfully.
+2024-03-29 22:48:59,758 - INFO - Sales data transformed successfully.
+2024-03-29 22:48:59,801 - INFO - 
+Transformed Data:
+2024-03-29 22:48:59,801 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:48:59.801083
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:48:59.801083
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:48:59.801083
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:48:59.801083
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:48:59.801083
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:48:59.801083
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:48:59.801083
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:48:59.801083
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:48:59.801083
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:48:59.801083
+
+[1000 rows x 5 columns]
+2024-03-29 22:48:59,820 - INFO - 
+Data after handling outliers:
+2024-03-29 22:48:59,820 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:48:59.801083
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:48:59.801083
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:48:59.801083
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:48:59.801083
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:48:59.801083
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:48:59.801083
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:48:59.801083
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:48:59.801083
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:48:59.801083
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:48:59.801083
+
+[1000 rows x 5 columns]
+2024-03-29 22:48:59,891 - INFO - Connected to the database successfully!
+2024-03-29 22:48:59,924 - INFO - Table schema updated successfully!
+2024-03-29 22:48:59,924 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:48:59,924 - INFO - Number of processors: 8
+2024-03-29 22:48:59,925 - INFO - Chunk size: 125
+2024-03-29 22:48:59,925 - INFO - Number of chunks: 8
+2024-03-29 22:49:01,840 - INFO - Connected to the database successfully!
+2024-03-29 22:49:01,862 - INFO - Connected to the database successfully!
+2024-03-29 22:49:01,863 - INFO - Connected to the database successfully!
+2024-03-29 22:49:01,872 - INFO - Connected to the database successfully!
+2024-03-29 22:49:01,879 - INFO - Connected to the database successfully!
+2024-03-29 22:49:01,922 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:49:01,922 - INFO - Connection closed successfully!
+2024-03-29 22:49:01,945 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:49:01,946 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:49:01,950 - INFO - Connection closed successfully!
+2024-03-29 22:49:01,955 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:49:01,956 - INFO - Connection closed successfully!
+2024-03-29 22:49:01,962 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:49:01,962 - INFO - Connection closed successfully!
+2024-03-29 22:49:01,965 - INFO - Connection closed successfully!
+2024-03-29 22:49:01,982 - INFO - Connected to the database successfully!
+2024-03-29 22:49:02,000 - INFO - Connected to the database successfully!
+2024-03-29 22:49:02,022 - INFO - Connected to the database successfully!
+2024-03-29 22:49:02,044 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:49:02,044 - INFO - Connection closed successfully!
+2024-03-29 22:49:02,056 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:49:02,057 - INFO - Connection closed successfully!
+2024-03-29 22:49:02,073 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:49:02,074 - INFO - Connection closed successfully!
+2024-03-29 22:51:57,638 - INFO - Connected to the database successfully!
+2024-03-29 22:51:57,657 - INFO - Table 'sales' deleted successfully!
+2024-03-29 22:52:14,462 - INFO - Connected to the database successfully!
+2024-03-29 22:52:14,478 - INFO - Table 'sales' created successfully!
+2024-03-29 22:52:14,478 - INFO - Connection to the database closed.
+2024-03-29 22:53:21,146 - INFO - Table 'sales' deleted successfully!
+2024-03-29 22:53:25,036 - INFO - Table 'sales' created successfully!
+2024-03-29 22:53:25,037 - INFO - Connection to the database closed.
+2024-03-29 22:54:27,828 - INFO - Table 'sales' deleted successfully!
+2024-03-29 22:54:30,507 - INFO - Table 'sales' created successfully!
+2024-03-29 22:54:42,068 - INFO - CSV file read successfully.
+2024-03-29 22:54:42,069 - INFO - Sales data transformed successfully.
+2024-03-29 22:54:42,113 - INFO - 
+Transformed Data:
+2024-03-29 22:54:42,113 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:54:42.111384
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:54:42.111384
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:54:42.111384
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:54:42.111384
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:54:42.111384
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:54:42.111384
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:54:42.111384
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:54:42.111384
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:54:42.111384
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:54:42.111384
+
+[1000 rows x 5 columns]
+2024-03-29 22:54:42,130 - INFO - 
+Data after handling outliers:
+2024-03-29 22:54:42,130 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:54:42.111384
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:54:42.111384
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:54:42.111384
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:54:42.111384
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:54:42.111384
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:54:42.111384
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:54:42.111384
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:54:42.111384
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:54:42.111384
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:54:42.111384
+
+[1000 rows x 5 columns]
+2024-03-29 22:54:42,211 - INFO - Table schema updated successfully!
+2024-03-29 22:54:42,211 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:54:42,212 - INFO - Number of processors: 8
+2024-03-29 22:54:42,212 - INFO - Chunk size: 125
+2024-03-29 22:54:42,212 - INFO - Number of chunks: 8
+2024-03-29 22:54:43,777 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:54:43,808 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:54:43,809 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:54:43,830 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:54:43,835 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:54:43,839 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:54:43,845 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:54:43,859 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:56:03,382 - INFO - All rows from table 'sales' deleted successfully!
+2024-03-29 22:56:25,143 - INFO - Table 'sales' deleted successfully!
+2024-03-29 22:56:30,159 - INFO - Table 'sales' created successfully!
+2024-03-29 22:56:38,127 - INFO - CSV file read successfully.
+2024-03-29 22:56:38,128 - INFO - Sales data transformed successfully.
+2024-03-29 22:56:38,171 - INFO - 
+Transformed Data:
+2024-03-29 22:56:38,171 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:56:38.170319
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:56:38.170319
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:56:38.170319
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:56:38.170319
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:56:38.170319
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:56:38.170319
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:56:38.170319
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:56:38.170319
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:56:38.170319
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:56:38.170319
+
+[1000 rows x 5 columns]
+2024-03-29 22:56:38,187 - INFO - 
+Data after handling outliers:
+2024-03-29 22:56:38,187 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:56:38.170319
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:56:38.170319
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:56:38.170319
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:56:38.170319
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:56:38.170319
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:56:38.170319
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:56:38.170319
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:56:38.170319
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:56:38.170319
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:56:38.170319
+
+[1000 rows x 5 columns]
+2024-03-29 22:56:38,274 - INFO - Table schema updated successfully!
+2024-03-29 22:56:38,274 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:56:38,274 - INFO - Number of processors: 8
+2024-03-29 22:56:38,275 - INFO - Chunk size: 125
+2024-03-29 22:56:38,275 - INFO - Number of chunks: 8
+2024-03-29 22:56:39,874 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:56:39,875 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:56:39,882 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:56:39,893 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:56:39,894 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:56:39,896 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:56:39,933 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:56:39,959 - INFO - Chunk loaded into database successfully!
+2024-03-29 22:57:12,396 - INFO - CSV file read successfully.
+2024-03-29 22:57:12,397 - INFO - Sales data transformed successfully.
+2024-03-29 22:57:12,439 - INFO - 
+Transformed Data:
+2024-03-29 22:57:12,439 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:57:12.438014
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:57:12.438014
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:57:12.438014
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:57:12.438014
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:57:12.438014
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:57:12.438014
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:57:12.438014
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:57:12.438014
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:57:12.438014
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:57:12.438014
+
+[1000 rows x 5 columns]
+2024-03-29 22:57:12,455 - INFO - 
+Data after handling outliers:
+2024-03-29 22:57:12,455 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:57:12.438014
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:57:12.438014
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:57:12.438014
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:57:12.438014
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:57:12.438014
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:57:12.438014
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:57:12.438014
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:57:12.438014
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:57:12.438014
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:57:12.438014
+
+[1000 rows x 5 columns]
+2024-03-29 22:57:12,541 - INFO - Table schema updated successfully!
+2024-03-29 22:57:12,541 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:57:12,541 - INFO - Number of processors: 8
+2024-03-29 22:57:12,541 - INFO - Chunk size: 125
+2024-03-29 22:57:12,542 - INFO - Number of chunks: 8
+2024-03-29 22:57:14,231 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ae6f06a5-97c0-4a74-8d5c-a1642046a8c9) already exists.
+
+2024-03-29 22:57:14,272 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(5d9ebf77-27b9-48e6-8b4c-2f12f5f31f6c) already exists.
+
+2024-03-29 22:57:14,284 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(9ab382f5-0888-4eda-9f96-7ebec463f1fa) already exists.
+
+2024-03-29 22:57:14,285 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(9c95b2bc-4461-4bce-a919-6e84e61fac5b) already exists.
+
+2024-03-29 22:57:14,287 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(18f8f507-3965-434a-b120-1fcef3237260) already exists.
+
+2024-03-29 22:57:14,288 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(ce1af878-4978-425e-831f-d1cb43729f9c) already exists.
+
+2024-03-29 22:57:14,299 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(d34b1341-d168-48ea-b920-4e294f317c6d) already exists.
+
+2024-03-29 22:57:14,309 - ERROR - Error loading data chunk into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(6af79e2e-7128-49dd-88e1-a8d1b173485f) already exists.
+
+2024-03-29 22:59:11,316 - INFO - Table 'sales' deleted successfully!
+2024-03-29 22:59:14,517 - INFO - Table 'sales' created successfully!
+2024-03-29 22:59:21,241 - INFO - CSV file read successfully.
+2024-03-29 22:59:21,242 - INFO - Sales data transformed successfully.
+2024-03-29 22:59:21,288 - INFO - 
+Original Data:
+2024-03-29 22:59:21,288 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:59:21.288392
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:59:21.288392
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:59:21.288392
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:59:21.288392
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:59:21.288392
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:59:21.288392
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:59:21.288392
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:59:21.288392
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:59:21.288392
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:59:21.288392
+
+[1000 rows x 5 columns]
+2024-03-29 22:59:21,305 - INFO - 
+Data after handling outliers:
+2024-03-29 22:59:21,305 - INFO -                            transaction_id  ...                  sale_date
+0    ae6f06a5-97c0-4a74-8d5c-a1642046a8c9  ... 2024-03-29 22:59:21.288392
+1    ea50f0ed-14cf-468a-b766-ed31cef67cef  ... 2024-03-29 22:59:21.288392
+2    bcb92588-aa4d-4ec1-9921-468d20c8240c  ... 2024-03-29 22:59:21.288392
+3    69a22701-b546-43cd-8b2b-7a0058faf651  ... 2024-03-29 22:59:21.288392
+4    167db451-46e3-46a8-ab69-89090a376e18  ... 2024-03-29 22:59:21.288392
+..                                    ...  ...                        ...
+995  4551324e-4395-4ff5-a035-fa8c16746104  ... 2024-03-29 22:59:21.288392
+996  86cb9fa2-153b-4045-8a6b-4e84c31d4ff4  ... 2024-03-29 22:59:21.288392
+997  0c3322e5-19d7-4129-995b-8bece53c711c  ... 2024-03-29 22:59:21.288392
+998  6241c782-1abb-48d7-b094-b603bfc34848  ... 2024-03-29 22:59:21.288392
+999  b4363d09-66b7-4df6-bad8-5be3145dae20  ... 2024-03-29 22:59:21.288392
+
+[1000 rows x 5 columns]
+2024-03-29 22:59:21,391 - INFO - Table schema updated successfully!
+2024-03-29 22:59:21,391 - INFO - Schema changes detected and applied to the database table.
+2024-03-29 22:59:21,647 - INFO - Data loaded into database successfully!
