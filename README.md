@@ -18,10 +18,17 @@ This project implements an ETL (Extract, Transform, Load) pipeline to process sa
 
 ## Dependencies
 
+- **faker**: For generating mock data.
 - **pandas**: For data manipulation and transformation.
 - **psycopg2**: For interacting with PostgreSQL databases.
 - **cryptography**: For encryption and decryption of sensitive information.
 - **PyYAML**: For loading database connection details from YAML configuration files.
+
+In addition to the packages listed in `requirements.txt`, this project also utilizes the following Python standard library modules:
+
+- **logging**: Used for recording information, errors, and other events during the ETL process.
+- **functools**: Used for creating partial functions, which are utilized in the multiprocessing functionality.
+- **multiprocessing**: Utilized for parallel processing to improve loading performance.
 
 ## Installation
 
