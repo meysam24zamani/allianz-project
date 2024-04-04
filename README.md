@@ -65,7 +65,7 @@ git clone https://github.com/meysam24zamani/allianz-project.git
 2. Navigate to the project directory:
 
 ```bash
-cd allianz-project/par1
+cd allianz-project/part1
 ```
 
 3. Install the required dependencies:
@@ -142,12 +142,8 @@ The project directory consists of the following components:
   - **generate_mock_data.py**: Python script to generate mock data.
 - **main.py**: Main Python script for loading data into the database.
 - **data_vault.log**: Log file for recording events and errors during the data pipeline execution.
-- **requirements.txt**: List of dependencies required for the project, including:
-  - Faker: For generating mock data.
-  - Pandas: For data manipulation and transformation.
-  - Psycopg2-binary: For interacting with PostgreSQL databases.
-  - PyYAML: For loading database connection details from YAML configuration files.
-  - Cryptography: For encryption and decryption of sensitive information.
+- **requirements.txt**: List of dependencies required for the project.
+
 
 ## Dependencies
 
@@ -166,7 +162,7 @@ git clone https://github.com/meysam24zamani/allianz-project.git
 2. Navigate to the project directory:
 
 ```bash
-cd allianz-project/par2
+cd allianz-project/part2
 ```
 
 3. **Setup Environment**: Install the required dependencies listed in `requirements.txt`.
@@ -185,13 +181,13 @@ pip install -r requirements.txt
 python src\database\create_tables.py
 ```
 
-3. **Generate Mock Data**: Optionally, generate mock data using generate-mock-data.py.
+3. **Generate Mock Data**: Optionally, generate mock data using generate_mock_data.py.
 
 ```bash
 python src\generate-mock-data.py
 ```
 
-4. **Load Data**: Load data into the database using load-data.py.
+4. **Load Data**: Load data into the database using main.py.
 
 ```bash
 python main.py

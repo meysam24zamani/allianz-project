@@ -1,6 +1,30 @@
-# ETL Project
+# Part1 - ETL Project
 
 This project implements an ETL (Extract, Transform, Load) pipeline to process sales data from CSV files, perform data transformations, and load the cleaned data into a PostgreSQL database. It also incorporates encryption techniques to secure sensitive information during transit and storage.
+
+## Project Structure
+
+The project directory consists of the following components:
+
+- **data**: Contains mock data file generated for sales data.
+- **documentation**: Includes documentation file explaining various approaches used in the project.
+- **src**: Contains the source code files for the data pipeline:
+  - **database**: Contains the source code files for intracting with database:
+    - **config.yaml**: Configuration file for database connection settings.
+    - **create_table.py**: Python script to create database table.
+    - **database_utils.py**: Utility functions for database operations.
+    - **drop_table.py**: Python script to drop database table.
+    - **empty_table.py**: Python script to empty (truncate) database table.
+  - **generate_mock_data.py**: Python script to generate mock data.
+  - **main_multiprocessing.py**: Main Python script for loading data into the database with multiprocessing.
+- **main.py**: Main Python script for loading data into the database.
+- **etl.log**: Log file for recording events and errors during the etl process.
+- **requirements.txt**: List of dependencies required for the project, including:
+  - Faker: For generating mock data.
+  - Pandas: For data manipulation and transformation.
+  - Psycopg2-binary: For interacting with PostgreSQL databases.
+  - PyYAML: For loading database connection details from YAML configuration files.
+  - Cryptography: For encryption and decryption of sensitive information.
 
 ## Features
 
@@ -12,9 +36,9 @@ This project implements an ETL (Extract, Transform, Load) pipeline to process sa
    - Detection and handling of outliers
 3. **Load Data**: Insert the transformed data into a PostgreSQL database.
 4. **Logging**: Record information, errors, and other events during the ETL process using the logging module.
-5. **Concurrency**: Utilize multiprocessing to improve loading performance. (A script, `main-multiprocessing.py`, is provided for running the ETL process with multiprocessing, which can significantly improve performance when handling large datasets.)
+5. **Concurrency**: Utilize multiprocessing to improve loading performance. (The script, `main-multiprocessing.py`, is provided in src folder for running the ETL process with multiprocessing, which can significantly improve performance when handling large datasets.)
 6. **Schema Changes Handling**: Handle changes to the schema of the CSV file or the destination database table, ensuring backward and forward compatibility without data loss.
-7. **Database Interaction Scripts**: Included scripts in the `database` folder for creating, emptying, and deleting tables in the PostgreSQL database.
+7. **Database Interaction Scripts**: Included scripts in the `src/database` folder for creating, emptying, and deleting tables in the PostgreSQL database.
 
 ## Dependencies
 
@@ -41,7 +65,7 @@ git clone https://github.com/meysam24zamani/allianz-project.git
 2. Navigate to the project directory:
 
 ```bash
-cd allianz-project
+cd allianz-project/part1
 ```
 
 3. Install the required dependencies:
@@ -52,25 +76,19 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Generate the CSV files containing sales data:
+1. Update the config.yaml file, which is in `src/database`, with the appropriate database connection settings.
+
+2. Generate the CSV files containing sales data:
 
 ```bash
-python Generate-mock-data.py
+python .\src\generate_mock_data.py
 ```
 
 3. Create the target table useing create script in database folder:
 
 ```bash
 
-python create_table.py
-
-```
-
-3. Run the ETL script with multiprocessing (optional):
-
-```bash
-
-python main-multiprocessing.py
+python .\src\database\create_table.py
 
 ```
 
@@ -78,22 +96,28 @@ python main-multiprocessing.py
 
 ```bash
 
-python main.py
+python .\main.py
 
 ```
 
-5. Check the log file `etl.log` for information and any errors encountered during the ETL process.
+5. Run the ETL script with multiprocessing (optional):
+
+```bash
+
+python .\src\main-multiprocessing.py
+
+```
+
+6. Check the log file `etl.log` for information and any errors encountered during the ETL process.
 
 
-## Database Interaction
+## Database Interaction (src\database)
 
 - **config.yaml**: This YAML file contains the configuration details required for connecting to the PostgreSQL database. Ensure that the `database` section includes the host, port, dbname, user, and password fields.
 - **Creating Tables**: Execute the script `create_table.sql` located in the `database` folder to create the necessary table in the database.
 - **Emptying Tables**: Use the script `empty_table.sql` to empty the table when needed.
-- **Deleting Tables**: Execute the script `delete_table.sql` to delete the table from the database.
+- **Deleting Tables**: Execute the script `drop_table.sql` to delete the table from the database.
 
 ## Contributors
 
-- **Meysam Zamani**
-
-
+**Meysam Zamani**
