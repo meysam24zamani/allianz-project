@@ -1,9 +1,7 @@
 import pandas as pd
 import logging
-from functools import partial
-from database.database_utils import connect_to_database, load_config, close_connection, get_table_schema, update_table_schema
+from src.database.database_utils import connect_to_database, load_config, close_connection, get_table_schema, update_table_schema
 from cryptography.fernet import Fernet
-from multiprocessing import Pool, cpu_count
 
 # Configure logging
 logging.basicConfig(filename='etl.log', level=logging.INFO,
@@ -103,42 +101,35 @@ def handle_outliers(df, column):
         print(f"Error handling outliers: {e}")
         return None
 
-# Function to load data chunk into database
-def load_data_chunk(chunk, chunk_size):
+# Function to load data into database
+def load_data(conn, df):
     try:
-        # Connect to the database
-        config_file = "database/config.yaml"
-        config = load_config(config_file)
-        if config:
-            connection = connect_to_database(config)
+        # Open a cursor
+        cursor = conn.cursor()
 
-            if connection:
-                # Open a cursor
-                cursor = connection.cursor()
+        # Iterate over DataFrame rows
+        for index, row in df.iterrows():
+            # Construct SQL query to insert row into 'sales' table
+            sql_query = "INSERT INTO sales (transaction_id, customer_id, product_id, quantity, sale_date) VALUES (%s, %s, %s, %s, %s)"
+            # Extract row values
+            values = (row['transaction_id'], row['customer_id'], row['product_id'], row['quantity'], row['sale_date'])
+            # Execute SQL query
+            cursor.execute(sql_query, values)
 
-                # Load chunk into the database
-                for index, row in chunk.iterrows():
-                    # Construct SQL query to insert row into 'sales' table
-                    sql_query = "INSERT INTO sales (transaction_id, customer_id, product_id, quantity, sale_date) VALUES (%s, %s, %s, %s, %s)"
-                    # Extract row values
-                    values = (row['transaction_id'], row['customer_id'], row['product_id'], row['quantity'], row['sale_date'])
-                    # Execute SQL query
-                    cursor.execute(sql_query, values)
-
-                # Commit the transaction
-                connection.commit()
-                logging.info(f"Chunk loaded into database successfully!")
-                print(f"Chunk loaded into database successfully!")
-
-                # Close the cursor and the connection
-                cursor.close()
-                close_connection(connection)
-                #logging.info("Connection to the database closed.")
-                #print("Connection to the database closed.")
+        # Commit the transaction
+        conn.commit()
+        logging.info("Data loaded into database successfully!")
+        print("Data loaded into database successfully!")
 
     except Exception as e:
-        logging.error(f"Error loading data chunk into database: {e}")
-        print(f"Error loading data chunk into database: {e}")
+        logging.error(f"Error loading data into database: {e}")
+        print(f"Error loading data into database: {e}")
+        conn.rollback()
+
+    finally:
+        # Close the cursor
+        if cursor:
+            cursor.close()
 
 # Function to dynamically detect and handle schema changes
 def handle_schema_changes(df, connection):
@@ -162,7 +153,7 @@ def handle_schema_changes(df, connection):
 def main():
     try:
         # Read data from CSV file
-        file_path = "mock_sales_data.csv"
+        file_path = "data/mock_sales_data.csv"
         sales_data = read_csv_file(file_path)
 
         if sales_data is not None:
@@ -186,7 +177,7 @@ def main():
                 print(df)
 
                 # Connect to the database
-                config_file = "database/config.yaml"
+                config_file = "src/database/config.yaml"
                 config = load_config(config_file)
                 if config:
                     connection = connect_to_database(config)
@@ -195,22 +186,13 @@ def main():
                         # Handle schema changes before loading data into the database
                         handle_schema_changes(df, connection)
 
-                        # Parallel processing
-                        num_processors = cpu_count()
-                        print(f"Number of processors: {num_processors}")
-                        logging.info(f"Number of processors: {num_processors}")
-                        chunk_size = len(df) // num_processors
-                        print(f"Chunk size: {chunk_size}")
-                        logging.info(f"Chunk size: {chunk_size}")
-                        chunks = [df[i:i+chunk_size] for i in range(0, len(df), chunk_size)]
-                        num_chunks = len(chunks)
-                        print(f"Number of chunks: {num_chunks}")
-                        logging.info(f"Number of chunks: {num_chunks}")
-                        
-                        # Create a pool of worker processes
-                        with Pool(processes=num_processors) as pool:
-                            # Load data into the database in parallel
-                            pool.map(partial(load_data_chunk, chunk_size=chunk_size), chunks)
+                        # Load data into the database
+                        load_data(connection, df)
+
+                        # Close the database connection
+                        close_connection(connection)
+                        #logging.info("Connection to the database closed.")
+                        #print("Connection to the database closed.")
 
     except Exception as e:
         logging.error(f"An error occurred: {e}")

@@ -94,7 +94,7 @@ try:
     sales_data = generate_sales_data(num_records)
 
     # Write mock data to CSV file
-    csv_filename = 'mock_sales_data.csv'
+    csv_filename = 'data/mock_sales_data.csv'
     write_to_csv(sales_data, csv_filename)
 
 except Exception as e:

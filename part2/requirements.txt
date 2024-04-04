@@ -1,0 +1,6 @@
+pyyaml
+faker==8.14.0
+pandas>=1.0.0
+psycopg2-binary==2.9.1
+pyyaml
+cryptography==3.4.7
