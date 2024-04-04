@@ -50,7 +50,7 @@ def create_table(conn):
 def main():
     try:
         # Load configuration from YAML file
-        config_file = "database/config.yaml"
+        config_file = "src/database/config.yaml"
         config = db_utils.load_config(config_file)
 
         if config:

@@ -1628,3 +1628,493 @@ Data after handling outliers:
 2024-03-29 22:59:21,391 - INFO - Table schema updated successfully!
 2024-03-29 22:59:21,391 - INFO - Schema changes detected and applied to the database table.
 2024-03-29 22:59:21,647 - INFO - Data loaded into database successfully!
+2024-04-05 00:17:25,800 - INFO - Mock sales data saved to 'mock_sales_data.csv'
+2024-04-05 00:19:13,626 - INFO - All rows from table 'sales' deleted successfully!
+2024-04-05 00:19:24,028 - INFO - Table 'sales' deleted successfully!
+2024-04-05 00:20:01,408 - INFO - Table 'sales' created successfully!
+2024-04-05 00:21:09,247 - INFO - CSV file read successfully.
+2024-04-05 00:21:09,247 - INFO - Sales data transformed successfully.
+2024-04-05 00:21:09,299 - INFO - 
+Transformed Data:
+2024-04-05 00:21:09,299 - INFO -                            transaction_id                                        customer_id                           product_id  quantity                  sale_date
+0    aee6ad75-cf4a-428f-b1d6-ecdbceeecbc5  b'gAAAAABmDyfVatlpqk6mAPS0UfWCxQtp7ln5KaqJCBm0...    Sports & Outdoors_AmazonBasics_TV      15.0 2024-04-05 00:21:09.299058
+1    e8876225-5fed-4136-abd0-fa7765ed48a4  b'gAAAAABmDyfVcevmApV9F72KuQuQEYGQuozctYKhuOsf...               Toys_Adidas_Headphones       0.0 2024-04-05 00:21:09.299058
+2    832e89a2-c16d-4068-9021-7950eb92e829  b'gAAAAABmDyfVmhn-ngM7e9VN5-HunKG-nosRVo1lifYm...        Sports & Outdoors_Apple_Shoes      13.0 2024-04-05 00:21:09.299058
+3    16a28e18-684d-4da2-a3b3-d0524c5174cf  b'gAAAAABmDyfVGU3Hs0TEWJfNRh_8mV93kuBBVoQnXZjZ...    Sports & Outdoors_Nike_Headphones      13.0 2024-04-05 00:21:09.299058
+4    73630e8a-ed0a-41ba-a065-4a4f70682d52  b'gAAAAABmDyfVGvjx1RMfwevcm98elGJM3GvDjGCT-Wgg...               Electronics_Canon_Book       0.0 2024-04-05 00:21:09.299058
+..                                    ...                                                ...                                  ...       ...                        ...
+995  19238904-4b49-4b49-b6a5-28d1a56d1911  b'gAAAAABmDyfVBfG8YWJmLm0QfB3OB9NTwAZFFob5mrKf...                      Books_Nike_Book       0.0 2024-04-05 00:21:09.299058
+996  6373be92-0014-4000-8eda-433491a82b6a  b'gAAAAABmDyfVoCWbtlx8q5ispdYBgY5Dlztjl68QNy_P...                      Books_Nike_Book      43.0 2024-04-05 00:21:09.299058
+997  2cbde089-250b-461d-b1fe-8dcab71a79cf  b'gAAAAABmDyfVreFbu13zdWl5wFBK8GDqn04ws7-_G5ui...  Sports & Outdoors_AmazonBasics_Book       0.0 2024-04-05 00:21:09.299058
+998  6ee8ac53-1bd7-4e8d-a403-711309205c9c  b'gAAAAABmDyfVr6C7Y_QfpTTRCI6JAo_smyhw93gVGWUZ...    Sports & Outdoors_Samsung_T-shirt      23.0 2024-04-05 00:21:09.299058
+999  2f5f3553-8c34-4497-971c-a99448b8c07e  b'gAAAAABmDyfVNZtJDSWgcC6g2VryHgQIBrMRK9Jif9u8...                  Books_Dell_Cookware       0.0 2024-04-05 00:21:09.299058
+
+[1000 rows x 5 columns]
+2024-04-05 00:21:09,324 - INFO - 
+Data after handling outliers:
+2024-04-05 00:21:09,324 - INFO -                            transaction_id                                        customer_id                           product_id  quantity                  sale_date
+0    aee6ad75-cf4a-428f-b1d6-ecdbceeecbc5  b'gAAAAABmDyfVatlpqk6mAPS0UfWCxQtp7ln5KaqJCBm0...    Sports & Outdoors_AmazonBasics_TV      15.0 2024-04-05 00:21:09.299058
+1    e8876225-5fed-4136-abd0-fa7765ed48a4  b'gAAAAABmDyfVcevmApV9F72KuQuQEYGQuozctYKhuOsf...               Toys_Adidas_Headphones       0.0 2024-04-05 00:21:09.299058
+2    832e89a2-c16d-4068-9021-7950eb92e829  b'gAAAAABmDyfVmhn-ngM7e9VN5-HunKG-nosRVo1lifYm...        Sports & Outdoors_Apple_Shoes      13.0 2024-04-05 00:21:09.299058
+3    16a28e18-684d-4da2-a3b3-d0524c5174cf  b'gAAAAABmDyfVGU3Hs0TEWJfNRh_8mV93kuBBVoQnXZjZ...    Sports & Outdoors_Nike_Headphones      13.0 2024-04-05 00:21:09.299058
+4    73630e8a-ed0a-41ba-a065-4a4f70682d52  b'gAAAAABmDyfVGvjx1RMfwevcm98elGJM3GvDjGCT-Wgg...               Electronics_Canon_Book       0.0 2024-04-05 00:21:09.299058
+..                                    ...                                                ...                                  ...       ...                        ...
+995  19238904-4b49-4b49-b6a5-28d1a56d1911  b'gAAAAABmDyfVBfG8YWJmLm0QfB3OB9NTwAZFFob5mrKf...                      Books_Nike_Book       0.0 2024-04-05 00:21:09.299058
+996  6373be92-0014-4000-8eda-433491a82b6a  b'gAAAAABmDyfVoCWbtlx8q5ispdYBgY5Dlztjl68QNy_P...                      Books_Nike_Book      11.0 2024-04-05 00:21:09.299058
+997  2cbde089-250b-461d-b1fe-8dcab71a79cf  b'gAAAAABmDyfVreFbu13zdWl5wFBK8GDqn04ws7-_G5ui...  Sports & Outdoors_AmazonBasics_Book       0.0 2024-04-05 00:21:09.299058
+998  6ee8ac53-1bd7-4e8d-a403-711309205c9c  b'gAAAAABmDyfVr6C7Y_QfpTTRCI6JAo_smyhw93gVGWUZ...    Sports & Outdoors_Samsung_T-shirt      23.0 2024-04-05 00:21:09.299058
+999  2f5f3553-8c34-4497-971c-a99448b8c07e  b'gAAAAABmDyfVNZtJDSWgcC6g2VryHgQIBrMRK9Jif9u8...                  Books_Dell_Cookware       0.0 2024-04-05 00:21:09.299058
+
+[1000 rows x 5 columns]
+2024-04-05 00:21:09,608 - INFO - Data loaded into database successfully!
+2024-04-05 00:21:17,661 - INFO - CSV file read successfully.
+2024-04-05 00:21:17,661 - INFO - Sales data transformed successfully.
+2024-04-05 00:21:17,708 - INFO - 
+Transformed Data:
+2024-04-05 00:21:17,708 - INFO -                            transaction_id                                        customer_id                           product_id  quantity                  sale_date
+0    aee6ad75-cf4a-428f-b1d6-ecdbceeecbc5  b'gAAAAABmDyfdwAzmzgUQV-gwe3yeYVcMxEDhsmExuAh3...    Sports & Outdoors_AmazonBasics_TV      15.0 2024-04-05 00:21:17.708401
+1    e8876225-5fed-4136-abd0-fa7765ed48a4  b'gAAAAABmDyfdzQvejlx_xDNIypz6hKLNtUfyIv9aTeUd...               Toys_Adidas_Headphones       0.0 2024-04-05 00:21:17.708401
+2    832e89a2-c16d-4068-9021-7950eb92e829  b'gAAAAABmDyfdXnGEa1M9xW0k5RtwDgBd8OEfIyETtIb_...        Sports & Outdoors_Apple_Shoes      13.0 2024-04-05 00:21:17.708401
+3    16a28e18-684d-4da2-a3b3-d0524c5174cf  b'gAAAAABmDyfdaNH0V6deQ0L8J32l9vU6y1x6vFTlrgRC...    Sports & Outdoors_Nike_Headphones      13.0 2024-04-05 00:21:17.708401
+4    73630e8a-ed0a-41ba-a065-4a4f70682d52  b'gAAAAABmDyfdp9YS6gkUP5QSfQuY0Nua2Eew9X2gAaqX...               Electronics_Canon_Book       0.0 2024-04-05 00:21:17.708401
+..                                    ...                                                ...                                  ...       ...                        ...
+995  19238904-4b49-4b49-b6a5-28d1a56d1911  b'gAAAAABmDyfdnOAduTwh5CC-q5RmwSqgBR3hqWqUPPrA...                      Books_Nike_Book       0.0 2024-04-05 00:21:17.708401
+996  6373be92-0014-4000-8eda-433491a82b6a  b'gAAAAABmDyfdAe3ta5AcWjGBu1oxDbGj82-EpnL-SpKo...                      Books_Nike_Book      43.0 2024-04-05 00:21:17.708401
+997  2cbde089-250b-461d-b1fe-8dcab71a79cf  b'gAAAAABmDyfdOhfE2izzMqRWdKvHxdQLS7lDygGRnK_E...  Sports & Outdoors_AmazonBasics_Book       0.0 2024-04-05 00:21:17.708401
+998  6ee8ac53-1bd7-4e8d-a403-711309205c9c  b'gAAAAABmDyfdmzSODOsdIwgknhu6w-14REXnxqkepAUo...    Sports & Outdoors_Samsung_T-shirt      23.0 2024-04-05 00:21:17.708401
+999  2f5f3553-8c34-4497-971c-a99448b8c07e  b'gAAAAABmDyfdSI8DXXQ6ynJd5X2zUu6wp1VNdRnl5RKu...                  Books_Dell_Cookware       0.0 2024-04-05 00:21:17.708401
+
+[1000 rows x 5 columns]
+2024-04-05 00:21:17,730 - INFO - 
+Data after handling outliers:
+2024-04-05 00:21:17,730 - INFO -                            transaction_id                                        customer_id                           product_id  quantity                  sale_date
+0    aee6ad75-cf4a-428f-b1d6-ecdbceeecbc5  b'gAAAAABmDyfdwAzmzgUQV-gwe3yeYVcMxEDhsmExuAh3...    Sports & Outdoors_AmazonBasics_TV      15.0 2024-04-05 00:21:17.708401
+1    e8876225-5fed-4136-abd0-fa7765ed48a4  b'gAAAAABmDyfdzQvejlx_xDNIypz6hKLNtUfyIv9aTeUd...               Toys_Adidas_Headphones       0.0 2024-04-05 00:21:17.708401
+2    832e89a2-c16d-4068-9021-7950eb92e829  b'gAAAAABmDyfdXnGEa1M9xW0k5RtwDgBd8OEfIyETtIb_...        Sports & Outdoors_Apple_Shoes      13.0 2024-04-05 00:21:17.708401
+3    16a28e18-684d-4da2-a3b3-d0524c5174cf  b'gAAAAABmDyfdaNH0V6deQ0L8J32l9vU6y1x6vFTlrgRC...    Sports & Outdoors_Nike_Headphones      13.0 2024-04-05 00:21:17.708401
+4    73630e8a-ed0a-41ba-a065-4a4f70682d52  b'gAAAAABmDyfdp9YS6gkUP5QSfQuY0Nua2Eew9X2gAaqX...               Electronics_Canon_Book       0.0 2024-04-05 00:21:17.708401
+..                                    ...                                                ...                                  ...       ...                        ...
+995  19238904-4b49-4b49-b6a5-28d1a56d1911  b'gAAAAABmDyfdnOAduTwh5CC-q5RmwSqgBR3hqWqUPPrA...                      Books_Nike_Book       0.0 2024-04-05 00:21:17.708401
+996  6373be92-0014-4000-8eda-433491a82b6a  b'gAAAAABmDyfdAe3ta5AcWjGBu1oxDbGj82-EpnL-SpKo...                      Books_Nike_Book      11.0 2024-04-05 00:21:17.708401
+997  2cbde089-250b-461d-b1fe-8dcab71a79cf  b'gAAAAABmDyfdOhfE2izzMqRWdKvHxdQLS7lDygGRnK_E...  Sports & Outdoors_AmazonBasics_Book       0.0 2024-04-05 00:21:17.708401
+998  6ee8ac53-1bd7-4e8d-a403-711309205c9c  b'gAAAAABmDyfdmzSODOsdIwgknhu6w-14REXnxqkepAUo...    Sports & Outdoors_Samsung_T-shirt      23.0 2024-04-05 00:21:17.708401
+999  2f5f3553-8c34-4497-971c-a99448b8c07e  b'gAAAAABmDyfdSI8DXXQ6ynJd5X2zUu6wp1VNdRnl5RKu...                  Books_Dell_Cookware       0.0 2024-04-05 00:21:17.708401
+
+[1000 rows x 5 columns]
+2024-04-05 00:21:17,801 - ERROR - Error loading data into database: duplicate key value violates unique constraint "sales_pkey"
+DETAIL:  Key (transaction_id)=(aee6ad75-cf4a-428f-b1d6-ecdbceeecbc5) already exists.
+
+2024-04-05 00:23:11,884 - INFO - Table 'sales' deleted successfully!
+2024-04-05 00:23:15,161 - INFO - Table 'sales' created successfully!
+2024-04-05 00:23:26,606 - INFO - Mock sales data saved to 'data/mock_sales_data.csv'
+2024-04-05 00:23:38,160 - ERROR - Error reading CSV file: [Errno 2] No such file or directory: 'mock_sales_data.csv'
+2024-04-05 00:24:11,386 - INFO - CSV file read successfully.
+2024-04-05 00:24:11,386 - INFO - Sales data transformed successfully.
+2024-04-05 00:24:11,418 - INFO - 
+Transformed Data:
+2024-04-05 00:24:11,418 - INFO -                            transaction_id                                        customer_id                         product_id  quantity                  sale_date
+0    c073b9ce-9efc-4762-be93-07c7e1100c25  b'gAAAAABmDyiLatjKQD2xOkN_7zJ3d5AMQ8emkYgOwsTR...                Books_Apple_T-shirt       0.0 2024-04-05 00:24:11.418297
+1    8a395f84-2f7a-4b42-b422-a9e82b771b1c  b'gAAAAABmDyiLhAVej1k-EKJglxy7gX5Az4QUxOnCC9zc...            Toys_AmazonBasics_Shoes      37.0 2024-04-05 00:24:11.418297
+2    687002a8-c723-4da7-8245-88f0f6fb4d3b  b'gAAAAABmDyiLUODE1nz1qPTMUpLIwdkYr4IOs23NbPSN...             Toys_Adidas_Headphones      18.0 2024-04-05 00:24:11.418297
+3    a8cb6c2b-1fda-46b2-a44f-a403094420ac  b'gAAAAABmDyiLQ6fbcwu5vcMCB1tIcArRT9bcXu5FV6Zw...                   Toys_LG_Cookware      15.0 2024-04-05 00:24:11.418297
+4    f2ba6d64-d01b-4360-b19a-238a15291b99  b'gAAAAABmDyiLtM85WIrfmD0QEBM24AugVtKbnBGJmhkS...     Home & Kitchen_Dell_Headphones       5.0 2024-04-05 00:24:11.418297
+..                                    ...                                                ...                                ...       ...                        ...
+995  b0b0701e-1ec4-4f00-92fd-29e0086488cb  b'gAAAAABmDyiL3HUU_HBux9UEaxRAZd_GV8D8p5b8m5nf...            Books_Adidas_Smartphone      14.0 2024-04-05 00:24:11.418297
+996  2f8ab61e-50cc-4e2f-a8f0-1c51e0f6b28c  b'gAAAAABmDyiLQHgSXQmi4LQBw76WJ-7JlogN5jTUlYao...      Home & Kitchen_Canon_Cookware      12.0 2024-04-05 00:24:11.418297
+997  85d120a5-c7a5-4afc-b31b-ac3561950947  b'gAAAAABmDyiL2609JyJGv7oyH9Pm_QpPxvtpCtXQlgau...      Sports & Outdoors_LG_Cookware       1.0 2024-04-05 00:24:11.418297
+998  daa54757-c664-4743-86a1-feb42699cd9d  b'gAAAAABmDyiLrhyO39qGWzLzuSGfYXqIoSdRA4EW4PRy...                Clothing_Canon_Book      10.0 2024-04-05 00:24:11.418297
+999  107f61bc-136f-4e3b-a535-19512fc95c76  b'gAAAAABmDyiLNnv3jZh5GzChia0GSEasCafIQlUNPhgz...  Sports & Outdoors_AmazonBasics_TV       0.0 2024-04-05 00:24:11.418297
+
+[1000 rows x 5 columns]
+2024-04-05 00:24:11,445 - INFO - 
+Data after handling outliers:
+2024-04-05 00:24:11,445 - INFO -                            transaction_id                                        customer_id                         product_id  quantity                  sale_date
+0    c073b9ce-9efc-4762-be93-07c7e1100c25  b'gAAAAABmDyiLatjKQD2xOkN_7zJ3d5AMQ8emkYgOwsTR...                Books_Apple_T-shirt       0.0 2024-04-05 00:24:11.418297
+1    8a395f84-2f7a-4b42-b422-a9e82b771b1c  b'gAAAAABmDyiLhAVej1k-EKJglxy7gX5Az4QUxOnCC9zc...            Toys_AmazonBasics_Shoes      37.0 2024-04-05 00:24:11.418297
+2    687002a8-c723-4da7-8245-88f0f6fb4d3b  b'gAAAAABmDyiLUODE1nz1qPTMUpLIwdkYr4IOs23NbPSN...             Toys_Adidas_Headphones      18.0 2024-04-05 00:24:11.418297
+3    a8cb6c2b-1fda-46b2-a44f-a403094420ac  b'gAAAAABmDyiLQ6fbcwu5vcMCB1tIcArRT9bcXu5FV6Zw...                   Toys_LG_Cookware      15.0 2024-04-05 00:24:11.418297
+4    f2ba6d64-d01b-4360-b19a-238a15291b99  b'gAAAAABmDyiLtM85WIrfmD0QEBM24AugVtKbnBGJmhkS...     Home & Kitchen_Dell_Headphones       5.0 2024-04-05 00:24:11.418297
+..                                    ...                                                ...                                ...       ...                        ...
+995  b0b0701e-1ec4-4f00-92fd-29e0086488cb  b'gAAAAABmDyiL3HUU_HBux9UEaxRAZd_GV8D8p5b8m5nf...            Books_Adidas_Smartphone      14.0 2024-04-05 00:24:11.418297
+996  2f8ab61e-50cc-4e2f-a8f0-1c51e0f6b28c  b'gAAAAABmDyiLQHgSXQmi4LQBw76WJ-7JlogN5jTUlYao...      Home & Kitchen_Canon_Cookware      12.0 2024-04-05 00:24:11.418297
+997  85d120a5-c7a5-4afc-b31b-ac3561950947  b'gAAAAABmDyiL2609JyJGv7oyH9Pm_QpPxvtpCtXQlgau...      Sports & Outdoors_LG_Cookware       1.0 2024-04-05 00:24:11.418297
+998  daa54757-c664-4743-86a1-feb42699cd9d  b'gAAAAABmDyiLrhyO39qGWzLzuSGfYXqIoSdRA4EW4PRy...                Clothing_Canon_Book      10.0 2024-04-05 00:24:11.418297
+999  107f61bc-136f-4e3b-a535-19512fc95c76  b'gAAAAABmDyiLNnv3jZh5GzChia0GSEasCafIQlUNPhgz...  Sports & Outdoors_AmazonBasics_TV       0.0 2024-04-05 00:24:11.418297
+
+[1000 rows x 5 columns]
+2024-04-05 00:24:11,790 - INFO - Data loaded into database successfully!
+2024-04-05 00:25:50,450 - INFO - All rows from table 'sales' deleted successfully!
+2024-04-05 00:25:56,895 - INFO - Table 'sales' deleted successfully!
+2024-04-05 00:26:01,026 - INFO - Table 'sales' created successfully!
+2024-04-05 00:26:38,382 - INFO - Mock sales data saved to 'data/mock_sales_data.csv'
+2024-04-05 00:36:21,902 - ERROR - Error loading configuration from database/config.yaml: [Errno 2] No such file or directory: 'database/config.yaml'
+2024-04-05 00:37:14,108 - ERROR - Error loading configuration from config.yaml: [Errno 2] No such file or directory: 'config.yaml'
+2024-04-05 00:38:01,203 - ERROR - Error loading configuration from config.yaml: [Errno 2] No such file or directory: 'config.yaml'
+2024-04-05 00:38:36,860 - INFO - All rows from table 'sales' deleted successfully!
+2024-04-05 00:39:14,491 - INFO - Table 'sales' deleted successfully!
+2024-04-05 00:39:27,105 - INFO - Table 'sales' created successfully!
+2024-04-05 00:40:00,441 - INFO - Mock sales data saved to 'data/mock_sales_data.csv'
+2024-04-05 00:41:11,835 - INFO - CSV file read successfully.
+2024-04-05 00:41:11,835 - INFO - Sales data transformed successfully.
+2024-04-05 00:41:11,870 - INFO - 
+Transformed Data:
+2024-04-05 00:41:11,870 - INFO -                            transaction_id                                        customer_id                          product_id  quantity                  sale_date
+0    7e9d4021-e019-4579-b05a-707957516b0e  b'gAAAAABmDyyHI5e43Ch9FWOC6l1klmELlp_YrNjkCmFV...     Sports & Outdoors_Nike_Cookware       4.0 2024-04-05 00:41:11.870362
+1    b221f351-ebca-4cf4-922f-621a72f46662  b'gAAAAABmDyyHmYuUs_LmWZHBiLEtJcj18l5Rdbj5vYpM...             Home & Kitchen_Nike_Toy      18.0 2024-04-05 00:41:11.870362
+2    44144739-925d-451d-8686-85c5a261e5a6  b'gAAAAABmDyyHjUX5fS7yC8Jpp7P1Ou9PppzhgiRp18wk...                   Toys_Samsung_Book      27.0 2024-04-05 00:41:11.870362
+3    f975564b-1813-4d10-8697-8292e272a658  b'gAAAAABmDyyHBvDA9vWzDePvOU3vEbxYuc2gqHcviJFI...         Sports & Outdoors_HP_Laptop       1.0 2024-04-05 00:41:11.870362
+4    d97aa907-353a-4d58-82a6-a76871066a80  b'gAAAAABmDyyHOmYIiMf2ff8fwIPnih-EEC42kVV94bfm...                 Books_Adidas_Laptop       3.0 2024-04-05 00:41:11.870362
+..                                    ...                                                ...                                 ...       ...                        ...
+995  5d81db2b-4e44-4862-b670-c2585d6a979d  b'gAAAAABmDyyHYU9m1UGT-say_Ia6ISBLHmUXLTadIH_9...                    Toys_Dell_Laptop       0.0 2024-04-05 00:41:11.870362
+996  458fa18a-51e9-4e59-a9d1-deeddc129bef  b'gAAAAABmDyyH49dwVH5ii0VogZhZ5jizOzbu6TQa__n8...     Sports & Outdoors_LG_Headphones      16.0 2024-04-05 00:41:11.870362
+997  5e581b1e-460e-4a73-b976-cffbd5a747b6  b'gAAAAABmDyyHPoPEvCrEqUoYsmbpsSw9FsI7t_EjY7zJ...         Electronics_Dell_Smartphone       9.0 2024-04-05 00:41:11.870362
+998  8873fefb-05bd-44b3-a742-83ccd7dd2044  b'gAAAAABmDyyHRECjA9b_M_HvdhHvAsX0PmsOHBABrQDs...  Sports & Outdoors_Samsung_Cookware      27.0 2024-04-05 00:41:11.870362
+999  ec69f68a-67d2-455d-94f9-5fc016320bf0  b'gAAAAABmDyyHsMUxneBsf7nwroJQ5v1V34ozt7i4ATqO...           Home & Kitchen_Apple_Book      10.0 2024-04-05 00:41:11.870362
+
+[1000 rows x 5 columns]
+2024-04-05 00:41:11,897 - INFO - 
+Data after handling outliers:
+2024-04-05 00:41:11,897 - INFO -                            transaction_id                                        customer_id                          product_id  quantity                  sale_date
+0    7e9d4021-e019-4579-b05a-707957516b0e  b'gAAAAABmDyyHI5e43Ch9FWOC6l1klmELlp_YrNjkCmFV...     Sports & Outdoors_Nike_Cookware       4.0 2024-04-05 00:41:11.870362
+1    b221f351-ebca-4cf4-922f-621a72f46662  b'gAAAAABmDyyHmYuUs_LmWZHBiLEtJcj18l5Rdbj5vYpM...             Home & Kitchen_Nike_Toy      18.0 2024-04-05 00:41:11.870362
+2    44144739-925d-451d-8686-85c5a261e5a6  b'gAAAAABmDyyHjUX5fS7yC8Jpp7P1Ou9PppzhgiRp18wk...                   Toys_Samsung_Book      27.0 2024-04-05 00:41:11.870362
+3    f975564b-1813-4d10-8697-8292e272a658  b'gAAAAABmDyyHBvDA9vWzDePvOU3vEbxYuc2gqHcviJFI...         Sports & Outdoors_HP_Laptop       1.0 2024-04-05 00:41:11.870362
+4    d97aa907-353a-4d58-82a6-a76871066a80  b'gAAAAABmDyyHOmYIiMf2ff8fwIPnih-EEC42kVV94bfm...                 Books_Adidas_Laptop       3.0 2024-04-05 00:41:11.870362
+..                                    ...                                                ...                                 ...       ...                        ...
+995  5d81db2b-4e44-4862-b670-c2585d6a979d  b'gAAAAABmDyyHYU9m1UGT-say_Ia6ISBLHmUXLTadIH_9...                    Toys_Dell_Laptop       0.0 2024-04-05 00:41:11.870362
+996  458fa18a-51e9-4e59-a9d1-deeddc129bef  b'gAAAAABmDyyH49dwVH5ii0VogZhZ5jizOzbu6TQa__n8...     Sports & Outdoors_LG_Headphones      16.0 2024-04-05 00:41:11.870362
+997  5e581b1e-460e-4a73-b976-cffbd5a747b6  b'gAAAAABmDyyHPoPEvCrEqUoYsmbpsSw9FsI7t_EjY7zJ...         Electronics_Dell_Smartphone       9.0 2024-04-05 00:41:11.870362
+998  8873fefb-05bd-44b3-a742-83ccd7dd2044  b'gAAAAABmDyyHRECjA9b_M_HvdhHvAsX0PmsOHBABrQDs...  Sports & Outdoors_Samsung_Cookware      27.0 2024-04-05 00:41:11.870362
+999  ec69f68a-67d2-455d-94f9-5fc016320bf0  b'gAAAAABmDyyHsMUxneBsf7nwroJQ5v1V34ozt7i4ATqO...           Home & Kitchen_Apple_Book      10.0 2024-04-05 00:41:11.870362
+
+[1000 rows x 5 columns]
+2024-04-05 00:41:11,911 - ERROR - Error loading configuration from database/config.yaml: [Errno 2] No such file or directory: 'database/config.yaml'
+2024-04-05 00:42:31,352 - INFO - CSV file read successfully.
+2024-04-05 00:42:31,352 - INFO - Sales data transformed successfully.
+2024-04-05 00:42:31,391 - INFO - 
+Transformed Data:
+2024-04-05 00:42:31,391 - INFO -                            transaction_id                                        customer_id                          product_id  quantity                  sale_date
+0    7e9d4021-e019-4579-b05a-707957516b0e  b'gAAAAABmDyzX5o1j4DMckSZvhbuE6g4HEEsrxFcgGV3x...     Sports & Outdoors_Nike_Cookware       4.0 2024-04-05 00:42:31.391464
+1    b221f351-ebca-4cf4-922f-621a72f46662  b'gAAAAABmDyzXs2e_hbpQH-vjEkzm0pAnlGtNbZxWXJV7...             Home & Kitchen_Nike_Toy      18.0 2024-04-05 00:42:31.391464
+2    44144739-925d-451d-8686-85c5a261e5a6  b'gAAAAABmDyzX9v0-WJCmeqXUCrRt5WzW1fZci6Ss5b-9...                   Toys_Samsung_Book      27.0 2024-04-05 00:42:31.391464
+3    f975564b-1813-4d10-8697-8292e272a658  b'gAAAAABmDyzX9XBe2f1lXHszfMRaf36XcqDhSic5aykL...         Sports & Outdoors_HP_Laptop       1.0 2024-04-05 00:42:31.391464
+4    d97aa907-353a-4d58-82a6-a76871066a80  b'gAAAAABmDyzXWdnYw3Ajq7mEwl_nOQkA5THLgh69hNxB...                 Books_Adidas_Laptop       3.0 2024-04-05 00:42:31.391464
+..                                    ...                                                ...                                 ...       ...                        ...
+995  5d81db2b-4e44-4862-b670-c2585d6a979d  b'gAAAAABmDyzX9goXk1YtvAFOA_kilg2KWYMRmd9CriI3...                    Toys_Dell_Laptop       0.0 2024-04-05 00:42:31.391464
+996  458fa18a-51e9-4e59-a9d1-deeddc129bef  b'gAAAAABmDyzXnokoy939GFo4Q2xfrfvLKXYwZoGnGJ3_...     Sports & Outdoors_LG_Headphones      16.0 2024-04-05 00:42:31.391464
+997  5e581b1e-460e-4a73-b976-cffbd5a747b6  b'gAAAAABmDyzXod3ZhpjqHRQ94N5sATpA3z1S8wZHXnMf...         Electronics_Dell_Smartphone       9.0 2024-04-05 00:42:31.391464
+998  8873fefb-05bd-44b3-a742-83ccd7dd2044  b'gAAAAABmDyzXDuH3zojdA40A3xtsfjkF0B8PGaV1Ast_...  Sports & Outdoors_Samsung_Cookware      27.0 2024-04-05 00:42:31.391464
+999  ec69f68a-67d2-455d-94f9-5fc016320bf0  b'gAAAAABmDyzXQXSKdS6nm1pNhXbsZ1nTWJAwMN5BDSRv...           Home & Kitchen_Apple_Book      10.0 2024-04-05 00:42:31.391464
+
+[1000 rows x 5 columns]
+2024-04-05 00:42:31,417 - INFO - 
+Data after handling outliers:
+2024-04-05 00:42:31,417 - INFO -                            transaction_id                                        customer_id                          product_id  quantity                  sale_date
+0    7e9d4021-e019-4579-b05a-707957516b0e  b'gAAAAABmDyzX5o1j4DMckSZvhbuE6g4HEEsrxFcgGV3x...     Sports & Outdoors_Nike_Cookware       4.0 2024-04-05 00:42:31.391464
+1    b221f351-ebca-4cf4-922f-621a72f46662  b'gAAAAABmDyzXs2e_hbpQH-vjEkzm0pAnlGtNbZxWXJV7...             Home & Kitchen_Nike_Toy      18.0 2024-04-05 00:42:31.391464
+2    44144739-925d-451d-8686-85c5a261e5a6  b'gAAAAABmDyzX9v0-WJCmeqXUCrRt5WzW1fZci6Ss5b-9...                   Toys_Samsung_Book      27.0 2024-04-05 00:42:31.391464
+3    f975564b-1813-4d10-8697-8292e272a658  b'gAAAAABmDyzX9XBe2f1lXHszfMRaf36XcqDhSic5aykL...         Sports & Outdoors_HP_Laptop       1.0 2024-04-05 00:42:31.391464
+4    d97aa907-353a-4d58-82a6-a76871066a80  b'gAAAAABmDyzXWdnYw3Ajq7mEwl_nOQkA5THLgh69hNxB...                 Books_Adidas_Laptop       3.0 2024-04-05 00:42:31.391464
+..                                    ...                                                ...                                 ...       ...                        ...
+995  5d81db2b-4e44-4862-b670-c2585d6a979d  b'gAAAAABmDyzX9goXk1YtvAFOA_kilg2KWYMRmd9CriI3...                    Toys_Dell_Laptop       0.0 2024-04-05 00:42:31.391464
+996  458fa18a-51e9-4e59-a9d1-deeddc129bef  b'gAAAAABmDyzXnokoy939GFo4Q2xfrfvLKXYwZoGnGJ3_...     Sports & Outdoors_LG_Headphones      16.0 2024-04-05 00:42:31.391464
+997  5e581b1e-460e-4a73-b976-cffbd5a747b6  b'gAAAAABmDyzXod3ZhpjqHRQ94N5sATpA3z1S8wZHXnMf...         Electronics_Dell_Smartphone       9.0 2024-04-05 00:42:31.391464
+998  8873fefb-05bd-44b3-a742-83ccd7dd2044  b'gAAAAABmDyzXDuH3zojdA40A3xtsfjkF0B8PGaV1Ast_...  Sports & Outdoors_Samsung_Cookware      27.0 2024-04-05 00:42:31.391464
+999  ec69f68a-67d2-455d-94f9-5fc016320bf0  b'gAAAAABmDyzXQXSKdS6nm1pNhXbsZ1nTWJAwMN5BDSRv...           Home & Kitchen_Apple_Book      10.0 2024-04-05 00:42:31.391464
+
+[1000 rows x 5 columns]
+2024-04-05 00:42:31,752 - INFO - Data loaded into database successfully!
+2024-04-05 00:42:40,877 - INFO - Table 'sales' deleted successfully!
+2024-04-05 00:42:44,216 - INFO - Table 'sales' created successfully!
+2024-04-05 00:42:47,654 - INFO - Mock sales data saved to 'data/mock_sales_data.csv'
+2024-04-05 00:43:01,226 - INFO - CSV file read successfully.
+2024-04-05 00:43:01,226 - INFO - Sales data transformed successfully.
+2024-04-05 00:43:01,273 - INFO - 
+Transformed Data:
+2024-04-05 00:43:01,273 - INFO -                            transaction_id                                        customer_id                       product_id  quantity                  sale_date
+0    6fd8049d-5297-4f29-874c-aadbe79544c2  b'gAAAAABmDyz15THRi-485pyjoCJ2U5gne2G1Czw90fOS...       Sports & Outdoors_LG_Shoes      10.0 2024-04-05 00:43:01.273858
+1    5079d47f-b4b7-4b19-bf01-229c0c2ba684  b'gAAAAABmDyz1DzmGSweEoRase__KavCM1MlrLXT2pUAH...            Electronics_Sony_Book       4.0 2024-04-05 00:43:01.273858
+2    e95b6d3f-0c63-4f3c-8ef2-c1b9745074c8  b'gAAAAABmDyz1MaDWkal7pdxkat8BPRFfB6c8k6A5ELot...               Toys_Dell_Cookware      19.0 2024-04-05 00:43:01.273858
+3    21cf6a54-1f7c-4852-8a46-2bca69fdd893  b'gAAAAABmDyz19O-65wzJnfl_NyVVQZFIvRDXnebEg9DG...                 Clothing_Dell_TV       5.0 2024-04-05 00:43:01.273858
+4    c6390e2d-b9c1-427f-a22e-65759755d673  b'gAAAAABmDyz1ZELBbDCe5lVn49s-ohFV9CTGTxkZecDx...               Toys_Samsung_Shoes       7.0 2024-04-05 00:43:01.273858
+..                                    ...                                                ...                              ...       ...                        ...
+995  d630ca91-f97a-4628-99b1-956f42d685a8  b'gAAAAABmDyz14vbiekaXg3DNvIGCe3rRHneXCZN68E2K...              Electronics_Dell_TV      10.0 2024-04-05 00:43:01.273858
+996  f290f545-cd94-4af1-bdc6-d10da23ba508  b'gAAAAABmDyz1VljiKHOV8dFg1YHD6az5LguVlWp_bgH1...                  Toys_LG_T-shirt       0.0 2024-04-05 00:43:01.273858
+997  a7201667-387a-4087-aff4-55f05dfee6cb  b'gAAAAABmDyz1JYY_TGhGZBHtXSK471XTPQhQXMVr9Uke...  Sports & Outdoors_LG_Smartphone       5.0 2024-04-05 00:43:01.273858
+998  26068cfc-a918-429e-8587-d8cc1279706d  b'gAAAAABmDyz1__OshB0noBcc-aZaZYb0d8x6lGyo1XO7...              Books_Sony_Cookware      22.0 2024-04-05 00:43:01.273858
+999  c7f98033-a0a4-4875-affc-3b3c3c6f1420  b'gAAAAABmDyz1NXR0QuLhhXUzvy2WM7pBpX9frThYO68b...                   Toys_Adidas_TV       0.0 2024-04-05 00:43:01.273858
+
+[1000 rows x 5 columns]
+2024-04-05 00:43:01,292 - INFO - 
+Data after handling outliers:
+2024-04-05 00:43:01,292 - INFO -                            transaction_id                                        customer_id                       product_id  quantity                  sale_date
+0    6fd8049d-5297-4f29-874c-aadbe79544c2  b'gAAAAABmDyz15THRi-485pyjoCJ2U5gne2G1Czw90fOS...       Sports & Outdoors_LG_Shoes      10.0 2024-04-05 00:43:01.273858
+1    5079d47f-b4b7-4b19-bf01-229c0c2ba684  b'gAAAAABmDyz1DzmGSweEoRase__KavCM1MlrLXT2pUAH...            Electronics_Sony_Book       4.0 2024-04-05 00:43:01.273858
+2    e95b6d3f-0c63-4f3c-8ef2-c1b9745074c8  b'gAAAAABmDyz1MaDWkal7pdxkat8BPRFfB6c8k6A5ELot...               Toys_Dell_Cookware      19.0 2024-04-05 00:43:01.273858
+3    21cf6a54-1f7c-4852-8a46-2bca69fdd893  b'gAAAAABmDyz19O-65wzJnfl_NyVVQZFIvRDXnebEg9DG...                 Clothing_Dell_TV       5.0 2024-04-05 00:43:01.273858
+4    c6390e2d-b9c1-427f-a22e-65759755d673  b'gAAAAABmDyz1ZELBbDCe5lVn49s-ohFV9CTGTxkZecDx...               Toys_Samsung_Shoes       7.0 2024-04-05 00:43:01.273858
+..                                    ...                                                ...                              ...       ...                        ...
+995  d630ca91-f97a-4628-99b1-956f42d685a8  b'gAAAAABmDyz14vbiekaXg3DNvIGCe3rRHneXCZN68E2K...              Electronics_Dell_TV      10.0 2024-04-05 00:43:01.273858
+996  f290f545-cd94-4af1-bdc6-d10da23ba508  b'gAAAAABmDyz1VljiKHOV8dFg1YHD6az5LguVlWp_bgH1...                  Toys_LG_T-shirt       0.0 2024-04-05 00:43:01.273858
+997  a7201667-387a-4087-aff4-55f05dfee6cb  b'gAAAAABmDyz1JYY_TGhGZBHtXSK471XTPQhQXMVr9Uke...  Sports & Outdoors_LG_Smartphone       5.0 2024-04-05 00:43:01.273858
+998  26068cfc-a918-429e-8587-d8cc1279706d  b'gAAAAABmDyz1__OshB0noBcc-aZaZYb0d8x6lGyo1XO7...              Books_Sony_Cookware      22.0 2024-04-05 00:43:01.273858
+999  c7f98033-a0a4-4875-affc-3b3c3c6f1420  b'gAAAAABmDyz1NXR0QuLhhXUzvy2WM7pBpX9frThYO68b...                   Toys_Adidas_TV       0.0 2024-04-05 00:43:01.273858
+
+[1000 rows x 5 columns]
+2024-04-05 00:43:01,590 - INFO - Data loaded into database successfully!
+2024-04-05 00:43:07,190 - INFO - Table 'sales' deleted successfully!
+2024-04-05 00:43:10,127 - INFO - Table 'sales' created successfully!
+2024-04-05 00:43:17,582 - INFO - Mock sales data saved to 'data/mock_sales_data.csv'
+2024-04-05 00:43:50,910 - ERROR - Error reading CSV file: [Errno 2] No such file or directory: 'mock_sales_data.csv'
+2024-04-05 00:44:49,821 - INFO - CSV file read successfully.
+2024-04-05 00:44:49,821 - INFO - Sales data transformed successfully.
+2024-04-05 00:44:49,852 - INFO - 
+Transformed Data:
+2024-04-05 00:44:49,852 - INFO -                            transaction_id                                        customer_id                       product_id  quantity                  sale_date
+0    49dad108-35c3-4c6e-a17e-4e312a6974a1  b'gAAAAABmDy1hgCCrxz7wpkPcpKPLOBrfaq9VKuu7H3Bu...       Toys_AmazonBasics_Cookware       5.0 2024-04-05 00:44:49.852473
+1    ef43c1ae-3379-4f86-96d9-2d33c2031da9  b'gAAAAABmDy1hKafldJCG7S7PH-eKz6fcD6g7gwPUKv83...                   Books_Sony_Toy      10.0 2024-04-05 00:44:49.852473
+2    dda29416-6c4a-4d93-bec2-9a1cfd9527c2  b'gAAAAABmDy1hqQr_5zb7EVQp_GO1ezPz7ziv9IJcbyga...   Sports & Outdoors_Dell_T-shirt      22.0 2024-04-05 00:44:49.852473
+3    cb594ce7-3a96-4a49-b57c-8326d556f300  b'gAAAAABmDy1h2BlOIx0vKqOh9tsP1da9om739bCpk4Uc...        Sports & Outdoors_Nike_TV       8.0 2024-04-05 00:44:49.852473
+4    64c911f6-7c73-4ee2-8169-5d7050545cb2  b'gAAAAABmDy1hUvYce3R8-KZiwMAkguggHmJLLd7syacm...  Home & Kitchen_Apple_Smartphone      10.0 2024-04-05 00:44:49.852473
+..                                    ...                                                ...                              ...       ...                        ...
+995  8dde5097-d8fb-4246-9044-9e66c1d8ea9e  b'gAAAAABmDy1hr1pAChbt_2QEyQTkCa0UbRwG1Byn1J-u...         Books_Samsung_Headphones      20.0 2024-04-05 00:44:49.852473
+996  a5bd1292-2db7-4f9b-bf67-3cc9913934ba  b'gAAAAABmDy1h__EHXDNC6FqAinbV9IV22OMk1TQf3IfU...              Books_Sony_Cookware       0.0 2024-04-05 00:44:49.852473
+997  fcb68370-c4f2-4ed0-a7f5-f3f483292099  b'gAAAAABmDy1hXyg7vOSrPmu7SznAlDSD9IewqjYq7Tle...    Clothing_AmazonBasics_T-shirt      19.0 2024-04-05 00:44:49.852473
+998  ba90523b-fd60-46ff-8605-84f17bb1a71a  b'gAAAAABmDy1hpgx1r44xCTJQJYCnDFHa_NIu39QwrDOM...      Sports & Outdoors_Apple_Toy       0.0 2024-04-05 00:44:49.852473
+999  5c89f5c8-2234-4b8a-8d11-f196ab372644  b'gAAAAABmDy1hw490cCtvWf_kWM3Y0YiI9xTDy3ypkLhM...                 Clothing_Sony_TV       4.0 2024-04-05 00:44:49.852473
+
+[1000 rows x 5 columns]
+2024-04-05 00:44:49,876 - INFO - 
+Data after handling outliers:
+2024-04-05 00:44:49,876 - INFO -                            transaction_id                                        customer_id                       product_id  quantity                  sale_date
+0    49dad108-35c3-4c6e-a17e-4e312a6974a1  b'gAAAAABmDy1hgCCrxz7wpkPcpKPLOBrfaq9VKuu7H3Bu...       Toys_AmazonBasics_Cookware       5.0 2024-04-05 00:44:49.852473
+1    ef43c1ae-3379-4f86-96d9-2d33c2031da9  b'gAAAAABmDy1hKafldJCG7S7PH-eKz6fcD6g7gwPUKv83...                   Books_Sony_Toy      10.0 2024-04-05 00:44:49.852473
+2    dda29416-6c4a-4d93-bec2-9a1cfd9527c2  b'gAAAAABmDy1hqQr_5zb7EVQp_GO1ezPz7ziv9IJcbyga...   Sports & Outdoors_Dell_T-shirt      22.0 2024-04-05 00:44:49.852473
+3    cb594ce7-3a96-4a49-b57c-8326d556f300  b'gAAAAABmDy1h2BlOIx0vKqOh9tsP1da9om739bCpk4Uc...        Sports & Outdoors_Nike_TV       8.0 2024-04-05 00:44:49.852473
+4    64c911f6-7c73-4ee2-8169-5d7050545cb2  b'gAAAAABmDy1hUvYce3R8-KZiwMAkguggHmJLLd7syacm...  Home & Kitchen_Apple_Smartphone      10.0 2024-04-05 00:44:49.852473
+..                                    ...                                                ...                              ...       ...                        ...
+995  8dde5097-d8fb-4246-9044-9e66c1d8ea9e  b'gAAAAABmDy1hr1pAChbt_2QEyQTkCa0UbRwG1Byn1J-u...         Books_Samsung_Headphones      20.0 2024-04-05 00:44:49.852473
+996  a5bd1292-2db7-4f9b-bf67-3cc9913934ba  b'gAAAAABmDy1h__EHXDNC6FqAinbV9IV22OMk1TQf3IfU...              Books_Sony_Cookware       0.0 2024-04-05 00:44:49.852473
+997  fcb68370-c4f2-4ed0-a7f5-f3f483292099  b'gAAAAABmDy1hXyg7vOSrPmu7SznAlDSD9IewqjYq7Tle...    Clothing_AmazonBasics_T-shirt      19.0 2024-04-05 00:44:49.852473
+998  ba90523b-fd60-46ff-8605-84f17bb1a71a  b'gAAAAABmDy1hpgx1r44xCTJQJYCnDFHa_NIu39QwrDOM...      Sports & Outdoors_Apple_Toy       0.0 2024-04-05 00:44:49.852473
+999  5c89f5c8-2234-4b8a-8d11-f196ab372644  b'gAAAAABmDy1hw490cCtvWf_kWM3Y0YiI9xTDy3ypkLhM...                 Clothing_Sony_TV       4.0 2024-04-05 00:44:49.852473
+
+[1000 rows x 5 columns]
+2024-04-05 00:44:49,948 - INFO - Number of processors: 8
+2024-04-05 00:44:49,948 - INFO - Chunk size: 125
+2024-04-05 00:44:49,948 - INFO - Number of chunks: 8
+2024-04-05 00:44:51,527 - ERROR - Error loading configuration from database/config.yaml: [Errno 2] No such file or directory: 'database/config.yaml'
+2024-04-05 00:44:51,543 - ERROR - Error loading configuration from database/config.yaml: [Errno 2] No such file or directory: 'database/config.yaml'
+2024-04-05 00:44:51,545 - ERROR - Error loading configuration from database/config.yaml: [Errno 2] No such file or directory: 'database/config.yaml'
+2024-04-05 00:44:51,546 - ERROR - Error loading configuration from database/config.yaml: [Errno 2] No such file or directory: 'database/config.yaml'
+2024-04-05 00:44:51,548 - ERROR - Error loading configuration from database/config.yaml: [Errno 2] No such file or directory: 'database/config.yaml'
+2024-04-05 00:44:51,549 - ERROR - Error loading configuration from database/config.yaml: [Errno 2] No such file or directory: 'database/config.yaml'
+2024-04-05 00:44:51,550 - ERROR - Error loading configuration from database/config.yaml: [Errno 2] No such file or directory: 'database/config.yaml'
+2024-04-05 00:44:51,551 - ERROR - Error loading configuration from database/config.yaml: [Errno 2] No such file or directory: 'database/config.yaml'
+2024-04-05 00:45:39,559 - INFO - CSV file read successfully.
+2024-04-05 00:45:39,560 - INFO - Sales data transformed successfully.
+2024-04-05 00:45:39,590 - INFO - 
+Transformed Data:
+2024-04-05 00:45:39,590 - INFO -                            transaction_id                                        customer_id                       product_id  quantity                  sale_date
+0    49dad108-35c3-4c6e-a17e-4e312a6974a1  b'gAAAAABmDy2TzK0LYtnCIN6FPIg-CNHx9az_DRHp0cDX...       Toys_AmazonBasics_Cookware       5.0 2024-04-05 00:45:39.590557
+1    ef43c1ae-3379-4f86-96d9-2d33c2031da9  b'gAAAAABmDy2T0KR3WBmgtwnbZjjLyXN-LYXiQAHUMWWV...                   Books_Sony_Toy      10.0 2024-04-05 00:45:39.590557
+2    dda29416-6c4a-4d93-bec2-9a1cfd9527c2  b'gAAAAABmDy2TVhw1vLAC5paT87y09-1MqZDq6pmcWO_m...   Sports & Outdoors_Dell_T-shirt      22.0 2024-04-05 00:45:39.590557
+3    cb594ce7-3a96-4a49-b57c-8326d556f300  b'gAAAAABmDy2TJv_kZFib8tczATTX_Gi5UiTv32l0bdkE...        Sports & Outdoors_Nike_TV       8.0 2024-04-05 00:45:39.590557
+4    64c911f6-7c73-4ee2-8169-5d7050545cb2  b'gAAAAABmDy2TanyDzIqgVJp7yodiG8S-BSCpumXAG_1R...  Home & Kitchen_Apple_Smartphone      10.0 2024-04-05 00:45:39.590557
+..                                    ...                                                ...                              ...       ...                        ...
+995  8dde5097-d8fb-4246-9044-9e66c1d8ea9e  b'gAAAAABmDy2TA38jZFvtgrIz1IaeFFHZkWhNW2KrE9Ay...         Books_Samsung_Headphones      20.0 2024-04-05 00:45:39.590557
+996  a5bd1292-2db7-4f9b-bf67-3cc9913934ba  b'gAAAAABmDy2THm924Zt8YLTBfqrGHvRky-W5SX9AS0UG...              Books_Sony_Cookware       0.0 2024-04-05 00:45:39.590557
+997  fcb68370-c4f2-4ed0-a7f5-f3f483292099  b'gAAAAABmDy2TMCXtjge7coNHVzimthAwd-S1-e8Vivpt...    Clothing_AmazonBasics_T-shirt      19.0 2024-04-05 00:45:39.590557
+998  ba90523b-fd60-46ff-8605-84f17bb1a71a  b'gAAAAABmDy2TObI6ugSVFM9rgTIuXou7Cp_MbqI4deOr...      Sports & Outdoors_Apple_Toy       0.0 2024-04-05 00:45:39.590557
+999  5c89f5c8-2234-4b8a-8d11-f196ab372644  b'gAAAAABmDy2TCB1viPurPeYA6Em1zBLN8UQzbRU7cs9V...                 Clothing_Sony_TV       4.0 2024-04-05 00:45:39.590557
+
+[1000 rows x 5 columns]
+2024-04-05 00:45:39,616 - INFO - 
+Data after handling outliers:
+2024-04-05 00:45:39,616 - INFO -                            transaction_id                                        customer_id                       product_id  quantity                  sale_date
+0    49dad108-35c3-4c6e-a17e-4e312a6974a1  b'gAAAAABmDy2TzK0LYtnCIN6FPIg-CNHx9az_DRHp0cDX...       Toys_AmazonBasics_Cookware       5.0 2024-04-05 00:45:39.590557
+1    ef43c1ae-3379-4f86-96d9-2d33c2031da9  b'gAAAAABmDy2T0KR3WBmgtwnbZjjLyXN-LYXiQAHUMWWV...                   Books_Sony_Toy      10.0 2024-04-05 00:45:39.590557
+2    dda29416-6c4a-4d93-bec2-9a1cfd9527c2  b'gAAAAABmDy2TVhw1vLAC5paT87y09-1MqZDq6pmcWO_m...   Sports & Outdoors_Dell_T-shirt      22.0 2024-04-05 00:45:39.590557
+3    cb594ce7-3a96-4a49-b57c-8326d556f300  b'gAAAAABmDy2TJv_kZFib8tczATTX_Gi5UiTv32l0bdkE...        Sports & Outdoors_Nike_TV       8.0 2024-04-05 00:45:39.590557
+4    64c911f6-7c73-4ee2-8169-5d7050545cb2  b'gAAAAABmDy2TanyDzIqgVJp7yodiG8S-BSCpumXAG_1R...  Home & Kitchen_Apple_Smartphone      10.0 2024-04-05 00:45:39.590557
+..                                    ...                                                ...                              ...       ...                        ...
+995  8dde5097-d8fb-4246-9044-9e66c1d8ea9e  b'gAAAAABmDy2TA38jZFvtgrIz1IaeFFHZkWhNW2KrE9Ay...         Books_Samsung_Headphones      20.0 2024-04-05 00:45:39.590557
+996  a5bd1292-2db7-4f9b-bf67-3cc9913934ba  b'gAAAAABmDy2THm924Zt8YLTBfqrGHvRky-W5SX9AS0UG...              Books_Sony_Cookware       0.0 2024-04-05 00:45:39.590557
+997  fcb68370-c4f2-4ed0-a7f5-f3f483292099  b'gAAAAABmDy2TMCXtjge7coNHVzimthAwd-S1-e8Vivpt...    Clothing_AmazonBasics_T-shirt      19.0 2024-04-05 00:45:39.590557
+998  ba90523b-fd60-46ff-8605-84f17bb1a71a  b'gAAAAABmDy2TObI6ugSVFM9rgTIuXou7Cp_MbqI4deOr...      Sports & Outdoors_Apple_Toy       0.0 2024-04-05 00:45:39.590557
+999  5c89f5c8-2234-4b8a-8d11-f196ab372644  b'gAAAAABmDy2TCB1viPurPeYA6Em1zBLN8UQzbRU7cs9V...                 Clothing_Sony_TV       4.0 2024-04-05 00:45:39.590557
+
+[1000 rows x 5 columns]
+2024-04-05 00:45:39,693 - INFO - Number of processors: 8
+2024-04-05 00:45:39,693 - INFO - Chunk size: 125
+2024-04-05 00:45:39,693 - INFO - Number of chunks: 8
+2024-04-05 00:45:41,331 - INFO - Chunk loaded into database successfully!
+2024-04-05 00:45:41,331 - INFO - Chunk loaded into database successfully!
+2024-04-05 00:45:41,346 - INFO - Chunk loaded into database successfully!
+2024-04-05 00:45:41,367 - INFO - Chunk loaded into database successfully!
+2024-04-05 00:45:41,370 - INFO - Chunk loaded into database successfully!
+2024-04-05 00:45:41,392 - INFO - Chunk loaded into database successfully!
+2024-04-05 00:45:41,412 - INFO - Chunk loaded into database successfully!
+2024-04-05 00:45:41,431 - INFO - Chunk loaded into database successfully!
+2024-04-05 00:45:48,936 - INFO - Table 'sales' deleted successfully!
+2024-04-05 00:45:52,569 - INFO - Table 'sales' created successfully!
+2024-04-05 00:45:57,845 - INFO - Mock sales data saved to 'data/mock_sales_data.csv'
+2024-04-05 00:46:06,923 - INFO - CSV file read successfully.
+2024-04-05 00:46:06,923 - INFO - Sales data transformed successfully.
+2024-04-05 00:46:06,970 - INFO - 
+Transformed Data:
+2024-04-05 00:46:06,970 - INFO -                            transaction_id                                        customer_id                               product_id  quantity                  sale_date
+0    20643b1e-c312-4189-8651-3594070f372d  b'gAAAAABmDy2ux8O_BKk-jU8CeNEbs2Z3vbHMh0wmBhVO...                 Books_Samsung_Headphones      16.0 2024-04-05 00:46:06.970600
+1    d4765eac-1ba5-4e57-bfff-b3046fdd8457  b'gAAAAABmDy2ukH6LE_RddmoqzBDRMzmM_DuN5pE5mRcH...  Sports & Outdoors_AmazonBasics_Cookware      12.0 2024-04-05 00:46:06.970600
+2    e2c02b87-0e38-4949-8fc4-ff96dfff8ce4  b'gAAAAABmDy2uG2SO-cGcev1Im4EqO5TUhPv5uXph3Y-2...              Sports & Outdoors_LG_Laptop      22.0 2024-04-05 00:46:06.970600
+3    66789fe2-0e6e-4872-9952-d029e7c52ae1  b'gAAAAABmDy2uEXBv-4vyz0RxfdIUTTEWB935LDvoTdwE...                Toys_AmazonBasics_T-shirt       9.0 2024-04-05 00:46:06.970600
+4    854b1d12-d416-43b5-b91e-99650c51eb08  b'gAAAAABmDy2uaZelblfEhsU-fNCt3n-EVIO-0Nfq8AMg...          Home & Kitchen_Apple_Headphones       0.0 2024-04-05 00:46:06.970600
+..                                    ...                                                ...                                      ...       ...                        ...
+995  0159f351-a100-43e7-975e-1fd5cb5889b7  b'gAAAAABmDy2uDEdJD0vUSFTcaQ9xw6lZ0MMiV-K6q5lX...                     Home & Kitchen_LG_TV      18.0 2024-04-05 00:46:06.970600
+996  5e133121-740b-44c4-bb37-fc4a1277b76f  b'gAAAAABmDy2upcNi5GnEZgK3Rb4mdgodlohBXPAEB7av...                    Electronics_LG_Laptop       0.0 2024-04-05 00:46:06.970600
+997  de4acecf-df12-4deb-bd38-479597443a75  b'gAAAAABmDy2uHXzNg_qTHCXmxVRAewXmCTSNEHsUjFH1...                        Books_LG_Cookware      16.0 2024-04-05 00:46:06.970600
+998  ddadfded-c44c-472d-b077-c175a12ee33c  b'gAAAAABmDy2uhv2BbB32tz7Do_GzhUF-iiAZ6dQN4LS5...                Sports & Outdoors_Nike_TV      10.0 2024-04-05 00:46:06.970600
+999  c198230e-9baf-4d5e-8bff-71d242741dc5  b'gAAAAABmDy2uq5Mi-cx2ewyBUBJk4uvK7N4vgIjPx9Bg...          Home & Kitchen_AmazonBasics_Toy       5.0 2024-04-05 00:46:06.970600
+
+[1000 rows x 5 columns]
+2024-04-05 00:46:06,994 - INFO - 
+Data after handling outliers:
+2024-04-05 00:46:06,994 - INFO -                            transaction_id                                        customer_id                               product_id  quantity                  sale_date
+0    20643b1e-c312-4189-8651-3594070f372d  b'gAAAAABmDy2ux8O_BKk-jU8CeNEbs2Z3vbHMh0wmBhVO...                 Books_Samsung_Headphones      16.0 2024-04-05 00:46:06.970600
+1    d4765eac-1ba5-4e57-bfff-b3046fdd8457  b'gAAAAABmDy2ukH6LE_RddmoqzBDRMzmM_DuN5pE5mRcH...  Sports & Outdoors_AmazonBasics_Cookware      12.0 2024-04-05 00:46:06.970600
+2    e2c02b87-0e38-4949-8fc4-ff96dfff8ce4  b'gAAAAABmDy2uG2SO-cGcev1Im4EqO5TUhPv5uXph3Y-2...              Sports & Outdoors_LG_Laptop      22.0 2024-04-05 00:46:06.970600
+3    66789fe2-0e6e-4872-9952-d029e7c52ae1  b'gAAAAABmDy2uEXBv-4vyz0RxfdIUTTEWB935LDvoTdwE...                Toys_AmazonBasics_T-shirt       9.0 2024-04-05 00:46:06.970600
+4    854b1d12-d416-43b5-b91e-99650c51eb08  b'gAAAAABmDy2uaZelblfEhsU-fNCt3n-EVIO-0Nfq8AMg...          Home & Kitchen_Apple_Headphones       0.0 2024-04-05 00:46:06.970600
+..                                    ...                                                ...                                      ...       ...                        ...
+995  0159f351-a100-43e7-975e-1fd5cb5889b7  b'gAAAAABmDy2uDEdJD0vUSFTcaQ9xw6lZ0MMiV-K6q5lX...                     Home & Kitchen_LG_TV      18.0 2024-04-05 00:46:06.970600
+996  5e133121-740b-44c4-bb37-fc4a1277b76f  b'gAAAAABmDy2upcNi5GnEZgK3Rb4mdgodlohBXPAEB7av...                    Electronics_LG_Laptop       0.0 2024-04-05 00:46:06.970600
+997  de4acecf-df12-4deb-bd38-479597443a75  b'gAAAAABmDy2uHXzNg_qTHCXmxVRAewXmCTSNEHsUjFH1...                        Books_LG_Cookware      16.0 2024-04-05 00:46:06.970600
+998  ddadfded-c44c-472d-b077-c175a12ee33c  b'gAAAAABmDy2uhv2BbB32tz7Do_GzhUF-iiAZ6dQN4LS5...                Sports & Outdoors_Nike_TV      10.0 2024-04-05 00:46:06.970600
+999  c198230e-9baf-4d5e-8bff-71d242741dc5  b'gAAAAABmDy2uq5Mi-cx2ewyBUBJk4uvK7N4vgIjPx9Bg...          Home & Kitchen_AmazonBasics_Toy       5.0 2024-04-05 00:46:06.970600
+
+[1000 rows x 5 columns]
+2024-04-05 00:46:07,321 - INFO - Data loaded into database successfully!
+2024-04-05 01:13:40,257 - INFO - Table 'sales' deleted successfully!
+2024-04-05 01:14:04,650 - INFO - Table 'sales' created successfully!
+2024-04-05 01:14:12,835 - INFO - All rows from table 'sales' deleted successfully!
+2024-04-05 01:14:31,141 - INFO - Mock sales data saved to 'data/mock_sales_data.csv'
+2024-04-05 01:15:03,704 - INFO - CSV file read successfully.
+2024-04-05 01:15:03,704 - INFO - Sales data transformed successfully.
+2024-04-05 01:15:03,736 - INFO - 
+Transformed Data:
+2024-04-05 01:15:03,736 - INFO -                            transaction_id                                        customer_id                         product_id  quantity                  sale_date
+0    6b9f9fb1-2026-4af0-adc2-ce9b075c6a9f  b'gAAAAABmDzR3xLyN6sX8z8GF7vmxNPpniWyesch3c-Ff...  Electronics_AmazonBasics_Cookware      10.0 2024-04-05 01:15:03.736036
+1    6959e0cd-4a81-48a7-85bc-6fff8b202402  b'gAAAAABmDzR3cuURY4qZ3l8ujy-aN2o-4KOC0w2ydFli...       Electronics_Apple_Smartphone       3.0 2024-04-05 01:15:03.736036
+2    b64f3b3c-eb43-478c-8ada-693d4933b599  b'gAAAAABmDzR3gsvu5iUyNYbtD2pS1k9mCF5SSpEj7YO1...                 Toys_LG_Headphones       4.0 2024-04-05 01:15:03.736036
+3    e95cf5cf-33d7-438a-a9af-8a6b1ff54923  b'gAAAAABmDzR3YHubbDy1PF2CZTrdSi8IQPzLWMjhn89y...         Sports & Outdoors_Nike_Toy      12.0 2024-04-05 01:15:03.736036
+4    1c61cab0-4d3e-4f95-9e8e-7801672e75ab  b'gAAAAABmDzR3xWpk_zaubqLADO3HFX2PDmdesxcudfEm...       Clothing_AmazonBasics_Laptop      11.0 2024-04-05 01:15:03.736036
+..                                    ...                                                ...                                ...       ...                        ...
+995  aac1200f-867f-489f-bf7c-eee1c501f9c4  b'gAAAAABmDzR3aM2Yy5Lr3y50Kn9n73xI97_2P4I_5PRm...                    Toys_LG_T-shirt      35.0 2024-04-05 01:15:03.736036
+996  d10ccf20-8e8b-4db8-a7ed-7aca1f945378  b'gAAAAABmDzR3o4XpIuk2JQTqgC9KlQGPXQU0oFvvDdP0...                   Toys_Nike_Laptop       6.0 2024-04-05 01:15:03.736036
+997  8c50722d-d496-4dc4-b25e-9b7bc56ab324  b'gAAAAABmDzR3OCpVLAyFQ5j_9H88nd2n9VYx_eW62WiV...        Sports & Outdoors_Apple_Toy       0.0 2024-04-05 01:15:03.736036
+998  37d75c83-74c4-41f8-b49d-60311b0f4012  b'gAAAAABmDzR3ZitadGXA7pgOQWy6PU7uXsl4FLPAVPUS...            Home & Kitchen_Sony_Toy       0.0 2024-04-05 01:15:03.736036
+999  942e653e-4123-4162-8f93-b447641cd0f1  b'gAAAAABmDzR3G6vUDPR_ZD3tXUg-ZlsIVtoRoDA4tCWW...   Clothing_AmazonBasics_Headphones      17.0 2024-04-05 01:15:03.736036
+
+[1000 rows x 5 columns]
+2024-04-05 01:15:03,764 - INFO - 
+Data after handling outliers:
+2024-04-05 01:15:03,764 - INFO -                            transaction_id                                        customer_id                         product_id  quantity                  sale_date
+0    6b9f9fb1-2026-4af0-adc2-ce9b075c6a9f  b'gAAAAABmDzR3xLyN6sX8z8GF7vmxNPpniWyesch3c-Ff...  Electronics_AmazonBasics_Cookware      10.0 2024-04-05 01:15:03.736036
+1    6959e0cd-4a81-48a7-85bc-6fff8b202402  b'gAAAAABmDzR3cuURY4qZ3l8ujy-aN2o-4KOC0w2ydFli...       Electronics_Apple_Smartphone       3.0 2024-04-05 01:15:03.736036
+2    b64f3b3c-eb43-478c-8ada-693d4933b599  b'gAAAAABmDzR3gsvu5iUyNYbtD2pS1k9mCF5SSpEj7YO1...                 Toys_LG_Headphones       4.0 2024-04-05 01:15:03.736036
+3    e95cf5cf-33d7-438a-a9af-8a6b1ff54923  b'gAAAAABmDzR3YHubbDy1PF2CZTrdSi8IQPzLWMjhn89y...         Sports & Outdoors_Nike_Toy      12.0 2024-04-05 01:15:03.736036
+4    1c61cab0-4d3e-4f95-9e8e-7801672e75ab  b'gAAAAABmDzR3xWpk_zaubqLADO3HFX2PDmdesxcudfEm...       Clothing_AmazonBasics_Laptop      11.0 2024-04-05 01:15:03.736036
+..                                    ...                                                ...                                ...       ...                        ...
+995  aac1200f-867f-489f-bf7c-eee1c501f9c4  b'gAAAAABmDzR3aM2Yy5Lr3y50Kn9n73xI97_2P4I_5PRm...                    Toys_LG_T-shirt      35.0 2024-04-05 01:15:03.736036
+996  d10ccf20-8e8b-4db8-a7ed-7aca1f945378  b'gAAAAABmDzR3o4XpIuk2JQTqgC9KlQGPXQU0oFvvDdP0...                   Toys_Nike_Laptop       6.0 2024-04-05 01:15:03.736036
+997  8c50722d-d496-4dc4-b25e-9b7bc56ab324  b'gAAAAABmDzR3OCpVLAyFQ5j_9H88nd2n9VYx_eW62WiV...        Sports & Outdoors_Apple_Toy       0.0 2024-04-05 01:15:03.736036
+998  37d75c83-74c4-41f8-b49d-60311b0f4012  b'gAAAAABmDzR3ZitadGXA7pgOQWy6PU7uXsl4FLPAVPUS...            Home & Kitchen_Sony_Toy       0.0 2024-04-05 01:15:03.736036
+999  942e653e-4123-4162-8f93-b447641cd0f1  b'gAAAAABmDzR3G6vUDPR_ZD3tXUg-ZlsIVtoRoDA4tCWW...   Clothing_AmazonBasics_Headphones      17.0 2024-04-05 01:15:03.736036
+
+[1000 rows x 5 columns]
+2024-04-05 01:15:04,066 - INFO - Data loaded into database successfully!
+2024-04-05 01:15:14,927 - INFO - Table 'sales' deleted successfully!
+2024-04-05 01:15:18,553 - INFO - Table 'sales' created successfully!
+2024-04-05 01:15:56,593 - INFO - CSV file read successfully.
+2024-04-05 01:15:56,593 - INFO - Sales data transformed successfully.
+2024-04-05 01:15:56,620 - INFO - 
+Transformed Data:
+2024-04-05 01:15:56,636 - INFO -                            transaction_id                                        customer_id                         product_id  quantity                  sale_date
+0    6b9f9fb1-2026-4af0-adc2-ce9b075c6a9f  b'gAAAAABmDzSsxPmUqBsIfhB_XsgxE0G9fXz60hjfNdbS...  Electronics_AmazonBasics_Cookware      10.0 2024-04-05 01:15:56.620783
+1    6959e0cd-4a81-48a7-85bc-6fff8b202402  b'gAAAAABmDzSsKpY_PDSov91kFVJ14G8IhVRsX1B_ADer...       Electronics_Apple_Smartphone       3.0 2024-04-05 01:15:56.620783
+2    b64f3b3c-eb43-478c-8ada-693d4933b599  b'gAAAAABmDzSsb7gYcnAMVP0EINU_sqO7ILE5rs3g05Ew...                 Toys_LG_Headphones       4.0 2024-04-05 01:15:56.620783
+3    e95cf5cf-33d7-438a-a9af-8a6b1ff54923  b'gAAAAABmDzSsJC0OY07tPvy8jPqoY97FmE6iM-IGXknN...         Sports & Outdoors_Nike_Toy      12.0 2024-04-05 01:15:56.620783
+4    1c61cab0-4d3e-4f95-9e8e-7801672e75ab  b'gAAAAABmDzSssIlJjNFgqOwA_rd24oPKxidl4CHfCI_E...       Clothing_AmazonBasics_Laptop      11.0 2024-04-05 01:15:56.620783
+..                                    ...                                                ...                                ...       ...                        ...
+995  aac1200f-867f-489f-bf7c-eee1c501f9c4  b'gAAAAABmDzSsNbvxE2j5lWtyK3SZOEuTpaAMwvWASSzH...                    Toys_LG_T-shirt      35.0 2024-04-05 01:15:56.620783
+996  d10ccf20-8e8b-4db8-a7ed-7aca1f945378  b'gAAAAABmDzSs9C14nv4GHUP6YhlTKzhXd9saVxe2jL9f...                   Toys_Nike_Laptop       6.0 2024-04-05 01:15:56.620783
+997  8c50722d-d496-4dc4-b25e-9b7bc56ab324  b'gAAAAABmDzSsAAdSKNY3SBUs_9mw9I-iicqCJyv-oa_B...        Sports & Outdoors_Apple_Toy       0.0 2024-04-05 01:15:56.620783
+998  37d75c83-74c4-41f8-b49d-60311b0f4012  b'gAAAAABmDzSszyhAFamWav8sdKLzK3WNbfZxCYpfscpp...            Home & Kitchen_Sony_Toy       0.0 2024-04-05 01:15:56.620783
+999  942e653e-4123-4162-8f93-b447641cd0f1  b'gAAAAABmDzSsUqQue4fDYXEod8VJCkNFKZmF9gDOdgKB...   Clothing_AmazonBasics_Headphones      17.0 2024-04-05 01:15:56.620783
+
+[1000 rows x 5 columns]
+2024-04-05 01:15:56,651 - INFO - 
+Data after handling outliers:
+2024-04-05 01:15:56,651 - INFO -                            transaction_id                                        customer_id                         product_id  quantity                  sale_date
+0    6b9f9fb1-2026-4af0-adc2-ce9b075c6a9f  b'gAAAAABmDzSsxPmUqBsIfhB_XsgxE0G9fXz60hjfNdbS...  Electronics_AmazonBasics_Cookware      10.0 2024-04-05 01:15:56.620783
+1    6959e0cd-4a81-48a7-85bc-6fff8b202402  b'gAAAAABmDzSsKpY_PDSov91kFVJ14G8IhVRsX1B_ADer...       Electronics_Apple_Smartphone       3.0 2024-04-05 01:15:56.620783
+2    b64f3b3c-eb43-478c-8ada-693d4933b599  b'gAAAAABmDzSsb7gYcnAMVP0EINU_sqO7ILE5rs3g05Ew...                 Toys_LG_Headphones       4.0 2024-04-05 01:15:56.620783
+3    e95cf5cf-33d7-438a-a9af-8a6b1ff54923  b'gAAAAABmDzSsJC0OY07tPvy8jPqoY97FmE6iM-IGXknN...         Sports & Outdoors_Nike_Toy      12.0 2024-04-05 01:15:56.620783
+4    1c61cab0-4d3e-4f95-9e8e-7801672e75ab  b'gAAAAABmDzSssIlJjNFgqOwA_rd24oPKxidl4CHfCI_E...       Clothing_AmazonBasics_Laptop      11.0 2024-04-05 01:15:56.620783
+..                                    ...                                                ...                                ...       ...                        ...
+995  aac1200f-867f-489f-bf7c-eee1c501f9c4  b'gAAAAABmDzSsNbvxE2j5lWtyK3SZOEuTpaAMwvWASSzH...                    Toys_LG_T-shirt      35.0 2024-04-05 01:15:56.620783
+996  d10ccf20-8e8b-4db8-a7ed-7aca1f945378  b'gAAAAABmDzSs9C14nv4GHUP6YhlTKzhXd9saVxe2jL9f...                   Toys_Nike_Laptop       6.0 2024-04-05 01:15:56.620783
+997  8c50722d-d496-4dc4-b25e-9b7bc56ab324  b'gAAAAABmDzSsAAdSKNY3SBUs_9mw9I-iicqCJyv-oa_B...        Sports & Outdoors_Apple_Toy       0.0 2024-04-05 01:15:56.620783
+998  37d75c83-74c4-41f8-b49d-60311b0f4012  b'gAAAAABmDzSszyhAFamWav8sdKLzK3WNbfZxCYpfscpp...            Home & Kitchen_Sony_Toy       0.0 2024-04-05 01:15:56.620783
+999  942e653e-4123-4162-8f93-b447641cd0f1  b'gAAAAABmDzSsUqQue4fDYXEod8VJCkNFKZmF9gDOdgKB...   Clothing_AmazonBasics_Headphones      17.0 2024-04-05 01:15:56.620783
+
+[1000 rows x 5 columns]
+2024-04-05 01:15:56,724 - INFO - Number of processors: 8
+2024-04-05 01:15:56,724 - INFO - Chunk size: 125
+2024-04-05 01:15:56,724 - INFO - Number of chunks: 8
+2024-04-05 01:15:58,329 - INFO - Chunk loaded into database successfully!
+2024-04-05 01:15:58,329 - INFO - Chunk loaded into database successfully!
+2024-04-05 01:15:58,329 - INFO - Chunk loaded into database successfully!
+2024-04-05 01:15:58,329 - INFO - Chunk loaded into database successfully!
+2024-04-05 01:15:58,345 - INFO - Chunk loaded into database successfully!
+2024-04-05 01:15:58,360 - INFO - Chunk loaded into database successfully!
+2024-04-05 01:15:58,393 - INFO - Chunk loaded into database successfully!
+2024-04-05 01:15:58,427 - INFO - Chunk loaded into database successfully!
+2024-04-05 01:16:20,063 - INFO - Table 'sales' deleted successfully!
+2024-04-05 01:16:24,050 - INFO - Table 'sales' created successfully!
+2024-04-05 01:16:30,277 - INFO - Mock sales data saved to 'data/mock_sales_data.csv'
+2024-04-05 01:16:36,267 - INFO - CSV file read successfully.
+2024-04-05 01:16:36,267 - INFO - Sales data transformed successfully.
+2024-04-05 01:16:36,299 - INFO - 
+Transformed Data:
+2024-04-05 01:16:36,299 - INFO -                            transaction_id                                        customer_id                             product_id  quantity                  sale_date
+0    0c68d56e-179a-4c9c-9c3a-518cb41fa466  b'gAAAAABmDzTU6YLjerfu08JbjobLYW32xB5eKq4FzkZC...                     Toys_HP_Smartphone      16.0 2024-04-05 01:16:36.299545
+1    8955b059-d48f-44a7-ab6c-701460507e06  b'gAAAAABmDzTUyUhEWThl-8Bcoj1Bl2br7Twp4Ekq8fDp...                    Electronics_Sony_TV      19.0 2024-04-05 01:16:36.299545
+2    fdf5cef2-c722-408a-89c4-e0a5feb73400  b'gAAAAABmDzTUmrQpVqOOEpVcgm2kMI7E6usRmB9hOO3C...                        Books_Apple_Toy       0.0 2024-04-05 01:16:36.299545
+3    c70c64c0-e3fb-4f15-aea0-993fb609d2bc  b'gAAAAABmDzTUgXwfvZ80uMeglM1jRf0BOGj5vaDElPNG...                          Books_Nike_TV      16.0 2024-04-05 01:16:36.299545
+4    2b50bde6-fb6c-48a4-8343-5c122e310d86  b'gAAAAABmDzTU6kyy7s7hFSmW19FSr45aoks_ve5cSn76...                   Toys_Sony_Headphones       1.0 2024-04-05 01:16:36.299545
+..                                    ...                                                ...                                    ...       ...                        ...
+995  1914b8eb-0e24-4411-9558-bc4b01338638  b'gAAAAABmDzTUQJzP4KyEHYRFUyFU-snA_9-qHe7hP1T6...                     Toys_HP_Smartphone      18.0 2024-04-05 01:16:36.299545
+996  46c453ff-9f4e-4e66-93ba-1fdb1933e731  b'gAAAAABmDzTUaiTowxZ9nCTvnf6YBLPYMBCU579emMrf...                   Toys_Dell_Headphones      31.0 2024-04-05 01:16:36.299545
+997  f43fe9db-05d5-428f-872d-43e3030c197e  b'gAAAAABmDzTUG3XsRi2NHrhZyghNSWv76vkx9oGm6saJ...             Home & Kitchen_Samsung_Toy      10.0 2024-04-05 01:16:36.299545
+998  69984f02-38f3-48be-87a2-ee1cf250c9ff  b'gAAAAABmDzTUBTqgBtUynaXZMnz5OGuZOANoJe5j3JTd...  Sports & Outdoors_AmazonBasics_Laptop      20.0 2024-04-05 01:16:36.299545
+999  49d10ed2-6cbb-4d1e-b8d6-67160d3d9ce9  b'gAAAAABmDzTULiNq7OubgknyHNGAE-lelh8k55JbxU_J...                      Toys_Canon_Laptop      17.0 2024-04-05 01:16:36.299545
+
+[1000 rows x 5 columns]
+2024-04-05 01:16:36,327 - INFO - 
+Data after handling outliers:
+2024-04-05 01:16:36,328 - INFO -                            transaction_id                                        customer_id                             product_id  quantity                  sale_date
+0    0c68d56e-179a-4c9c-9c3a-518cb41fa466  b'gAAAAABmDzTU6YLjerfu08JbjobLYW32xB5eKq4FzkZC...                     Toys_HP_Smartphone      16.0 2024-04-05 01:16:36.299545
+1    8955b059-d48f-44a7-ab6c-701460507e06  b'gAAAAABmDzTUyUhEWThl-8Bcoj1Bl2br7Twp4Ekq8fDp...                    Electronics_Sony_TV      19.0 2024-04-05 01:16:36.299545
+2    fdf5cef2-c722-408a-89c4-e0a5feb73400  b'gAAAAABmDzTUmrQpVqOOEpVcgm2kMI7E6usRmB9hOO3C...                        Books_Apple_Toy       0.0 2024-04-05 01:16:36.299545
+3    c70c64c0-e3fb-4f15-aea0-993fb609d2bc  b'gAAAAABmDzTUgXwfvZ80uMeglM1jRf0BOGj5vaDElPNG...                          Books_Nike_TV      16.0 2024-04-05 01:16:36.299545
+4    2b50bde6-fb6c-48a4-8343-5c122e310d86  b'gAAAAABmDzTU6kyy7s7hFSmW19FSr45aoks_ve5cSn76...                   Toys_Sony_Headphones       1.0 2024-04-05 01:16:36.299545
+..                                    ...                                                ...                                    ...       ...                        ...
+995  1914b8eb-0e24-4411-9558-bc4b01338638  b'gAAAAABmDzTUQJzP4KyEHYRFUyFU-snA_9-qHe7hP1T6...                     Toys_HP_Smartphone      18.0 2024-04-05 01:16:36.299545
+996  46c453ff-9f4e-4e66-93ba-1fdb1933e731  b'gAAAAABmDzTUaiTowxZ9nCTvnf6YBLPYMBCU579emMrf...                   Toys_Dell_Headphones      31.0 2024-04-05 01:16:36.299545
+997  f43fe9db-05d5-428f-872d-43e3030c197e  b'gAAAAABmDzTUG3XsRi2NHrhZyghNSWv76vkx9oGm6saJ...             Home & Kitchen_Samsung_Toy      10.0 2024-04-05 01:16:36.299545
+998  69984f02-38f3-48be-87a2-ee1cf250c9ff  b'gAAAAABmDzTUBTqgBtUynaXZMnz5OGuZOANoJe5j3JTd...  Sports & Outdoors_AmazonBasics_Laptop      20.0 2024-04-05 01:16:36.299545
+999  49d10ed2-6cbb-4d1e-b8d6-67160d3d9ce9  b'gAAAAABmDzTULiNq7OubgknyHNGAE-lelh8k55JbxU_J...                      Toys_Canon_Laptop      17.0 2024-04-05 01:16:36.299545
+
+[1000 rows x 5 columns]
+2024-04-05 01:16:36,625 - INFO - Data loaded into database successfully!
