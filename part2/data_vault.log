@@ -280,3 +280,39 @@ DETAIL:  PRIMARY KEY constraint on table "sales_transactions_satellite" lacks co
 2024-04-05 10:11:09,022 - INFO - Data from data/product_data.csv inserted into products_hub successfully!
 2024-04-05 10:11:09,417 - INFO - Data from data/customer_data.csv inserted into customers_hub successfully!
 2024-04-05 10:11:15,428 - INFO - Data from data/sales_data.csv inserted into sales_link successfully!
+2024-04-05 10:41:43,707 - INFO - Tables emptied successfully!
+2024-04-05 10:41:48,136 - INFO - Tables dropped successfully!
+2024-04-05 10:41:52,750 - INFO - customers_hub table created successfully!
+2024-04-05 10:41:52,750 - INFO - products_hub table created successfully!
+2024-04-05 10:41:52,777 - INFO - customers_satellite table created successfully!
+2024-04-05 10:41:52,790 - INFO - products_satellite table created successfully!
+2024-04-05 10:41:52,797 - INFO - sales_link table created successfully!
+2024-04-05 10:41:52,806 - INFO - sales_transactions_satellite table created successfully!
+2024-04-05 10:41:52,809 - INFO - Index created on source field in sales_link table successfully!
+2024-04-05 10:41:58,770 - INFO - Mock data saved to 'data/customer_data.csv'
+2024-04-05 10:41:58,770 - INFO - Mock data saved to 'data/product_data.csv'
+2024-04-05 10:41:58,827 - INFO - Mock data saved to 'data/sales_data.csv'
+2024-04-05 10:42:58,448 - INFO - customers_hub table created successfully!
+2024-04-05 10:42:58,448 - INFO - products_hub table created successfully!
+2024-04-05 10:42:58,448 - INFO - customers_satellite table created successfully!
+2024-04-05 10:42:58,448 - INFO - products_satellite table created successfully!
+2024-04-05 10:42:58,448 - INFO - sales_link table created successfully!
+2024-04-05 10:42:58,448 - INFO - sales_transactions_satellite table created successfully!
+2024-04-05 10:42:58,458 - INFO - Index created on source field in sales_link table successfully!
+2024-04-05 10:43:07,767 - INFO - Data from data/product_data.csv inserted into products_hub successfully!
+2024-04-05 10:43:08,158 - INFO - Data from data/customer_data.csv inserted into customers_hub successfully!
+2024-04-05 10:43:14,142 - INFO - Data from data/sales_data.csv inserted into sales_link successfully!
+2024-04-05 10:43:21,993 - INFO - Tables dropped successfully!
+2024-04-05 11:29:20,744 - INFO - Mock data saved to 'data/customer_data.csv'
+2024-04-05 11:29:20,746 - INFO - Mock data saved to 'data/product_data.csv'
+2024-04-05 11:29:20,841 - INFO - Mock data saved to 'data/sales_data.csv'
+2024-04-05 11:33:10,514 - INFO - customers_hub table created successfully!
+2024-04-05 11:33:10,523 - INFO - products_hub table created successfully!
+2024-04-05 11:33:10,538 - INFO - customers_satellite table created successfully!
+2024-04-05 11:33:10,548 - INFO - products_satellite table created successfully!
+2024-04-05 11:33:10,562 - INFO - sales_link table created successfully!
+2024-04-05 11:33:10,569 - INFO - sales_transactions_satellite table created successfully!
+2024-04-05 11:33:10,575 - INFO - Index created on source field in sales_link table successfully!
+2024-04-05 11:34:11,892 - INFO - Data from data/product_data.csv inserted into products_hub successfully!
+2024-04-05 11:34:12,646 - INFO - Data from data/customer_data.csv inserted into customers_hub successfully!
+2024-04-05 11:34:25,967 - INFO - Data from data/sales_data.csv inserted into sales_link successfully!

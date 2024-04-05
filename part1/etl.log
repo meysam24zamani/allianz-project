@@ -2118,3 +2118,79 @@ Data after handling outliers:
 
 [1000 rows x 5 columns]
 2024-04-05 01:16:36,625 - INFO - Data loaded into database successfully!
+2024-04-05 10:44:17,027 - INFO - Table 'sales' deleted successfully!
+2024-04-05 10:44:28,264 - INFO - Table 'sales' created successfully!
+2024-04-05 10:44:43,788 - INFO - Mock sales data saved to 'data/mock_sales_data.csv'
+2024-04-05 10:44:53,092 - INFO - CSV file read successfully.
+2024-04-05 10:44:53,092 - INFO - Sales data transformed successfully.
+2024-04-05 10:44:53,149 - INFO - 
+Transformed Data:
+2024-04-05 10:44:53,149 - INFO -                            transaction_id                                        customer_id                            product_id  quantity                  sale_date
+0    59487758-9953-4a5c-aca3-c6360b54d256  b'gAAAAABmD7oFqYz9Kp1fCSGs_YqAfIvsc7w_a8aubkY1...                         Toys_Canon_TV      18.0 2024-04-05 10:44:53.149529
+1    b8b501ff-7828-4084-8cee-32444b7d111d  b'gAAAAABmD7oFUg16xYWxmq8NtKTHTfnoUcYj1PXinHap...                         Toys_LG_Shoes       2.0 2024-04-05 10:44:53.149529
+2    5a504205-8e70-4d72-b59b-3628d6c89aee  b'gAAAAABmD7oFbY77CXNIqLafeJ2mlyZtqCzgzqAaYImZ...                   Clothing_HP_T-shirt      11.0 2024-04-05 10:44:53.149529
+3    ff1c91bf-dda1-489a-886e-2256f5554d3d  b'gAAAAABmD7oFHyZHD4wTTELC98D6MfQhi_acOe0gFMue...          Clothing_AmazonBasics_Laptop      16.0 2024-04-05 10:44:53.149529
+4    8e4d8dd5-c957-4d46-8284-f1e73f1d73e1  b'gAAAAABmD7oFzq4VtgkXpXMs-3eR6B1c0m4hsJrEPd0c...        Electronics_Samsung_Smartphone      12.0 2024-04-05 10:44:53.149529
+..                                    ...                                                ...                                   ...       ...                        ...
+995  4be2fc07-3bf7-4a1c-ae14-3c9d956c78a5  b'gAAAAABmD7oFhZGABwaGJI2E6ZAmP7oVTuX2qwpQX0wI...                  Clothing_Apple_Shoes       4.0 2024-04-05 10:44:53.149529
+996  5755ed92-4d5d-4757-b24c-2af5abacf9d3  b'gAAAAABmD7oF9xwkpp5R9uOYIOx1b5I0T0kr7J8fCK0g...                  Home & Kitchen_LG_TV       0.0 2024-04-05 10:44:53.149529
+997  b0ed2c26-26d3-4747-8685-7d6d33277b85  b'gAAAAABmD7oFPHY1jhWMnuPp_Z-cqOu4f4Ts4iKmFlgN...                      Toys_Apple_Shoes       5.0 2024-04-05 10:44:53.149529
+998  1aa56501-9ed2-46e5-9f62-6c60d3a4de0c  b'gAAAAABmD7oFBiL4ZR7WUxCJh6hLXzEJvno_8M7tFHaQ...  Sports & Outdoors_AmazonBasics_Shoes      24.0 2024-04-05 10:44:53.149529
+999  2b45f098-d701-402a-9774-e7ec1db122e7  b'gAAAAABmD7oFRUIq1xxqEq5NmPbSt4gL6-5sdpwEhYS9...          Home & Kitchen_Sony_Cookware      19.0 2024-04-05 10:44:53.149529
+
+[1000 rows x 5 columns]
+2024-04-05 10:44:53,175 - INFO - 
+Data after handling outliers:
+2024-04-05 10:44:53,175 - INFO -                            transaction_id                                        customer_id                            product_id  quantity                  sale_date
+0    59487758-9953-4a5c-aca3-c6360b54d256  b'gAAAAABmD7oFqYz9Kp1fCSGs_YqAfIvsc7w_a8aubkY1...                         Toys_Canon_TV      18.0 2024-04-05 10:44:53.149529
+1    b8b501ff-7828-4084-8cee-32444b7d111d  b'gAAAAABmD7oFUg16xYWxmq8NtKTHTfnoUcYj1PXinHap...                         Toys_LG_Shoes       2.0 2024-04-05 10:44:53.149529
+2    5a504205-8e70-4d72-b59b-3628d6c89aee  b'gAAAAABmD7oFbY77CXNIqLafeJ2mlyZtqCzgzqAaYImZ...                   Clothing_HP_T-shirt      11.0 2024-04-05 10:44:53.149529
+3    ff1c91bf-dda1-489a-886e-2256f5554d3d  b'gAAAAABmD7oFHyZHD4wTTELC98D6MfQhi_acOe0gFMue...          Clothing_AmazonBasics_Laptop      16.0 2024-04-05 10:44:53.149529
+4    8e4d8dd5-c957-4d46-8284-f1e73f1d73e1  b'gAAAAABmD7oFzq4VtgkXpXMs-3eR6B1c0m4hsJrEPd0c...        Electronics_Samsung_Smartphone      12.0 2024-04-05 10:44:53.149529
+..                                    ...                                                ...                                   ...       ...                        ...
+995  4be2fc07-3bf7-4a1c-ae14-3c9d956c78a5  b'gAAAAABmD7oFhZGABwaGJI2E6ZAmP7oVTuX2qwpQX0wI...                  Clothing_Apple_Shoes       4.0 2024-04-05 10:44:53.149529
+996  5755ed92-4d5d-4757-b24c-2af5abacf9d3  b'gAAAAABmD7oF9xwkpp5R9uOYIOx1b5I0T0kr7J8fCK0g...                  Home & Kitchen_LG_TV       0.0 2024-04-05 10:44:53.149529
+997  b0ed2c26-26d3-4747-8685-7d6d33277b85  b'gAAAAABmD7oFPHY1jhWMnuPp_Z-cqOu4f4Ts4iKmFlgN...                      Toys_Apple_Shoes       5.0 2024-04-05 10:44:53.149529
+998  1aa56501-9ed2-46e5-9f62-6c60d3a4de0c  b'gAAAAABmD7oFBiL4ZR7WUxCJh6hLXzEJvno_8M7tFHaQ...  Sports & Outdoors_AmazonBasics_Shoes      24.0 2024-04-05 10:44:53.149529
+999  2b45f098-d701-402a-9774-e7ec1db122e7  b'gAAAAABmD7oFRUIq1xxqEq5NmPbSt4gL6-5sdpwEhYS9...          Home & Kitchen_Sony_Cookware      19.0 2024-04-05 10:44:53.149529
+
+[1000 rows x 5 columns]
+2024-04-05 10:44:53,520 - INFO - Data loaded into database successfully!
+2024-04-05 10:44:57,526 - INFO - Table 'sales' deleted successfully!
+2024-04-05 11:10:51,511 - INFO - Mock sales data saved to 'data/mock_sales_data.csv'
+2024-04-05 11:15:18,748 - INFO - Table 'sales' created successfully!
+2024-04-05 11:19:08,827 - INFO - CSV file read successfully.
+2024-04-05 11:19:08,828 - INFO - Sales data transformed successfully.
+2024-04-05 11:19:08,899 - INFO - 
+Transformed Data:
+2024-04-05 11:19:08,900 - INFO -                            transaction_id                                        customer_id                       product_id  quantity                  sale_date
+0    105edabe-78ed-4c4d-837b-3e9255015c39  b'gAAAAABmD8IM--Mt1m4XYz8UFk6WA5IBMhhbDmOONgfG...  Home & Kitchen_Samsung_Cookware       0.0 2024-04-05 11:19:08.899246
+1    6d4b2548-fffe-4579-abc8-25cd3ef4dd2a  b'gAAAAABmD8IMybBdRqBCES7P4NuZPtIKGYcLLGRCk3Lu...             Books_Canon_Cookware       7.0 2024-04-05 11:19:08.899246
+2    3da3cd8a-ea84-4c32-93ae-8248af0d5fce  b'gAAAAABmD8IMBbLU8n7Yg9-SKSvGx_76dGKBH_6kpWvA...       Sports & Outdoors_Nike_Toy       9.0 2024-04-05 11:19:08.899246
+3    df0f3462-020d-423e-bb62-4dbdcde5fea0  b'gAAAAABmD8IMaMbYvlpILqpdOg9lMYNwokrjmGQ9FqWA...                Clothing_LG_Shoes      18.0 2024-04-05 11:19:08.899246
+4    95b327dc-c99a-4d6f-a453-806e53163cc6  b'gAAAAABmD8IMKa0922W6_-SkfYVcSdwJa5mKv-21plcu...      Electronics_Nike_Headphones      13.0 2024-04-05 11:19:08.899246
+..                                    ...                                                ...                              ...       ...                        ...
+995  e6db92cd-de79-4cc2-bf1e-aad955c5a2d6  b'gAAAAABmD8IMzsdqZiXfBoY8ULe_fntxb8tnQJhnBtWP...                 Books_Nike_Shoes      20.0 2024-04-05 11:19:08.899246
+996  571ea193-6804-40ee-8a6a-19617c76b7f1  b'gAAAAABmD8IMxOCisb8J6LCtN7UZQPx9CI4K5KX2R_DI...       Electronics_Samsung_Laptop      14.0 2024-04-05 11:19:08.899246
+997  02d527c3-85ee-4554-8a1b-bf2792ccb645  b'gAAAAABmD8IMGTUb9fk7FwHj-YRXuq0H5fq5qq7wEZ0f...   Sports & Outdoors_Sony_T-shirt       5.0 2024-04-05 11:19:08.899246
+998  27e0d58c-10b7-4bb9-8ce6-ea143e8a5605  b'gAAAAABmD8IMf-AYKwQf1A1kXGYBenx1mc1zwlxv8HoK...   Sports & Outdoors_Samsung_Book      15.0 2024-04-05 11:19:08.899246
+999  a423c591-a8b1-4244-8578-9fb41ac3706f  b'gAAAAABmD8IMpxCaBliAqFaqEGdRw1ocI6vvTPgRJlRG...             Clothing_Canon_Shoes       9.0 2024-04-05 11:19:08.899246
+
+[1000 rows x 5 columns]
+2024-04-05 11:19:08,924 - INFO - 
+Data after handling outliers:
+2024-04-05 11:19:08,924 - INFO -                            transaction_id                                        customer_id                       product_id  quantity                  sale_date
+0    105edabe-78ed-4c4d-837b-3e9255015c39  b'gAAAAABmD8IM--Mt1m4XYz8UFk6WA5IBMhhbDmOONgfG...  Home & Kitchen_Samsung_Cookware       0.0 2024-04-05 11:19:08.899246
+1    6d4b2548-fffe-4579-abc8-25cd3ef4dd2a  b'gAAAAABmD8IMybBdRqBCES7P4NuZPtIKGYcLLGRCk3Lu...             Books_Canon_Cookware       7.0 2024-04-05 11:19:08.899246
+2    3da3cd8a-ea84-4c32-93ae-8248af0d5fce  b'gAAAAABmD8IMBbLU8n7Yg9-SKSvGx_76dGKBH_6kpWvA...       Sports & Outdoors_Nike_Toy       9.0 2024-04-05 11:19:08.899246
+3    df0f3462-020d-423e-bb62-4dbdcde5fea0  b'gAAAAABmD8IMaMbYvlpILqpdOg9lMYNwokrjmGQ9FqWA...                Clothing_LG_Shoes      18.0 2024-04-05 11:19:08.899246
+4    95b327dc-c99a-4d6f-a453-806e53163cc6  b'gAAAAABmD8IMKa0922W6_-SkfYVcSdwJa5mKv-21plcu...      Electronics_Nike_Headphones      13.0 2024-04-05 11:19:08.899246
+..                                    ...                                                ...                              ...       ...                        ...
+995  e6db92cd-de79-4cc2-bf1e-aad955c5a2d6  b'gAAAAABmD8IMzsdqZiXfBoY8ULe_fntxb8tnQJhnBtWP...                 Books_Nike_Shoes      20.0 2024-04-05 11:19:08.899246
+996  571ea193-6804-40ee-8a6a-19617c76b7f1  b'gAAAAABmD8IMxOCisb8J6LCtN7UZQPx9CI4K5KX2R_DI...       Electronics_Samsung_Laptop      14.0 2024-04-05 11:19:08.899246
+997  02d527c3-85ee-4554-8a1b-bf2792ccb645  b'gAAAAABmD8IMGTUb9fk7FwHj-YRXuq0H5fq5qq7wEZ0f...   Sports & Outdoors_Sony_T-shirt       5.0 2024-04-05 11:19:08.899246
+998  27e0d58c-10b7-4bb9-8ce6-ea143e8a5605  b'gAAAAABmD8IMf-AYKwQf1A1kXGYBenx1mc1zwlxv8HoK...   Sports & Outdoors_Samsung_Book      15.0 2024-04-05 11:19:08.899246
+999  a423c591-a8b1-4244-8578-9fb41ac3706f  b'gAAAAABmD8IMpxCaBliAqFaqEGdRw1ocI6vvTPgRJlRG...             Clothing_Canon_Shoes       9.0 2024-04-05 11:19:08.899246
+
+[1000 rows x 5 columns]
+2024-04-05 11:19:09,584 - INFO - Data loaded into database successfully!
