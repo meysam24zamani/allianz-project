@@ -69,3 +69,214 @@
 2024-04-05 01:20:06,590 - INFO - Data from data/product_data.csv inserted into products_hub successfully!
 2024-04-05 01:20:07,006 - INFO - Data from data/customer_data.csv inserted into customers_hub successfully!
 2024-04-05 01:20:13,601 - INFO - Data from data/sales_data.csv inserted into sales_link successfully!
+2024-04-05 08:41:18,962 - INFO - Tables dropped successfully!
+2024-04-05 08:41:26,218 - INFO - customers_hub table created successfully!
+2024-04-05 08:41:26,222 - INFO - products_hub table created successfully!
+2024-04-05 08:41:26,225 - ERROR - Error creating tables: syntax error at or near "("
+LINE 13:                 ) PARTITION BY RANGE (start_date) (
+                                                           ^
+
+2024-04-05 08:51:34,389 - INFO - Tables dropped successfully!
+2024-04-05 08:51:36,476 - INFO - Partitioning function created successfully!
+2024-04-05 08:51:36,486 - INFO - customers_hub table created successfully!
+2024-04-05 08:51:36,491 - INFO - products_hub table created successfully!
+2024-04-05 08:51:36,492 - INFO - customers_satellite table created successfully!
+2024-04-05 08:51:36,503 - INFO - products_satellite table created successfully!
+2024-04-05 08:51:36,508 - INFO - sales_link table created successfully!
+2024-04-05 08:51:36,511 - INFO - sales_transactions_satellite table created successfully!
+2024-04-05 08:51:36,513 - INFO - Partitioning trigger for customers_satellite created successfully!
+2024-04-05 08:51:36,513 - INFO - Partitioning trigger for products_satellite created successfully!
+2024-04-05 08:51:36,514 - INFO - Partitioning trigger for sales_transactions_satellite created successfully!
+2024-04-05 08:51:50,000 - ERROR - Error inserting data into products_hub: syntax error at or near "PARTITION"
+LINE 1: INSERT INTO products_satellite PARTITION OF products_satelli...
+                                       ^
+QUERY:  INSERT INTO products_satellite PARTITION OF products_satellite FOR VALUES FROM ('2024-04-05') TO ('2024-04-06 00:00:00') VALUES ($1.*)
+CONTEXT:  PL/pgSQL function products_satellite_insert_trigger() line 3 at EXECUTE
+
+2024-04-05 08:51:50,000 - ERROR - Error inserting data into customers_hub: current transaction is aborted, commands ignored until end of transaction block
+
+2024-04-05 08:51:50,016 - ERROR - Error inserting data into sales_link: current transaction is aborted, commands ignored until end of transaction block
+
+2024-04-05 08:56:55,491 - INFO - Tables dropped successfully!
+2024-04-05 08:56:57,811 - INFO - Partitioning function created successfully!
+2024-04-05 08:56:57,826 - INFO - customers_hub table created successfully!
+2024-04-05 08:56:57,840 - INFO - products_hub table created successfully!
+2024-04-05 08:56:57,849 - ERROR - Error creating tables: unique constraint on partitioned table must include all partitioning columns
+DETAIL:  PRIMARY KEY constraint on table "customers_satellite" lacks column "start_date" which is part of the partition key.
+
+2024-04-05 09:00:48,308 - INFO - Tables dropped successfully!
+2024-04-05 09:00:50,284 - INFO - Partitioning function created successfully!
+2024-04-05 09:00:50,308 - INFO - customers_hub table created successfully!
+2024-04-05 09:00:50,313 - INFO - products_hub table created successfully!
+2024-04-05 09:00:50,316 - INFO - customers_satellite table created successfully!
+2024-04-05 09:00:50,319 - INFO - products_satellite table created successfully!
+2024-04-05 09:00:50,325 - INFO - sales_link table created successfully!
+2024-04-05 09:00:50,328 - INFO - sales_transactions_satellite table created successfully!
+2024-04-05 09:00:50,335 - ERROR - Error creating tables: syntax error at or near "PARTITION"
+LINE 6:             PARTITION OF customers_satellite
+                    ^
+
+2024-04-05 09:02:41,184 - INFO - Tables dropped successfully!
+2024-04-05 09:02:43,090 - INFO - Partitioning function created successfully!
+2024-04-05 09:02:43,100 - INFO - customers_hub table created successfully!
+2024-04-05 09:02:43,104 - INFO - products_hub table created successfully!
+2024-04-05 09:02:43,111 - ERROR - Error creating tables: unique constraint on partitioned table must include all partitioning columns
+DETAIL:  PRIMARY KEY constraint on table "customers_satellite" lacks column "start_date" which is part of the partition key.
+
+2024-04-05 09:04:17,071 - INFO - Tables dropped successfully!
+2024-04-05 09:04:19,112 - INFO - Partitioning function created successfully!
+2024-04-05 09:04:19,124 - INFO - customers_hub table created successfully!
+2024-04-05 09:04:19,134 - INFO - products_hub table created successfully!
+2024-04-05 09:04:19,135 - ERROR - Error creating tables: multiple primary keys for table "customers_satellite" are not allowed
+LINE 13:                     CONSTRAINT customers_satellite_pk PRIMAR...
+                             ^
+
+2024-04-05 09:05:07,221 - INFO - Partitioning function created successfully!
+2024-04-05 09:05:07,236 - INFO - customers_hub table created successfully!
+2024-04-05 09:05:07,239 - INFO - products_hub table created successfully!
+2024-04-05 09:05:07,244 - INFO - customers_satellite table created successfully!
+2024-04-05 09:05:07,246 - INFO - products_satellite table created successfully!
+2024-04-05 09:05:07,252 - INFO - sales_link table created successfully!
+2024-04-05 09:05:07,256 - INFO - sales_transactions_satellite table created successfully!
+2024-04-05 09:05:07,258 - INFO - Partitioning trigger for customers_satellite created successfully!
+2024-04-05 09:05:07,259 - INFO - Partitioning trigger for products_satellite created successfully!
+2024-04-05 09:05:07,259 - INFO - Partitioning trigger for sales_transactions_satellite created successfully!
+2024-04-05 09:05:10,885 - INFO - Tables dropped successfully!
+2024-04-05 09:05:12,512 - INFO - Partitioning function created successfully!
+2024-04-05 09:05:12,527 - INFO - customers_hub table created successfully!
+2024-04-05 09:05:12,540 - INFO - products_hub table created successfully!
+2024-04-05 09:05:12,540 - INFO - customers_satellite table created successfully!
+2024-04-05 09:05:12,540 - INFO - products_satellite table created successfully!
+2024-04-05 09:05:12,550 - INFO - sales_link table created successfully!
+2024-04-05 09:05:12,555 - INFO - sales_transactions_satellite table created successfully!
+2024-04-05 09:05:12,557 - INFO - Partitioning trigger for customers_satellite created successfully!
+2024-04-05 09:05:12,558 - INFO - Partitioning trigger for products_satellite created successfully!
+2024-04-05 09:05:12,559 - INFO - Partitioning trigger for sales_transactions_satellite created successfully!
+2024-04-05 09:05:17,933 - ERROR - Error inserting data into products_hub: no partition of relation "products_satellite" found for row
+DETAIL:  Partition key of the failing row contains (start_date) = (2024-04-05).
+
+2024-04-05 09:05:17,933 - ERROR - Error inserting data into customers_hub: current transaction is aborted, commands ignored until end of transaction block
+
+2024-04-05 09:05:17,933 - ERROR - Error inserting data into sales_link: current transaction is aborted, commands ignored until end of transaction block
+
+2024-04-05 09:06:28,141 - INFO - Tables dropped successfully!
+2024-04-05 09:06:30,138 - INFO - Partitioning function created successfully!
+2024-04-05 09:06:30,138 - INFO - customers_hub table created successfully!
+2024-04-05 09:06:30,153 - INFO - products_hub table created successfully!
+2024-04-05 09:06:30,160 - ERROR - Error creating tables: unique constraint on partitioned table must include all partitioning columns
+DETAIL:  PRIMARY KEY constraint on table "customers_satellite" lacks column "start_date" which is part of the partition key.
+
+2024-04-05 09:09:32,030 - INFO - Tables dropped successfully!
+2024-04-05 09:09:33,593 - INFO - Partitioning function created successfully!
+2024-04-05 09:09:33,614 - INFO - customers_hub table created successfully!
+2024-04-05 09:09:33,622 - INFO - products_hub table created successfully!
+2024-04-05 09:09:33,622 - INFO - customers_satellite table created successfully!
+2024-04-05 09:09:33,622 - INFO - products_satellite table created successfully!
+2024-04-05 09:09:33,622 - INFO - sales_link table created successfully!
+2024-04-05 09:09:33,636 - INFO - sales_transactions_satellite table created successfully!
+2024-04-05 09:09:33,644 - ERROR - Error creating tables: syntax error at or near "PARTITION"
+LINE 6:             PARTITION OF customers_satellite
+                    ^
+
+2024-04-05 09:11:49,862 - INFO - Tables dropped successfully!
+2024-04-05 09:11:51,461 - INFO - Partitioning function created successfully!
+2024-04-05 09:11:51,476 - INFO - customers_hub table created successfully!
+2024-04-05 09:11:51,489 - INFO - products_hub table created successfully!
+2024-04-05 09:11:51,492 - INFO - customers_satellite table created successfully!
+2024-04-05 09:11:51,493 - INFO - products_satellite table created successfully!
+2024-04-05 09:11:51,502 - INFO - sales_link table created successfully!
+2024-04-05 09:11:51,509 - ERROR - Error creating tables: unique constraint on partitioned table must include all partitioning columns
+DETAIL:  PRIMARY KEY constraint on table "sales_transactions_satellite" lacks column "start_date" which is part of the partition key.
+
+2024-04-05 09:12:48,122 - INFO - Tables dropped successfully!
+2024-04-05 09:12:49,539 - INFO - Partitioning function created successfully!
+2024-04-05 09:12:49,570 - INFO - customers_hub table created successfully!
+2024-04-05 09:12:49,580 - INFO - products_hub table created successfully!
+2024-04-05 09:12:49,584 - INFO - customers_satellite table created successfully!
+2024-04-05 09:12:49,586 - INFO - products_satellite table created successfully!
+2024-04-05 09:12:49,591 - INFO - sales_link table created successfully!
+2024-04-05 09:12:49,601 - ERROR - Error creating tables: multiple primary keys for table "sales_transactions_satellite" are not allowed
+LINE 9:                     PRIMARY KEY (transaction_hash_key, start...
+                            ^
+
+2024-04-05 09:14:01,785 - INFO - Tables dropped successfully!
+2024-04-05 09:14:03,062 - INFO - Partitioning function created successfully!
+2024-04-05 09:14:03,085 - INFO - customers_hub table created successfully!
+2024-04-05 09:14:03,101 - INFO - products_hub table created successfully!
+2024-04-05 09:14:03,109 - INFO - customers_satellite table created successfully!
+2024-04-05 09:14:03,111 - INFO - products_satellite table created successfully!
+2024-04-05 09:14:03,119 - INFO - sales_link table created successfully!
+2024-04-05 09:14:03,125 - ERROR - Error creating tables: unique constraint on partitioned table must include all partitioning columns
+DETAIL:  PRIMARY KEY constraint on table "sales_transactions_satellite" lacks column "start_date" which is part of the partition key.
+
+2024-04-05 09:14:47,541 - INFO - Tables dropped successfully!
+2024-04-05 09:14:48,726 - INFO - Partitioning function created successfully!
+2024-04-05 09:14:48,753 - INFO - customers_hub table created successfully!
+2024-04-05 09:14:48,758 - INFO - products_hub table created successfully!
+2024-04-05 09:14:48,761 - INFO - customers_satellite table created successfully!
+2024-04-05 09:14:48,763 - INFO - products_satellite table created successfully!
+2024-04-05 09:14:48,766 - INFO - sales_link table created successfully!
+2024-04-05 09:14:48,772 - ERROR - Error creating tables: unique constraint on partitioned table must include all partitioning columns
+DETAIL:  PRIMARY KEY constraint on table "sales_transactions_satellite" lacks column "start_date" which is part of the partition key.
+
+2024-04-05 09:17:03,593 - INFO - Tables dropped successfully!
+2024-04-05 09:17:05,221 - INFO - customers_hub table created successfully!
+2024-04-05 09:17:05,226 - INFO - products_hub table created successfully!
+2024-04-05 09:17:05,233 - INFO - customers_satellite table created successfully!
+2024-04-05 09:17:05,238 - INFO - products_satellite table created successfully!
+2024-04-05 09:17:05,243 - INFO - sales_link table created successfully!
+2024-04-05 09:17:05,248 - INFO - sales_transactions_satellite table created successfully!
+2024-04-05 09:17:11,156 - INFO - Mock data saved to 'data/customer_data.csv'
+2024-04-05 09:17:11,156 - INFO - Mock data saved to 'data/product_data.csv'
+2024-04-05 09:17:11,208 - INFO - Mock data saved to 'data/sales_data.csv'
+2024-04-05 09:17:15,425 - INFO - Data from data/product_data.csv inserted into products_hub successfully!
+2024-04-05 09:17:15,824 - INFO - Data from data/customer_data.csv inserted into customers_hub successfully!
+2024-04-05 09:17:21,771 - INFO - Data from data/sales_data.csv inserted into sales_link successfully!
+2024-04-05 09:29:53,840 - INFO - Tables dropped successfully!
+2024-04-05 09:29:56,249 - INFO - customers_hub table created successfully!
+2024-04-05 09:29:56,258 - INFO - products_hub table created successfully!
+2024-04-05 09:29:56,268 - ERROR - Error creating tables: unrecognized parameter "compression"
+
+2024-04-05 09:32:12,734 - INFO - Tables dropped successfully!
+2024-04-05 09:32:13,901 - INFO - customers_hub table created successfully!
+2024-04-05 09:32:13,922 - INFO - products_hub table created successfully!
+2024-04-05 09:32:13,923 - ERROR - Error creating tables: unrecognized parameter "compression"
+
+2024-04-05 09:37:33,910 - INFO - Tables dropped successfully!
+2024-04-05 09:37:35,292 - INFO - customers_hub table created successfully!
+2024-04-05 09:37:35,292 - INFO - products_hub table created successfully!
+2024-04-05 09:37:35,314 - INFO - customers_satellite table created successfully!
+2024-04-05 09:37:35,322 - INFO - products_satellite table created successfully!
+2024-04-05 09:37:35,337 - INFO - sales_link table created successfully!
+2024-04-05 09:37:35,340 - INFO - sales_transactions_satellite table created successfully!
+2024-04-05 09:37:38,810 - INFO - Mock data saved to 'data/customer_data.csv'
+2024-04-05 09:37:38,810 - INFO - Mock data saved to 'data/product_data.csv'
+2024-04-05 09:37:38,862 - INFO - Mock data saved to 'data/sales_data.csv'
+2024-04-05 09:37:41,859 - INFO - Data from data/product_data.csv inserted into products_hub successfully!
+2024-04-05 09:37:42,258 - INFO - Data from data/customer_data.csv inserted into customers_hub successfully!
+2024-04-05 09:37:48,473 - INFO - Data from data/sales_data.csv inserted into sales_link successfully!
+2024-04-05 09:40:29,518 - INFO - Tables dropped successfully!
+2024-04-05 09:40:31,902 - INFO - customers_hub table created successfully!
+2024-04-05 09:40:31,920 - INFO - products_hub table created successfully!
+2024-04-05 09:40:31,926 - INFO - customers_satellite table created successfully!
+2024-04-05 09:40:31,940 - INFO - products_satellite table created successfully!
+2024-04-05 09:40:31,950 - INFO - sales_link table created successfully!
+2024-04-05 09:40:31,950 - INFO - sales_transactions_satellite table created successfully!
+2024-04-05 09:40:31,959 - INFO - Index created on source field in sales_link table successfully!
+2024-04-05 09:40:40,153 - INFO - Data from data/product_data.csv inserted into products_hub successfully!
+2024-04-05 09:40:40,539 - INFO - Data from data/customer_data.csv inserted into customers_hub successfully!
+2024-04-05 09:40:46,514 - INFO - Data from data/sales_data.csv inserted into sales_link successfully!
+2024-04-05 10:10:54,614 - INFO - Tables dropped successfully!
+2024-04-05 10:10:56,546 - INFO - customers_hub table created successfully!
+2024-04-05 10:10:56,549 - INFO - products_hub table created successfully!
+2024-04-05 10:10:56,570 - INFO - customers_satellite table created successfully!
+2024-04-05 10:10:56,573 - INFO - products_satellite table created successfully!
+2024-04-05 10:10:56,588 - INFO - sales_link table created successfully!
+2024-04-05 10:10:56,592 - INFO - sales_transactions_satellite table created successfully!
+2024-04-05 10:10:56,601 - INFO - Index created on source field in sales_link table successfully!
+2024-04-05 10:11:05,427 - INFO - Mock data saved to 'data/customer_data.csv'
+2024-04-05 10:11:05,427 - INFO - Mock data saved to 'data/product_data.csv'
+2024-04-05 10:11:05,481 - INFO - Mock data saved to 'data/sales_data.csv'
+2024-04-05 10:11:09,022 - INFO - Data from data/product_data.csv inserted into products_hub successfully!
+2024-04-05 10:11:09,417 - INFO - Data from data/customer_data.csv inserted into customers_hub successfully!
+2024-04-05 10:11:15,428 - INFO - Data from data/sales_data.csv inserted into sales_link successfully!
